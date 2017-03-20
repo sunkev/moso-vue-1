@@ -1,2 +1,2 @@
 # moso-vue
-moso.io built with vue.js
+moso.io rebuilt with vue.js
