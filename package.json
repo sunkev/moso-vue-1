@@ -1,0 +1,28 @@
+{
+  "name": "moso-vue",
+  "version": "1.0.0",
+  "description": "moso.io built with vue.js",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moso/moso-vue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moso/moso-vue/issues"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "keywords": [],
+  "author": "moso <morten@moso.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "laravel-mix": "^0.8.8",
+    "vue": "^2.2.4",
+    "vue-material": "^0.7.1",
+    "vue-router": "^2.3.0"
+  }
+}
