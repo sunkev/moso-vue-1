@@ -1,8 +1,14 @@
-// VUE & VUE-ROUTER
+// VUE IMPORTS
 import Vue from 'vue';
-import VueRouter from 'vue-router';
+//import VueRouter from 'vue-router';
 
-Vue.use(VueRouter);
+
+// VUE COMPONENTS
+Vue.component('moso-sidenav', require('./components/moso-sidenav/moso-sidenav.vue'));
+
+
+// VUE-ROUTER
+/*Vue.use(VueRouter);
 
 import profile from './views/profile.vue';
 import resume from './views/resume.vue';
@@ -21,4 +27,8 @@ const router = new VueRouter({
 
 const app = new Vue({
     router
+}).$mount('#app')*/
+
+const app = new Vue({
+    //router
 }).$mount('#app')

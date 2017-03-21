@@ -22,7 +22,6 @@
   "devDependencies": {
     "laravel-mix": "^0.8.8",
     "vue": "^2.2.4",
-    "vue-material": "^0.7.1",
     "vue-router": "^2.3.0"
   }
 }
