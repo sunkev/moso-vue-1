@@ -1,18 +1,6 @@
 // ROBOTO & MATERIAL ICON FONTS IMPORT
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
-@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-
-
-// VUE-MATERIAL COMPONENTS IMPORT
-@import 'node_modules/vue-material/src/core/stylesheets/core';
-@import 'node_modules/vue-material/src/components/mdButton/mdButton';
-@import 'node_modules/vue-material/src/components/mdCard/mdCard';
-@import 'node_modules/vue-material/src/components/mdIcon/mdIcon';
-@import 'node_modules/vue-material/src/components/mdBackdrop/mdBackdrop';
-@import 'node_modules/vue-material/src/components/mdLayout/mdLayout';
-@import 'node_modules/vue-material/src/components/mdSidenav/mdSidenav';
-@import 'node_modules/vue-material/src/components/mdTabs/mdTabs';
-@import 'node_modules/vue-material/src/components/mdToolbar/mdToolbar';
+@import 'node_modules/mdi/scss/materialdesignicons';
 
 
 // VARIABLES & BASE CSS
