@@ -5,7 +5,9 @@
                 <slot></slot>
             </div>
         </div>
-        <div class="sidenav-backdrop" @click="close();"></div>
+        <transition name="sidenav-backdrop">
+            <div class="sidenav-backdrop" v-if="sidenavShow" @click="close();"></div>
+        </transition>
     </div>
 </template>
 

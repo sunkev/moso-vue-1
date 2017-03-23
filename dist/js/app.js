@@ -217,6 +217,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = {
     data: function data() {
@@ -561,14 +563,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('div', {
     staticClass: "sidenav-content"
-  }, [_vm._t("default")], 2)]), _vm._v(" "), _c('div', {
+  }, [_vm._t("default")], 2)]), _vm._v(" "), _c('transition', {
+    attrs: {
+      "name": "sidenav-backdrop"
+    }
+  }, [(_vm.sidenavShow) ? _c('div', {
     staticClass: "sidenav-backdrop",
     on: {
       "click": function($event) {
         _vm.close();
       }
     }
-  })])
+  }) : _vm._e()])], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {

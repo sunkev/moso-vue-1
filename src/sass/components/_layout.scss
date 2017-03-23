@@ -1,0 +1,5 @@
+#app > .container-fluid {
+  @media (min-width: 992px) {
+    padding-left: $sidenav-width + $root-font-size;
+  }
+}

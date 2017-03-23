@@ -7,9 +7,10 @@
 @import 'node_modules/flexgrid.co/scss/flexgrid';
 
 
-// VARIABLES & BASE CSS
+// VARIABLES, BASE, AND LAYOUT SPECIFIC STYLES
 @import 'components/variables';
 @import 'components/base';
+@import 'components/layout';
 
 
 // COMPONENTS
