@@ -20,6 +20,7 @@
   "author": "moso <morten@moso.io>",
   "license": "MIT",
   "devDependencies": {
+    "flexgrid.co": "^2.1.1",
     "laravel-mix": "^0.8.8",
     "mdi": "^1.8.36",
     "vue": "^2.2.4",
