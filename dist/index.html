@@ -22,27 +22,33 @@
   </head>
   <body>
     <div id="app">
-      <div class="container" style="padding-left: 256px;">
-        <moso-sidenav ref="sidenav">
-          <div class="logo">
-            <a href="/">
-              <img src="/images/logo.svg" alt="">
-            </a>
+      <div class="container-fluid">
+        <div class="row">
+          <moso-sidenav ref="sidenav">
+            <div class="logo">
+              <a href="/">
+                <img src="/images/logo.svg" alt="">
+              </a>
+            </div>
+            <moso-profile-picture image="/images/profile.jpg">
+              <p slot="name">Morten Sørensen</p>
+              <p slot="position">UI Designer &amp; Front-End Developer</p>
+            </moso-profile-picture>
+            <!--<moso-drawer-list>
+              <item icon="mdi-account" link="/profile">Profile</item>
+              <item icon="mdi-file-document" link="/resume">Resume</item>
+              <item icon="mdi-image-filter-hdr" link="/portfolio">Portfolio</item>
+            </moso-drawer-list>-->
+            <div class="made-with">
+              <p>Made with <i class="mdi mdi-heart"></i> and <a href="https://vuejs.org"><img src="/images/vue-logo.svg" alt=""></a></p>
+            </div>
+          </moso-sidenav>
+          <div class="app-layout">
+            <moso-toolbar>
+              <button class="nav-toggle" @click="toggleSidenav"><i class="mdi mdi-menu"></i></button>
+            </moso-toolbar>
           </div>
-          <moso-profile-picture image="/images/profile.jpg">
-            <p slot="name">Morten Sørensen</p>
-            <p slot="position">UI Designer &amp; Front-End Developer</p>
-          </moso-profile-picture>
-          <!--<moso-drawer-list>
-            <item icon="mdi-account" link="/profile">Profile</item>
-            <item icon="mdi-file-document" link="/resume">Resume</item>
-            <item icon="mdi-image-filter-hdr" link="/portfolio">Portfolio</item>
-          </moso-drawer-list>-->
-          <div class="made-with">
-            <p>Made with <i class="mdi mdi-heart"></i> and <a href="https://vuejs.org"><img src="/images/vue-logo.svg" alt=""></a></p>
-          </div>
-        </moso-sidenav>
-        <button class="nav-toggle" @click="toggleSidenav">Toggle</button>
+        </div>
       </div>
     </div>
 

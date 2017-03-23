@@ -1,10 +1,11 @@
 <template>
-    <div class="sidenav" :class="classes" @keyup.esc="close" tabindex="0">
-        <div class="sidenav-content">
-            <slot></slot>
+    <div>
+        <div class="sidenav" :class="classes" @keyup.esc="close">
+            <div class="sidenav-content">
+                <slot></slot>
+            </div>
         </div>
-
-        <div class="sidenav-backdrop"></div>
+        <div class="sidenav-backdrop" @click="close();"></div>
     </div>
 </template>
 

@@ -8,6 +8,7 @@
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);
   transform: translate3d(-100%,0,0);
   transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  z-index: 3;
 
   @media (min-width: 992px) {
     transform: translate3d(0,0,0);
@@ -100,6 +101,19 @@
       }
     }
   }
+}
+
+.sidenav-backdrop {
+  background-color: transparent;
+  transition: background-color 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+}
+.sidenav-open + .sidenav-backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.20);
 }
 
 .nav-toggle {

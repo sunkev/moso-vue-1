@@ -6,6 +6,8 @@ import Vue from 'vue';
 // VUE COMPONENTS
 Vue.component('moso-sidenav', require('./components/moso-sidenav/moso-sidenav.vue'));
 Vue.component('moso-profile-picture', require('./components/moso-profile-picture/moso-profile-picture.vue'));
+// Vue.component('moso-drawer-list', require('./components/moso-drawer-list/moso-drawer-list.vue'));
+Vue.component('moso-toolbar', require('./components/moso-toolbar/moso-toolbar.vue'));
 
 
 // VUE-ROUTER
