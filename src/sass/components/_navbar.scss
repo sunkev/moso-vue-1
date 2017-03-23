@@ -6,6 +6,17 @@
   width: 256px;
   background-color: $dark-blue-gray;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);
+  transform: translate3d(-100%,0,0);
+  transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+
+  @media (min-width: 992px) {
+    transform: translate3d(0,0,0);
+  }
+
+
+  &.sidenav-open {
+    transform: translate3d(0,0,0);
+  }
 
   .logo {
     display: flex;

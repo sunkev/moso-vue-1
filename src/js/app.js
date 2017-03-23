@@ -31,5 +31,9 @@ const app = new Vue({
 }).$mount('#app')*/
 
 const app = new Vue({
-    //router
+    methods: {
+        toggleSidenav() {
+            this.$refs.sidenav.toggle();
+        }
+    }
 }).$mount('#app')
