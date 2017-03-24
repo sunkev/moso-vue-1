@@ -1,0 +1,23 @@
+// BUTTONS
+//
+// BUTTON RESET
+button {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 8px 25px;
+  outline: none;
+  background-color: transparent;
+  user-select: none;
+  font: 1rem $font-family;
+  font-weight: 500;
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+}
+

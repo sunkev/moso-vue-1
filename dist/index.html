@@ -34,19 +34,25 @@
               <p slot="name">Morten Sørensen</p>
               <p slot="position">UI Designer &amp; Front-End Developer</p>
             </moso-profile-picture>
-            <!--<moso-drawer-list>
-              <item icon="mdi-account" link="/profile">Profile</item>
-              <item icon="mdi-file-document" link="/resume">Resume</item>
-              <item icon="mdi-image-filter-hdr" link="/portfolio">Portfolio</item>
-            </moso-drawer-list>-->
+            <moso-drawer-list>
+              <nav-item icon="mdi-account" link="/profile">Profile</nav-item>
+              <nav-item icon="mdi-file-document" link="/resume">Resume</nav-item>
+              <nav-item icon="mdi-image-filter-hdr" link="/portfolio">Portfolio</nav-item>
+            </moso-drawer-list>
             <div class="made-with">
               <p>Made with <i class="mdi mdi-heart"></i> and <a href="https://vuejs.org"><img src="/images/vue-logo.svg" alt=""></a></p>
             </div>
           </moso-sidenav>
           <div class="app-layout">
-            <moso-toolbar>
-              <button class="nav-toggle" @click="toggleSidenav"><i class="mdi mdi-menu"></i></button>
-            </moso-toolbar>
+            <div class="header">
+              <moso-toolbar>
+                <button class="nav-toggle" @click="toggleSidenav"><i class="mdi mdi-menu"></i></button>
+              </moso-toolbar>
+            </div>
+
+            <main>
+              <router-view></router-view>
+            </main>
           </div>
         </div>
       </div>

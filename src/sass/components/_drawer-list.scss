@@ -1,0 +1,42 @@
+.drawer-list {
+  margin-top: 20px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      display: flex;
+      height: 40px;
+      a {
+        display: block;
+        padding: 0 16px;
+        color: $sidenav-link-color;
+        line-height: 40px;
+        text-decoration: none;
+        transition: color .2s ease-in-out;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:hover:active {
+          color: lighten($sidenav-link-color, 10%);
+          outline: none;
+        }
+
+        i.mdi {
+          position: relative;
+          width: 18px;
+          height: 18px;
+          margin-right: 10px;
+        }
+
+        &.router-link-active {
+          color: $sidenav-active-link-color;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

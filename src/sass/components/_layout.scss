@@ -1,5 +1,22 @@
+#app,
+#app > .container-fluid {
+  height: 100%;
+}
+
 #app > .container-fluid {
   @media (min-width: 992px) {
     padding-left: $sidenav-width + $root-font-size;
   }
+
+  > .row,
+  > .row > [class^="md-"] {
+    height: 100%;
+  }
+}
+
+main {
+  // 32px top and bottom,
+  // 16px to add 16px (32 in total) to the container inside <main>
+  // which already has padding 0 1rem;
+  padding: 2rem 1rem;
 }
