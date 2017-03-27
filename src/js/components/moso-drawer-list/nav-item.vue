@@ -1,6 +1,6 @@
 <template>
     <li>
-        <router-link :to="link" exact>
+        <router-link :to="link">
             <i class="mdi" :class="icon" v-if="icon"></i>
             <slot></slot>
         </router-link>

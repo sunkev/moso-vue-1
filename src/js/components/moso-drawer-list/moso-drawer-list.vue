@@ -1,6 +1,6 @@
 <template>
     <div class="drawer-list">
-        <ul>
+        <ul id="drawerMenu">
             <slot></slot>
         </ul>
     </div>
@@ -8,7 +8,6 @@
 <script>
     export default {
         mounted() {
-            //
-        }
+        },
     }
 </script>

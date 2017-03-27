@@ -41,3 +41,18 @@ const app = new Vue({
         }
     }
 }).$mount('#app')
+
+
+// CUSTOM ACTIVE CLASS ON COMPONENT LOADED BY ROOT
+if(window.location.hash === '#/') {
+    var menu = document.querySelector('#drawerMenu');
+    var el = menu.firstElementChild.firstChild;
+    el.className += 'router-link-active';
+
+    var removeRouterClass = function () {
+        el.classList.remove('router-link-active');
+        menu.removeEventListener('click', removeRouterClass);
+    }
+
+    menu.addEventListener('click', removeRouterClass);
+}
