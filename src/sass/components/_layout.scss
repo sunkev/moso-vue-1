@@ -15,8 +15,17 @@
 }
 
 main {
-  // 32px top and bottom,
-  // 16px to add 16px (32 in total) to the container inside <main>
-  // which already has padding 0 1rem;
-  padding: 2rem 1rem;
+  padding: 1rem;
+  @media (min-width: 992px) {
+    // 32px top and bottom,
+    // 16px to add 16px (32 in total) to the container inside <main>
+    // which already has padding 0 1rem;
+    padding: 2rem 1rem;
+  }
+
+  > .container-fluid {
+    @media (max-width: 991px) {
+      padding: 0;
+    }
+  }
 }

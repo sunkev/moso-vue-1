@@ -1,6 +1,8 @@
 <template>
     <div class="container-fluid">
-        <h1>Profile</h1>
+        <div class="widget">
+            <p>Hello World!</p>
+        </div>
     </div>
 </template>
 <script>

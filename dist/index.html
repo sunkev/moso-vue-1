@@ -35,9 +35,21 @@
               <p slot="position">UI Designer &amp; Front-End Developer</p>
             </moso-profile-picture>
             <moso-drawer-list ref="drawerList">
-              <nav-item icon="mdi-account" link="/profile">Profile</nav-item>
-              <nav-item icon="mdi-file-document" link="/resume">Resume</nav-item>
-              <nav-item icon="mdi-image-filter-hdr" link="/portfolio">Portfolio</nav-item>
+              <li>
+                <router-link to="/profile" :class="{'router-link-active': $route.fullPath ==='/' || $route.fullPath === '/profile'}">
+                  <i class="mdi mdi-account"></i> Profile
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/resume">
+                  <i class="mdi mdi-file-document"></i> Resume
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/portfolio">
+                  <i class="mdi mdi-image-filter-hdr"></i> Portfolio
+                </router-link>
+              </li>
             </moso-drawer-list>
             <div class="made-with">
               <p>Made with <i class="mdi mdi-heart"></i> and <a href="https://vuejs.org"><img src="/images/vue-logo.svg" alt=""></a></p>
@@ -47,6 +59,8 @@
             <div class="header">
               <moso-toolbar>
                 <button class="nav-toggle" @click="toggleSidenav"><i class="mdi mdi-menu"></i></button>
+                <div class="page-title"><h1>{{ this.$route.name }}</h1></div>
+                <version-badge version="v4.2-vue"></version-badge>
               </moso-toolbar>
             </div>
 
