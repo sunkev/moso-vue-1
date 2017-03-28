@@ -1,7 +1,7 @@
 // BUTTONS
 //
 // BUTTON RESET
-button {
+button, .button {
   display: inline-block;
   position: relative;
   margin: 0;
@@ -17,7 +17,41 @@ button {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent;
   text-align: center;
+  text-decoration: none;
   cursor: pointer;
   transition: background-color .2s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:hover:active {
+    outline: none;
+    text-decoration: none;
+  }
+
+  &.icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    i.mdi {
+      font-size: 1.5rem;
+      vertical-align: middle;
+    }
+
+    &--small {
+      width: 35px;
+      height: 35px;
+
+      i.mdi {
+        font-size: 1.125rem;
+        vertical-align: middle;
+      }
+    }
+  }
 }
 

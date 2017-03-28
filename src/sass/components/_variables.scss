@@ -8,12 +8,19 @@ $font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 // COLORS
 $gray: #eee;
 
+$blue: #2196f3;
+$blue-hover: #1976d2;
+
 $blue-gray: #B0BEC5;
 $text-color-sidenav: $blue-gray;
 
 $dark-blue-gray: #263238;
 
 $rgba-black: rgba(0,0,0,.87);
+
+$facebook: #3b5998;
+$twitter: #1da1f2;
+$linkedin: #0077b5;
 
 $box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);
 
@@ -22,3 +29,8 @@ $box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);
 $sidenav-width: 256px;
 $sidenav-link-color: #546E7A;
 $sidenav-active-link-color: $blue-gray;
+
+
+// TABS
+$tabs-background: $dark-blue-gray;
+$tabs-indicator: $dark-blue-gray;

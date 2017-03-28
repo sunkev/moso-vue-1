@@ -3,11 +3,20 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 
+// DIRECTIVES
+Vue.directive('ripple', require('./directives/Ripple.js'));
+
+
 // VUE COMPONENTS
 Vue.component('moso-sidenav', require('./components/moso-sidenav/moso-sidenav.vue'));
 Vue.component('moso-profile-picture', require('./components/moso-profile-picture/moso-profile-picture.vue'));
 Vue.component('moso-drawer-list', require('./components/moso-drawer-list/moso-drawer-list.vue'));
 Vue.component('moso-toolbar', require('./components/moso-toolbar/moso-toolbar.vue'));
+Vue.component('moso-project', require('./components/moso-project/moso-project.vue'));
+
+Vue.component('nano-ripple', require('./components/nano-ripple/nano-ripple.vue'));
+Vue.component('nano-tabs', require('./components/nano-tabs/nano-tabs.vue'));
+Vue.component('nano-tab', require('./components/nano-tabs/nano-tab.vue'));
 
 Vue.component('version-badge', require('./components/version-badge/version-badge.vue'));
 
