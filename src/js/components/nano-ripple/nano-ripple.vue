@@ -6,8 +6,6 @@
     import Ripple from '../../classes/Ripple.js';
 
     export default {
-        props: {},
-
         data() {
             return {
                 element: null,
