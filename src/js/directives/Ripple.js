@@ -6,8 +6,7 @@ export default {
     }
 }
 
-class RippleContainer
-{
+class RippleContainer {
     constructor(element) {
         this.element = element;
         this.ripples = [];
