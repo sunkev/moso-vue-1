@@ -1,7 +1,7 @@
 <template>
-  <div class="toolbar" :class="classes">
-    <slot></slot>
-  </div>
+    <div class="toolbar" :class="classes">
+        <slot></slot>
+    </div>
 </template>
 <script>
     export default {
@@ -13,7 +13,7 @@
         },
 
         mounted() {
-            //
+
         },
 
         computed: {
