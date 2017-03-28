@@ -83,7 +83,7 @@
                 return {
                     'transition-off': this.transitionOff,
                     'transparent': this.transparent,
-                    'fixed': this.fixed,
+                    'fixed': this.fixed
                 };
             },
 

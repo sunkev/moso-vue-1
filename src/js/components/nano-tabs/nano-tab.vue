@@ -9,8 +9,14 @@
 
     export default {
         props: {
-            name: { required: true },
-            selected: { default: false },
+            name: {
+                required: true
+            },
+
+            selected: {
+                default: false
+            },
+
             icon: {
                 type: String
             }
