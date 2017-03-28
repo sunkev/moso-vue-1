@@ -1,3 +1,4 @@
+// Throttle.js
 const debounce = (callback, limit) => {
   var wait = false;
 

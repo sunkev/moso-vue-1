@@ -1,3 +1,5 @@
+// getClosestVueParent
+
 let getClosestVueParent = ($parent, cssClass) => {
   if (!$parent || !$parent.$el) {
     return false;
