@@ -1244,6 +1244,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = {
     mounted: function mounted() {}
@@ -2352,7 +2358,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "lg-6"
   }, [_c('div', {
     staticClass: "widget"
-  }, [_c('div', {
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
     staticClass: "widget__body"
   }, [_c('moso-timeline', [_c('timeline-item', {
     attrs: {
@@ -2376,7 +2382,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "lg-6"
   }, [_c('div', {
     staticClass: "widget"
-  }, [_c('div', {
+  }, [_vm._m(1), _vm._v(" "), _c('div', {
     staticClass: "widget__body"
   }, [_c('moso-timeline', [_c('timeline-item', {
     attrs: {
@@ -2394,7 +2400,23 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "time": "2012"
     }
   }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, necessitatibus rem. Iusto quam reprehenderit incidunt delectus dolorem fuga aut odit, accusamus minima omnis quod minus deserunt dolores sequi! Consequuntur, a.")])])], 1)], 1)])])])])
-},staticRenderFns: []}
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "widget__header"
+  }, [_c('h3', {
+    staticClass: "title"
+  }, [_c('i', {
+    staticClass: "mdi mdi-briefcase"
+  }), _vm._v(" Experience")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "widget__header"
+  }, [_c('h3', {
+    staticClass: "title"
+  }, [_c('i', {
+    staticClass: "mdi mdi-school"
+  }), _vm._v(" Education")])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()

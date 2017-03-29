@@ -3,6 +3,9 @@
         <div class="row">
             <div class="lg-6">
                 <div class="widget">
+                    <div class="widget__header">
+                        <h3 class="title"><i class="mdi mdi-briefcase"></i> Experience</h3>
+                    </div>
                     <div class="widget__body">
                         <moso-timeline>
                             <timeline-item entry="Front-End Developer" location="Indexed" time="2017 -">
@@ -20,6 +23,9 @@
             </div>
             <div class="lg-6">
                 <div class="widget">
+                    <div class="widget__header">
+                        <h3 class="title"><i class="mdi mdi-school"></i> Education</h3>
+                    </div>
                     <div class="widget__body">
                         <moso-timeline>
                             <timeline-item entry="Webintegrator" time="2016">
