@@ -13,6 +13,7 @@ Vue.component('moso-profile-picture', require('./components/moso-profile-picture
 Vue.component('moso-drawer-list', require('./components/moso-drawer-list/moso-drawer-list.vue'));
 Vue.component('moso-toolbar', require('./components/moso-toolbar/moso-toolbar.vue'));
 Vue.component('moso-project', require('./components/moso-project/moso-project.vue'));
+Vue.component('moso-timeline', require('./components/moso-timeline/moso-timeline.vue'));
 
 Vue.component('nano-ripple', require('./components/nano-ripple/nano-ripple.vue'));
 Vue.component('nano-tabs', require('./components/nano-tabs/nano-tabs.vue'));
