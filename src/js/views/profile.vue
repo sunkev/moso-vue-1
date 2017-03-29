@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid">
         <div class="row">
-            <div class="md-4">
+            <div class="lg-5 xl-4">
                 <div class="widget">
                     <div class="widget__body">
                         <p>Hello World!</p>
@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div>
-            <div class="md-8">
+            <div class="lg-7 xl-8">
                 <div class="widget tabs-widget">
                     <nano-tabs transparent fixed>
                         <nano-tab icon="mdi-account-circle" name="About">

@@ -1887,7 +1887,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "project-title"
   }, [_vm._v(_vm._s(_vm.name))]), _vm._v(" "), _c('a', {
     attrs: {
-      "href": _vm.link
+      "href": _vm.link,
+      "title": _vm.link
     }
   }, [_vm._v(_vm._s(_vm.link))]), _vm._v(" "), _vm._t("default")], 2)])
 },staticRenderFns: []}
@@ -2001,7 +2002,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "row"
   }, [_c('div', {
-    staticClass: "md-4"
+    staticClass: "lg-5 xl-4"
   }, [_c('div', {
     staticClass: "widget"
   }, [_c('div', {
@@ -2011,7 +2012,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('i', {
     staticClass: "mdi mdi-github-circle"
   }), _vm._v(" "), _c('nano-ripple')], 1)])])]), _vm._v(" "), _c('div', {
-    staticClass: "md-8"
+    staticClass: "lg-7 xl-8"
   }, [_c('div', {
     staticClass: "widget tabs-widget"
   }, [_c('nano-tabs', {

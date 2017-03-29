@@ -5,7 +5,7 @@
         </div>
         <div class="project-content">
             <h3 class="project-title">{{ name }}</h3>
-            <a :href="link">{{ link }}</a>
+            <a :href="link" :title="link">{{ link }}</a>
             <slot></slot>
         </div>
     </div>
