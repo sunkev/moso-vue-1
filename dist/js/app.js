@@ -582,11 +582,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.open();
         },
         open: function open() {
+            document.querySelector('body').classList.add('open-sidenav');
             this.sidenavShow = true;
             this.$el.focus();
             this.$emit('open');
         },
         close: function close() {
+            document.querySelector('body').classList.remove('open-sidenav');
             this.sidenavShow = false;
             this.$el.blur();
             this.$emit('close');

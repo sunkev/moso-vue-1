@@ -42,11 +42,13 @@
                 this.open();
             },
             open() {
+                document.querySelector('body').classList.add('open-sidenav');
                 this.sidenavShow = true;
                 this.$el.focus();
                 this.$emit('open');
             },
             close() {
+                document.querySelector('body').classList.remove('open-sidenav');
                 this.sidenavShow = false;
                 this.$el.blur();
                 this.$emit('close');
