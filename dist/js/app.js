@@ -14047,6 +14047,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = {
     props: {
@@ -14109,13 +14111,15 @@ module.exports = Component.exports
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('li', [_c('h3', {
     staticClass: "title"
-  }, [_vm._v(_vm._s(_vm.entry))]), _vm._v(" "), (_vm.location) ? _c('span', {
+  }, [_vm._v(_vm._s(_vm.entry))]), _vm._v(" "), _c('div', {
+    staticClass: "information"
+  }, [(_vm.location) ? _c('span', {
     staticClass: "location"
   }, [_c('i', {
     staticClass: "mdi mdi-map-marker"
-  }), _vm._v(" " + _vm._s(_vm.location) + "\n    ")]) : _vm._e(), _vm._v(" "), _c('span', {
+  }), _vm._v(" " + _vm._s(_vm.location) + "\n        ")]) : _vm._e(), _vm._v(" "), _c('span', {
     staticClass: "time"
-  }, [_vm._v(_vm._s(_vm.time))]), _vm._v(" "), _vm._t("default")], 2)
+  }, [_vm._v(_vm._s(_vm.time))])]), _vm._v(" "), _vm._t("default")], 2)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
