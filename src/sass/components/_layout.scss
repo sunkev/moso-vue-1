@@ -33,3 +33,7 @@ main {
     }
   }
 }
+
+.resume [class^="lg-"]:last-of-type .widget {
+  margin-bottom: 0;
+}

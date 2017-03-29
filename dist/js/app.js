@@ -1209,6 +1209,41 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = {
     mounted: function mounted() {}
@@ -2310,8 +2345,55 @@ if (false) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "container-fluid"
-  })
+    staticClass: "container-fluid resume"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "lg-6"
+  }, [_c('div', {
+    staticClass: "widget"
+  }, [_c('div', {
+    staticClass: "widget__body"
+  }, [_c('moso-timeline', [_c('timeline-item', {
+    attrs: {
+      "entry": "Front-End Developer",
+      "location": "Indexed",
+      "time": "2017 -"
+    }
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis impedit, ipsam, laborum suscipit aperiam molestias fuga quo soluta saepe quae consectetur molestiae, tempora excepturi perspiciatis quod repudiandae iusto ipsa enim.")])]), _vm._v(" "), _c('timeline-item', {
+    attrs: {
+      "entry": "Front-End Developer",
+      "location": "Eyeforce",
+      "time": "2015 - 2017"
+    }
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor animi facilis repellat cupiditate rem consectetur, assumenda fuga, ipsa expedita quia omnis officia unde magni deserunt doloremque, at natus hic fugiat.")])]), _vm._v(" "), _c('timeline-item', {
+    attrs: {
+      "entry": "Freelance Webdeveloper",
+      "location": "M Development v/ Morten Sørensen",
+      "time": "2014 - 2015"
+    }
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, fugiat quo molestiae recusandae eos soluta cumque dolore aperiam fugit repudiandae aut voluptas rerum a! Sit harum quasi fugit blanditiis, voluptas!")])])], 1)], 1)])]), _vm._v(" "), _c('div', {
+    staticClass: "lg-6"
+  }, [_c('div', {
+    staticClass: "widget"
+  }, [_c('div', {
+    staticClass: "widget__body"
+  }, [_c('moso-timeline', [_c('timeline-item', {
+    attrs: {
+      "entry": "Webintegrator",
+      "time": "2016"
+    }
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quos saepe, nostrum facere vel minima voluptates, modi ut a vitae ipsum non unde numquam, maxime eum, quasi ipsa ab temporibus.")])]), _vm._v(" "), _c('timeline-item', {
+    attrs: {
+      "entry": "IT-Supporter",
+      "time": "2012"
+    }
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati cumque eveniet illo numquam vel, accusantium impedit sint laboriosam natus omnis repellendus blanditiis dicta veniam repellat, autem delectus. Obcaecati, hic accusantium.")])]), _vm._v(" "), _c('timeline-item', {
+    attrs: {
+      "entry": "CCNA",
+      "time": "2012"
+    }
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, necessitatibus rem. Iusto quam reprehenderit incidunt delectus dolorem fuga aut odit, accusamus minima omnis quod minus deserunt dolores sequi! Consequuntur, a.")])])], 1)], 1)])])])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
