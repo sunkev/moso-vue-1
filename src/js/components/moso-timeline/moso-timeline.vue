@@ -1,24 +1,10 @@
 <template>
     <ul class="timeline">
-        <li>
-            <h3 class="title">{{ entry }}</h3>
-            <span class="time">{{ time }}</span>
-            <slot></slot>
-        </li>
+        <slot></slot>
     </ul>
 </template>
 <script>
     export default {
-        props: {
-            entry: {
-                type: String
-            },
-
-            time: {
-                type: String
-            }
-        },
-
         mounted() {
             //
         }
