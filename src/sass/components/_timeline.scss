@@ -51,8 +51,22 @@
       }
     }
 
+    .location,
     .time {
       display: block;
+    }
+
+    .location {
+      padding: .125rem 0 .375rem;
+      font-size: .875rem;
+      color: rgba(0,0,0,.75);
+
+      i.mdi {
+        margin-right: .625rem;
+      }
+    }
+
+    .time {
       padding: .375rem 0;
       font-size: .75rem;
       font-weight: 300;
