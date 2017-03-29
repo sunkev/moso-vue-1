@@ -47,7 +47,7 @@
       }
 
       .project-content {
-        padding-left: 50px;
+        padding-left: 3.125rem;
 
         p {
           margin: 0;
@@ -78,11 +78,11 @@
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
-          margin-bottom: 2px;
+          margin-bottom: .125rem;
 
           + a {
             display: block;
-            margin: 0 0 5px;
+            margin: 0 0 .3125rem;
             font-size: .8125rem;
             font-weight: 400;
             color: rgba(0,0,0,.54);

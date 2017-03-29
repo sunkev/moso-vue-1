@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "./";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 34);
+/******/ 	return __webpack_require__(__webpack_require__.s = 50);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -121,6 +121,81 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 /* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Ripple = function () {
+    function Ripple(element, e) {
+        _classCallCheck(this, Ripple);
+
+        this.element = element;
+        this.ripple = document.createElement('DIV');
+        this.ripple.classList.add('ripple');
+        this.element.querySelector('.ink-ripple').appendChild(this.ripple);
+
+        this.init(e);
+    }
+
+    _createClass(Ripple, [{
+        key: 'init',
+        value: function init(e) {
+            var _this = this;
+
+            var elWidth = this.element.offsetWidth,
+                elHeight = this.element.offsetHeight;
+            var rippleSize = elWidth < elHeight ? elHeight : elWidth;
+
+            this.ripple.classList.remove('active');
+
+            var boundingBox = this.element.getBoundingClientRect();
+
+            var leftOffset = e.clientX - boundingBox.left - rippleSize / 2;
+            var topOffset = e.clientY - boundingBox.top - rippleSize / 2;
+
+            if (this.element.classList.contains('icon-button')) {
+                leftOffset = 0;
+                topOffset = 0;
+            }
+
+            this.ripple.style.width = rippleSize + 'px';
+            this.ripple.style.height = rippleSize + 'px';
+            this.ripple.style.left = leftOffset + 'px';
+            this.ripple.style.top = topOffset + 'px';
+            this.ripple.classList.add('active');
+
+            document.addEventListener('mouseup', function () {
+                _this.remove();
+            });
+        }
+
+        /**
+         * Remove the ripple
+         */
+
+    }, {
+        key: 'remove',
+        value: function remove() {
+            var _this2 = this;
+
+            this.ripple.classList.add('active-out');
+
+            setTimeout(function () {
+                _this2.ripple.remove();
+            }, 1000);
+        }
+    }]);
+
+    return Ripple;
+}();
+
+/* harmony default export */ __webpack_exports__["a"] = Ripple;
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -306,41 +381,41 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_profile_vue__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_profile_vue__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_profile_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__views_profile_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_resume_vue__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_resume_vue__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_resume_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__views_resume_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_portfolio_vue__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_portfolio_vue__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_portfolio_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__views_portfolio_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_notfound_vue__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_notfound_vue__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_notfound_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__views_notfound_vue__);
 // VUE IMPORTS
 
 
 
 // DIRECTIVES
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.directive('ripple', __webpack_require__(47));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.directive('ripple', __webpack_require__(18));
 
 // VUE COMPONENTS
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('moso-sidenav', __webpack_require__(15));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('moso-profile-picture', __webpack_require__(14));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('moso-drawer-list', __webpack_require__(13));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('moso-toolbar', __webpack_require__(16));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('moso-project', __webpack_require__(57));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('moso-sidenav', __webpack_require__(24));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('moso-profile-picture', __webpack_require__(22));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('moso-drawer-list', __webpack_require__(21));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('moso-toolbar', __webpack_require__(25));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('moso-project', __webpack_require__(23));
 
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('nano-ripple', __webpack_require__(44));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('nano-tabs', __webpack_require__(51));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('nano-tab', __webpack_require__(50));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('nano-ripple', __webpack_require__(26));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('nano-tabs', __webpack_require__(28));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('nano-tab', __webpack_require__(27));
 
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('version-badge', __webpack_require__(17));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('version-badge', __webpack_require__(29));
 
 // VUE-ROUTER
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]);
@@ -368,13 +443,13 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 }).$mount('#app');
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -392,7 +467,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -418,7 +493,46 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 6 */
+/* 7 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    props: {
+        image: {
+            type: String
+        },
+
+        name: {
+            type: String
+        },
+
+        link: {
+            type: String
+        }
+    },
+
+    mounted: function mounted() {
+        //
+    }
+};
+
+/***/ }),
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -511,7 +625,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 7 */
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -530,9 +644,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }
     },
 
-    mounted: function mounted() {
-        //
-    },
+    mounted: function mounted() {},
 
 
     computed: {
@@ -545,7 +657,315 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 8 */
+/* 10 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__classes_Ripple_js__ = __webpack_require__(1);
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    data: function data() {
+        return {
+            element: null
+        };
+    },
+
+
+    methods: {
+        init: function init() {
+            this.element.classList.add('has-ripple');
+        },
+        create: function create(e) {
+            this.ripples.push(new __WEBPACK_IMPORTED_MODULE_0__classes_Ripple_js__["a" /* default */](this.element, e));
+        }
+    },
+
+    mounted: function mounted() {
+        var _this = this;
+
+        this.element = this.$el.parentElement;
+        this.ripples = [];
+
+        if (this.element.classList.contains('disabled')) return;
+
+        this.init();
+
+        this.element.addEventListener('mousedown', function (e) {
+            _this.create(e);
+        });
+    }
+};
+
+/***/ }),
+/* 11 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_getClosestVueParent__ = __webpack_require__(19);
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    props: {
+        name: {
+            required: true
+        },
+
+        selected: {
+            default: false
+        },
+
+        icon: {
+            type: String
+        }
+    },
+
+    data: function data() {
+        return {};
+    },
+
+
+    computed: {
+        href: function href() {
+            return '#' + this.id;
+        },
+        id: function id() {
+            return this.name.toLowerCase().replace(/ /g, '-');
+        }
+    },
+
+    mounted: function mounted() {
+        this.parentTabs = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__utils_getClosestVueParent__["a" /* default */])(this.$parent, 'tabs');
+
+        if (!this.parentTabs) {
+            throw new Error('You must wrap the nano-tab in a nano-tabs');
+        }
+
+        this.parentTabs.registerTab(this);
+    }
+};
+
+/***/ }),
+/* 12 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_throttle__ = __webpack_require__(20);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    props: {
+        hashes: {
+            default: false
+        },
+
+        icon: {
+            type: String
+        },
+
+        fixed: {
+            default: false,
+            type: Boolean
+        },
+
+        transparent: {
+            default: false,
+            type: Boolean
+        }
+    },
+
+    data: function data() {
+        return {
+            tabs: {},
+            activeTab: null,
+            activeTabNumber: null,
+            contentHeight: '0px',
+            contentWidth: '0px',
+            transitionOff: false
+        };
+    },
+    mounted: function mounted() {
+        var _this = this;
+
+        this.$nextTick(function () {
+            _this.observeElementChanges();
+            window.addEventListener('resize', _this.calculateOnResize);
+
+            if (Object.keys(_this.tabs).length && !_this.activeTab) {
+                var firstTab = Object.keys(_this.tabs)[0];
+
+                _this.selectTab(_this.tabs[firstTab]);
+            }
+
+            _this.calculatePosition();
+        });
+    },
+    beforeDestroy: function beforeDestroy() {
+        if (this.parentObserver) {
+            this.parentObserver.disconnect();
+        }
+        window.removeEventListener('resize', this.calculateOnResize);
+    },
+
+
+    computed: {
+        tabClasses: function tabClasses() {
+            return {
+                'transition-off': this.transitionOff,
+                'transparent': this.transparent,
+                'fixed': this.fixed
+            };
+        },
+        indicatorClasses: function indicatorClasses() {
+            var toLeft = this.lastIndicatorNumber > this.activeTabNumber;
+
+            this.lastIndicatorNumber = this.activeTabNumber;
+
+            return {
+                'to-right': !toLeft,
+                'to-left': toLeft
+            };
+        }
+    },
+
+    methods: {
+        observeElementChanges: function observeElementChanges() {
+            this.parentObserver = new MutationObserver(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__utils_throttle__["a" /* default */])(this.calculateOnWatch, 50));
+            this.parentObserver.observe(this.$refs.tabContent, {
+                childList: true,
+                attributes: true,
+                subtree: true
+            });
+        },
+        debounceTransition: function debounceTransition() {
+            var _this2 = this;
+
+            window.clearTimeout(this.transitionControl);
+            this.transitionControl = window.setTimeout(function () {
+                _this2.calculatePosition();
+                _this2.transitionOff = false;
+            }, 1);
+        },
+        calculateOnWatch: function calculateOnWatch() {
+            this.calculatePosition();
+            this.debounceTransition();
+        },
+        calculateOnResize: function calculateOnResize() {
+            this.transitionOff = true;
+            this.calculateOnWatch();
+        },
+        getTabClass: function getTabClass(tab) {
+            return {
+                'active': this.activeTab && this.activeTab.id && this.activeTab.id === tab.id,
+                'disabled': tab.disabled
+            };
+        },
+        registerTab: function registerTab(tab) {
+            this.tabs[tab.id] = tab;
+
+            if (tab.selected) {
+                this.selectTab(tab);
+            }
+        },
+        selectTab: function selectTab(selectedTab) {
+            this.activeTab = selectedTab;
+            this.activeTabNumber = this.getTabIndex(selectedTab.id);
+
+            this.calculatePosition();
+            this.$emit('change', this.activeTabNumber);
+        },
+        getTabIndex: function getTabIndex(id) {
+            var idList = Object.keys(this.tabs);
+
+            return idList.indexOf(id);
+        },
+        calculatePosition: function calculatePosition() {
+            var _this3 = this;
+
+            window.requestAnimationFrame(function () {
+                _this3.calculateIndicatorPosition();
+                _this3.calculateTabsWidthAndPosition();
+                _this3.calculateContentHeight();
+            });
+        },
+        calculateIndicatorPosition: function calculateIndicatorPosition() {
+            if (this.$refs.tabHeader && this.$refs.tabHeader[this.activeTabNumber]) {
+                var tabsWidth = this.$el.offsetWidth;
+                var activeTab = this.$refs.tabHeader[this.getTabIndex(this.activeTab.id)];
+                var left = activeTab.offsetLeft;
+                var right = tabsWidth - left - activeTab.offsetWidth;
+
+                this.$refs.indicator.style.left = left + 'px';
+                this.$refs.indicator.style.right = right + 'px';
+            }
+        },
+        calculateTabsWidthAndPosition: function calculateTabsWidthAndPosition() {
+            var width = this.$el.offsetWidth;
+            var index = 0;
+            this.contentWidth = width * this.activeTabNumber + 'px';
+
+            for (var tabId in this.tabs) {
+                var tab = this.tabs[tabId];
+                tab.$el.style.width = width + 'px';
+                tab.$el.style.left = width * index + 'px';
+                index++;
+            }
+        },
+        calculateContentHeight: function calculateContentHeight() {
+            var _this4 = this;
+
+            this.$nextTick(function () {
+                if (Object.keys(_this4.tabs).length) {
+                    var height = _this4.tabs[_this4.activeTab.id].$el.offsetHeight;
+
+                    _this4.contentHeight = height + 'px';
+                }
+            });
+        }
+    }
+};
+
+/***/ }),
+/* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -565,7 +985,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 9 */
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -595,7 +1015,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 10 */
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -611,7 +1031,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 11 */
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -775,7 +1195,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 12 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -791,14 +1211,115 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 13 */
+/* 18 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__classes_Ripple_js__ = __webpack_require__(1);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    inserted: function inserted(el) {
+        new RippleContainer(el);
+    }
+};
+
+var RippleContainer = function () {
+    function RippleContainer(element) {
+        var _this = this;
+
+        _classCallCheck(this, RippleContainer);
+
+        this.element = element;
+        this.ripples = [];
+
+        if (this.element.classList.contains('disabled')) return;
+
+        this.init();
+
+        this.element.addEventListener('mousedown', function (e) {
+            _this.create(e);
+        });
+    }
+
+    _createClass(RippleContainer, [{
+        key: 'init',
+        value: function init() {
+            this.element.innerHTML += '<div class="ink-ripple"></div>';
+            this.element.classList.add('has-ripple');
+        }
+    }, {
+        key: 'create',
+        value: function create(e) {
+            this.ripples.push(new __WEBPACK_IMPORTED_MODULE_0__classes_Ripple_js__["a" /* default */](this.element, e));
+        }
+    }]);
+
+    return RippleContainer;
+}();
+
+/***/ }),
+/* 19 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// getClosestVueParent
+
+var getClosestVueParent = function getClosestVueParent($parent, cssClass) {
+  if (!$parent || !$parent.$el) {
+    return false;
+  }
+
+  if ($parent._uid === 0) {
+    return false;
+  }
+
+  if ($parent.$el.classList.contains(cssClass)) {
+    return $parent;
+  }
+
+  return getClosestVueParent($parent.$parent, cssClass);
+};
+
+/* harmony default export */ __webpack_exports__["a"] = getClosestVueParent;
+
+/***/ }),
+/* 20 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// Throttle.js
+var debounce = function debounce(callback, limit) {
+  var wait = false;
+
+  return function () {
+    if (!wait) {
+      callback.call();
+      wait = true;
+
+      window.setTimeout(function () {
+        wait = false;
+      }, limit);
+    }
+  };
+};
+
+/* harmony default export */ __webpack_exports__["a"] = debounce;
+
+/***/ }),
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(4),
+  __webpack_require__(5),
   /* template */
-  __webpack_require__(25),
+  __webpack_require__(40),
   /* scopeId */
   null,
   /* cssModules */
@@ -825,14 +1346,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 14 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(5),
+  __webpack_require__(6),
   /* template */
-  __webpack_require__(29),
+  __webpack_require__(44),
   /* scopeId */
   null,
   /* cssModules */
@@ -859,14 +1380,48 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 15 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(6),
+  __webpack_require__(7),
   /* template */
-  __webpack_require__(23),
+  __webpack_require__(36),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/home/morten/Code/moso-vue/src/js/components/moso-project/moso-project.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] moso-project.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3d357e72", Component.options)
+  } else {
+    hotAPI.reload("data-v-3d357e72", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(8),
+  /* template */
+  __webpack_require__(37),
   /* scopeId */
   null,
   /* cssModules */
@@ -893,14 +1448,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 16 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(7),
+  __webpack_require__(9),
   /* template */
-  __webpack_require__(27),
+  __webpack_require__(42),
   /* scopeId */
   null,
   /* cssModules */
@@ -927,14 +1482,116 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 17 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(8),
+  __webpack_require__(10),
   /* template */
-  __webpack_require__(24),
+  __webpack_require__(38),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/home/morten/Code/moso-vue/src/js/components/nano-ripple/nano-ripple.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] nano-ripple.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-402e6a9b", Component.options)
+  } else {
+    hotAPI.reload("data-v-402e6a9b", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(11),
+  /* template */
+  __webpack_require__(46),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/home/morten/Code/moso-vue/src/js/components/nano-tabs/nano-tab.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] nano-tab.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-e3f74428", Component.options)
+  } else {
+    hotAPI.reload("data-v-e3f74428", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(12),
+  /* template */
+  __webpack_require__(35),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/home/morten/Code/moso-vue/src/js/components/nano-tabs/nano-tabs.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] nano-tabs.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-363300b7", Component.options)
+  } else {
+    hotAPI.reload("data-v-363300b7", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(13),
+  /* template */
+  __webpack_require__(39),
   /* scopeId */
   null,
   /* cssModules */
@@ -961,14 +1618,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 18 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(9),
+  __webpack_require__(14),
   /* template */
-  __webpack_require__(22),
+  __webpack_require__(34),
   /* scopeId */
   null,
   /* cssModules */
@@ -995,14 +1652,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 19 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(10),
+  __webpack_require__(15),
   /* template */
-  __webpack_require__(30),
+  __webpack_require__(45),
   /* scopeId */
   null,
   /* cssModules */
@@ -1029,14 +1686,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 20 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(11),
+  __webpack_require__(16),
   /* template */
-  __webpack_require__(26),
+  __webpack_require__(41),
   /* scopeId */
   null,
   /* cssModules */
@@ -1063,14 +1720,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 21 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(12),
+  __webpack_require__(17),
   /* template */
-  __webpack_require__(28),
+  __webpack_require__(43),
   /* scopeId */
   null,
   /* cssModules */
@@ -1097,7 +1754,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 22 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1138,7 +1795,112 @@ if (false) {
 }
 
 /***/ }),
-/* 23 */
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "tabs",
+    class: _vm.tabClasses
+  }, [_c('ul', [_vm._l((_vm.tabs), function(tab) {
+    return _c('li', {
+      ref: "tabHeader",
+      refInFor: true,
+      class: _vm.getTabClass(tab),
+      attrs: {
+        "id": tab.id,
+        "disabled": tab.disabled
+      }
+    }, [(_vm.hashes) ? _c('a', {
+      directives: [{
+        name: "ripple",
+        rawName: "v-ripple"
+      }],
+      attrs: {
+        "href": tab.href
+      },
+      on: {
+        "click": function($event) {
+          _vm.selectTab(tab)
+        }
+      }
+    }, [(tab.icon) ? _c('i', {
+      staticClass: "hidden-xs hidden-sm mdi",
+      class: tab.icon
+    }) : _vm._e(), _vm._v("\n                " + _vm._s(tab.name) + "\n            ")]) : _c('a', {
+      directives: [{
+        name: "ripple",
+        rawName: "v-ripple"
+      }],
+      on: {
+        "click": function($event) {
+          $event.preventDefault();
+          _vm.selectTab(tab)
+        }
+      }
+    }, [(tab.icon) ? _c('i', {
+      staticClass: "hidden-xs hidden-sm mdi",
+      class: tab.icon
+    }) : _vm._e(), _vm._v("\n                " + _vm._s(tab.name) + "\n            ")])])
+  }), _vm._v(" "), _c('span', {
+    ref: "indicator",
+    staticClass: "tabs-indicator",
+    class: _vm.indicatorClasses
+  })], 2), _vm._v(" "), _c('div', {
+    ref: "tabContent",
+    staticClass: "tabs-content",
+    style: ({
+      height: _vm.contentHeight
+    })
+  }, [_c('div', {
+    staticClass: "tabs-wrapper",
+    style: ({
+      transform: ("translate3D(-" + _vm.contentWidth + ", 0, 0)")
+    })
+  }, [_vm._t("default")], 2)])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-363300b7", module.exports)
+  }
+}
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "project"
+  }, [_c('div', {
+    staticClass: "project-icon"
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.image,
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "project-content"
+  }, [_c('h3', {
+    staticClass: "project-title"
+  }, [_vm._v(_vm._s(_vm.name))]), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": _vm.link
+    }
+  }, [_vm._v(_vm._s(_vm.link))]), _vm._v(" "), _vm._t("default")], 2)])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-3d357e72", module.exports)
+  }
+}
+
+/***/ }),
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1175,7 +1937,24 @@ if (false) {
 }
 
 /***/ }),
-/* 24 */
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "ink-ripple"
+  })
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-402e6a9b", module.exports)
+  }
+}
+
+/***/ }),
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1192,7 +1971,7 @@ if (false) {
 }
 
 /***/ }),
-/* 25 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1213,7 +1992,7 @@ if (false) {
 }
 
 /***/ }),
-/* 26 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1242,7 +2021,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('nano-tab', {
     attrs: {
-      "icon": "mdi-account",
+      "icon": "mdi-account-circle",
       "name": "About"
     }
   }, [_c('div', {
@@ -1380,7 +2159,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "mdi mdi-linkedin"
   }), _vm._v(" "), _c('nano-ripple')], 1)])])])])])]), _vm._v(" "), _c('nano-tab', {
     attrs: {
-      "icon": "mdi-check",
+      "icon": "mdi-file-tree",
       "name": "Projects"
     }
   }, [_c('div', {
@@ -1487,7 +2266,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Hyper")]), _vm._v(" terminal, replacing the clonky standard scrollbar with a pretty, modern one.")])])], 1)])])])]), _vm._v(" "), _c('nano-tab', {
     attrs: {
-      "icon": "mdi-check",
+      "icon": "mdi-codepen",
       "name": "Demos"
     }
   }, [_c('div', {
@@ -1503,7 +2282,7 @@ if (false) {
 }
 
 /***/ }),
-/* 27 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1521,7 +2300,7 @@ if (false) {
 }
 
 /***/ }),
-/* 28 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1538,7 +2317,7 @@ if (false) {
 }
 
 /***/ }),
-/* 29 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1564,7 +2343,7 @@ if (false) {
 }
 
 /***/ }),
-/* 30 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1581,7 +2360,24 @@ if (false) {
 }
 
 /***/ }),
-/* 31 */
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "tab"
+  }, [_vm._t("default")], 2)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-e3f74428", module.exports)
+  }
+}
+
+/***/ }),
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3863,10 +4659,10 @@ if (inBrowser && window.Vue) {
 
 /* harmony default export */ __webpack_exports__["a"] = VueRouter;
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
 
 /***/ }),
-/* 32 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13116,10 +13912,10 @@ Vue$3.compile = compileToFunctions;
 
 module.exports = Vue$3;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(33)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(49)))
 
 /***/ }),
-/* 33 */
+/* 49 */
 /***/ (function(module, exports) {
 
 var g;
@@ -13146,811 +13942,12 @@ module.exports = g;
 
 
 /***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(2);
-module.exports = __webpack_require__(3);
-
-
-/***/ }),
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__classes_Ripple_js__ = __webpack_require__(46);
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = {
-    props: {},
-
-    data: function data() {
-        return {
-            element: null
-        };
-    },
-
-
-    methods: {
-        init: function init() {
-            this.element.classList.add('has-ripple');
-        },
-        create: function create(e) {
-            this.ripples.push(new __WEBPACK_IMPORTED_MODULE_0__classes_Ripple_js__["a" /* default */](this.element, e));
-        }
-    },
-
-    mounted: function mounted() {
-        var _this = this;
-
-        this.element = this.$el.parentElement;
-        this.ripples = [];
-
-        if (this.element.classList.contains('disabled')) return;
-
-        this.init();
-
-        this.element.addEventListener('mousedown', function (e) {
-            _this.create(e);
-        });
-    }
-};
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(0)(
-  /* script */
-  __webpack_require__(43),
-  /* template */
-  __webpack_require__(45),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/home/morten/Code/moso-vue/src/js/components/nano-ripple/nano-ripple.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] nano-ripple.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-402e6a9b", Component.options)
-  } else {
-    hotAPI.reload("data-v-402e6a9b", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 45 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "ink-ripple"
-  })
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-402e6a9b", module.exports)
-  }
-}
-
-/***/ }),
-/* 46 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Ripple = function () {
-    function Ripple(element, e) {
-        _classCallCheck(this, Ripple);
-
-        this.element = element;
-        this.ripple = document.createElement('DIV');
-        this.ripple.classList.add('ripple');
-        this.element.querySelector('.ink-ripple').appendChild(this.ripple);
-
-        this.init(e);
-    }
-
-    _createClass(Ripple, [{
-        key: 'init',
-        value: function init(e) {
-            var _this = this;
-
-            var elWidth = this.element.offsetWidth,
-                elHeight = this.element.offsetHeight;
-            var rippleSize = elWidth < elHeight ? elHeight : elWidth;
-
-            this.ripple.classList.remove('active');
-
-            var boundingBox = this.element.getBoundingClientRect();
-
-            var leftOffset = e.clientX - boundingBox.left - rippleSize / 2;
-            var topOffset = e.clientY - boundingBox.top - rippleSize / 2;
-
-            if (this.element.classList.contains('icon-button')) {
-                leftOffset = 0;
-                topOffset = 0;
-            }
-
-            this.ripple.style.width = rippleSize + 'px';
-            this.ripple.style.height = rippleSize + 'px';
-            this.ripple.style.left = leftOffset + 'px';
-            this.ripple.style.top = topOffset + 'px';
-            this.ripple.classList.add('active');
-
-            document.addEventListener('mouseup', function () {
-                _this.remove();
-            });
-        }
-
-        /**
-         * Remove the ripple
-         */
-
-    }, {
-        key: 'remove',
-        value: function remove() {
-            var _this2 = this;
-
-            this.ripple.classList.add('active-out');
-
-            setTimeout(function () {
-                _this2.ripple.remove();
-            }, 1000);
-        }
-    }]);
-
-    return Ripple;
-}();
-
-/* harmony default export */ __webpack_exports__["a"] = Ripple;
-
-/***/ }),
-/* 47 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__classes_Ripple_js__ = __webpack_require__(46);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = {
-    inserted: function inserted(el) {
-        new RippleContainer(el);
-    }
-};
-
-var RippleContainer = function () {
-    function RippleContainer(element) {
-        var _this = this;
-
-        _classCallCheck(this, RippleContainer);
-
-        this.element = element;
-        this.ripples = [];
-
-        if (this.element.classList.contains('disabled')) return;
-
-        this.init();
-
-        this.element.addEventListener('mousedown', function (e) {
-            _this.create(e);
-        });
-    }
-
-    _createClass(RippleContainer, [{
-        key: 'init',
-        value: function init() {
-            this.element.innerHTML += '<div class="ink-ripple"></div>';
-            this.element.classList.add('has-ripple');
-        }
-    }, {
-        key: 'create',
-        value: function create(e) {
-            this.ripples.push(new __WEBPACK_IMPORTED_MODULE_0__classes_Ripple_js__["a" /* default */](this.element, e));
-        }
-    }]);
-
-    return RippleContainer;
-}();
-
-/***/ }),
-/* 48 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_getClosestVueParent__ = __webpack_require__(54);
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = {
-    props: {
-        name: { required: true },
-        selected: { default: false },
-        icon: {
-            type: String
-        }
-    },
-
-    data: function data() {
-        return {};
-    },
-
-
-    computed: {
-        href: function href() {
-            return '#' + this.id;
-        },
-        id: function id() {
-            return this.name.toLowerCase().replace(/ /g, '-');
-        }
-    },
-
-    mounted: function mounted() {
-        this.parentTabs = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__utils_getClosestVueParent__["a" /* default */])(this.$parent, 'tabs');
-
-        if (!this.parentTabs) {
-            throw new Error('You must wrap the nano-tab in a nano-tabs');
-        }
-
-        this.parentTabs.registerTab(this);
-    }
-};
-
-/***/ }),
-/* 49 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_throttle__ = __webpack_require__(55);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = {
-    props: {
-        hashes: {
-            default: false
-        },
-
-        icon: {
-            type: String
-        },
-
-        fixed: {
-            default: false,
-            type: Boolean
-        },
-
-        transparent: {
-            default: false,
-            type: Boolean
-        }
-    },
-
-    data: function data() {
-        return {
-            tabs: {},
-            activeTab: null,
-            activeTabNumber: null,
-            contentHeight: '0px',
-            contentWidth: '0px',
-            transitionOff: false
-        };
-    },
-    mounted: function mounted() {
-        var _this = this;
-
-        this.$nextTick(function () {
-            _this.observeElementChanges();
-            window.addEventListener('resize', _this.calculateOnResize);
-
-            if (Object.keys(_this.tabs).length && !_this.activeTab) {
-                var firstTab = Object.keys(_this.tabs)[0];
-
-                _this.selectTab(_this.tabs[firstTab]);
-            }
-
-            _this.calculatePosition();
-        });
-    },
-    beforeDestroy: function beforeDestroy() {
-        if (this.parentObserver) {
-            this.parentObserver.disconnect();
-        }
-        window.removeEventListener('resize', this.calculateOnResize);
-    },
-
-
-    computed: {
-        tabClasses: function tabClasses() {
-            return {
-                'transition-off': this.transitionOff,
-                'transparent': this.transparent,
-                'fixed': this.fixed
-            };
-        },
-        indicatorClasses: function indicatorClasses() {
-            var toLeft = this.lastIndicatorNumber > this.activeTabNumber;
-
-            this.lastIndicatorNumber = this.activeTabNumber;
-
-            return {
-                'to-right': !toLeft,
-                'to-left': toLeft
-            };
-        }
-    },
-
-    methods: {
-        observeElementChanges: function observeElementChanges() {
-            this.parentObserver = new MutationObserver(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__utils_throttle__["a" /* default */])(this.calculateOnWatch, 50));
-            this.parentObserver.observe(this.$refs.tabContent, {
-                childList: true,
-                attributes: true,
-                subtree: true
-            });
-        },
-        debounceTransition: function debounceTransition() {
-            var _this2 = this;
-
-            window.clearTimeout(this.transitionControl);
-            this.transitionControl = window.setTimeout(function () {
-                _this2.calculatePosition();
-                _this2.transitionOff = false;
-            }, 1);
-        },
-        calculateOnWatch: function calculateOnWatch() {
-            this.calculatePosition();
-            this.debounceTransition();
-        },
-        calculateOnResize: function calculateOnResize() {
-            this.transitionOff = true;
-            this.calculateOnWatch();
-        },
-        getTabClass: function getTabClass(tab) {
-            return {
-                'active': this.activeTab && this.activeTab.id && this.activeTab.id === tab.id,
-                'disabled': tab.disabled
-            };
-        },
-        registerTab: function registerTab(tab) {
-            this.tabs[tab.id] = tab;
-
-            if (tab.selected) {
-                this.selectTab(tab);
-            }
-        },
-        selectTab: function selectTab(selectedTab) {
-            this.activeTab = selectedTab;
-            this.activeTabNumber = this.getTabIndex(selectedTab.id);
-
-            this.calculatePosition();
-            this.$emit('change', this.activeTabNumber);
-        },
-        getTabIndex: function getTabIndex(id) {
-            var idList = Object.keys(this.tabs);
-
-            return idList.indexOf(id);
-        },
-        calculatePosition: function calculatePosition() {
-            var _this3 = this;
-
-            window.requestAnimationFrame(function () {
-                _this3.calculateIndicatorPosition();
-                _this3.calculateTabsWidthAndPosition();
-                _this3.calculateContentHeight();
-            });
-        },
-        calculateIndicatorPosition: function calculateIndicatorPosition() {
-            if (this.$refs.tabHeader && this.$refs.tabHeader[this.activeTabNumber]) {
-                var tabsWidth = this.$el.offsetWidth;
-                var activeTab = this.$refs.tabHeader[this.getTabIndex(this.activeTab.id)];
-                var left = activeTab.offsetLeft;
-                var right = tabsWidth - left - activeTab.offsetWidth;
-
-                this.$refs.indicator.style.left = left + 'px';
-                this.$refs.indicator.style.right = right + 'px';
-            }
-        },
-        calculateTabsWidthAndPosition: function calculateTabsWidthAndPosition() {
-            var width = this.$el.offsetWidth;
-            var index = 0;
-            this.contentWidth = width * this.activeTabNumber + 'px';
-
-            for (var tabId in this.tabs) {
-                var tab = this.tabs[tabId];
-                tab.$el.style.width = width + 'px';
-                tab.$el.style.left = width * index + 'px';
-                index++;
-            }
-        },
-        calculateContentHeight: function calculateContentHeight() {
-            var _this4 = this;
-
-            this.$nextTick(function () {
-                if (Object.keys(_this4.tabs).length) {
-                    var height = _this4.tabs[_this4.activeTab.id].$el.offsetHeight;
-
-                    _this4.contentHeight = height + 'px';
-                }
-            });
-        }
-    }
-};
-
-/***/ }),
 /* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Component = __webpack_require__(0)(
-  /* script */
-  __webpack_require__(48),
-  /* template */
-  __webpack_require__(53),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/home/morten/Code/moso-vue/src/js/components/nano-tabs/nano-tab.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] nano-tab.vue: functional components are not supported with templates, they should use render functions.")}
+__webpack_require__(3);
+module.exports = __webpack_require__(4);
 
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-e3f74428", Component.options)
-  } else {
-    hotAPI.reload("data-v-e3f74428", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 51 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(0)(
-  /* script */
-  __webpack_require__(49),
-  /* template */
-  __webpack_require__(52),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/home/morten/Code/moso-vue/src/js/components/nano-tabs/nano-tabs.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] nano-tabs.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-363300b7", Component.options)
-  } else {
-    hotAPI.reload("data-v-363300b7", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 52 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "tabs",
-    class: _vm.tabClasses
-  }, [_c('ul', [_vm._l((_vm.tabs), function(tab) {
-    return _c('li', {
-      ref: "tabHeader",
-      refInFor: true,
-      class: _vm.getTabClass(tab),
-      attrs: {
-        "id": tab.id,
-        "disabled": tab.disabled
-      }
-    }, [(_vm.hashes) ? _c('a', {
-      directives: [{
-        name: "ripple",
-        rawName: "v-ripple"
-      }],
-      attrs: {
-        "href": tab.href
-      },
-      on: {
-        "click": function($event) {
-          _vm.selectTab(tab)
-        }
-      }
-    }, [(tab.icon) ? _c('i', {
-      staticClass: "hidden-xs hidden-sm mdi",
-      class: tab.icon
-    }) : _vm._e(), _vm._v("\n                " + _vm._s(tab.name) + "\n            ")]) : _c('a', {
-      directives: [{
-        name: "ripple",
-        rawName: "v-ripple"
-      }],
-      on: {
-        "click": function($event) {
-          $event.preventDefault();
-          _vm.selectTab(tab)
-        }
-      }
-    }, [(tab.icon) ? _c('i', {
-      staticClass: "hidden-xs hidden-sm mdi",
-      class: tab.icon
-    }) : _vm._e(), _vm._v("\n                " + _vm._s(tab.name) + "\n            ")])])
-  }), _vm._v(" "), _c('span', {
-    ref: "indicator",
-    staticClass: "tabs-indicator",
-    class: _vm.indicatorClasses
-  })], 2), _vm._v(" "), _c('div', {
-    ref: "tabContent",
-    staticClass: "tabs-content",
-    style: ({
-      height: _vm.contentHeight
-    })
-  }, [_c('div', {
-    staticClass: "tabs-wrapper",
-    style: ({
-      transform: ("translate3D(-" + _vm.contentWidth + ", 0, 0)")
-    })
-  }, [_vm._t("default")], 2)])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-363300b7", module.exports)
-  }
-}
-
-/***/ }),
-/* 53 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "tab"
-  }, [_vm._t("default")], 2)
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-e3f74428", module.exports)
-  }
-}
-
-/***/ }),
-/* 54 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var getClosestVueParent = function getClosestVueParent($parent, cssClass) {
-  if (!$parent || !$parent.$el) {
-    return false;
-  }
-
-  if ($parent._uid === 0) {
-    return false;
-  }
-
-  if ($parent.$el.classList.contains(cssClass)) {
-    return $parent;
-  }
-
-  return getClosestVueParent($parent.$parent, cssClass);
-};
-
-/* harmony default export */ __webpack_exports__["a"] = getClosestVueParent;
-
-/***/ }),
-/* 55 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var debounce = function debounce(callback, limit) {
-  var wait = false;
-
-  return function () {
-    if (!wait) {
-      callback.call();
-      wait = true;
-
-      window.setTimeout(function () {
-        wait = false;
-      }, limit);
-    }
-  };
-};
-
-/* harmony default export */ __webpack_exports__["a"] = debounce;
-
-/***/ }),
-/* 56 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = {
-    props: {
-        image: {
-            type: String
-        },
-
-        name: {
-            type: String
-        },
-
-        link: {
-            type: String
-        }
-    },
-
-    mounted: function mounted() {
-        //
-    }
-};
-
-/***/ }),
-/* 57 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(0)(
-  /* script */
-  __webpack_require__(56),
-  /* template */
-  __webpack_require__(58),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/home/morten/Code/moso-vue/src/js/components/moso-project/moso-project.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] moso-project.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3d357e72", Component.options)
-  } else {
-    hotAPI.reload("data-v-3d357e72", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 58 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "project"
-  }, [_c('div', {
-    staticClass: "project-icon"
-  }, [_c('img', {
-    attrs: {
-      "src": _vm.image,
-      "alt": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "project-content"
-  }, [_c('h3', {
-    staticClass: "project-title"
-  }, [_vm._v(_vm._s(_vm.name))]), _vm._v(" "), _c('a', {
-    attrs: {
-      "href": _vm.link
-    }
-  }, [_vm._v(_vm._s(_vm.link))]), _vm._v(" "), _vm._t("default")], 2)])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-3d357e72", module.exports)
-  }
-}
 
 /***/ })
 /******/ ]);

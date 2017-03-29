@@ -15,7 +15,7 @@
             <div class="md-8">
                 <div class="widget tabs-widget">
                     <nano-tabs transparent fixed>
-                        <nano-tab icon="mdi-account" name="About">
+                        <nano-tab icon="mdi-account-circle" name="About">
                             <div class="tab-content bio">
                                 <h4>Bio</h4>
                                 <p>With 15+ years of experience with making websites, I see myself as a veteran. I often tell people around me that I'm from the generation that designed websites for IE6 in XHTML Strict, which, for the unfamiliar, was utterly horrible. It's something we can all laugh about now but back then, it was the challenge that drove us.</p>
@@ -102,7 +102,7 @@
                                 </div>
                             </div>
                         </nano-tab>
-                        <nano-tab icon="mdi-check" name="Projects">
+                        <nano-tab icon="mdi-file-tree" name="Projects">
                             <div class="tab-content projects">
                                 <div class="container-fluid">
                                     <div class="row">
@@ -140,7 +140,7 @@
                                 </div>
                             </div>
                         </nano-tab>
-                        <nano-tab icon="mdi-check" name="Demos">
+                        <nano-tab icon="mdi-codepen" name="Demos">
                             <div class="tab-content">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia nobis fugiat eius voluptatibus cumque dolorem, quas accusantium dignissimos magnam, ex enim. Pariatur ipsa ea cum asperiores incidunt. Ad, deleniti quaerat!</p>
                             </div>

@@ -25,7 +25,7 @@ body {
   height: 100%;
   min-height: 100vh;
   margin: 0;
-  padding-top: 71px;
+  padding-top: 4.4375rem;
   background-color: $gray;
   font-family: $font-family;
   font-size: 1rem;
@@ -54,25 +54,25 @@ a {
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 0 0 .625rem;
 }
 
 .list {
-  margin: 0 0 10px;
+  margin: 0 0 .625rem;
   padding: 0;
   list-style-type: none;
 
   &--inline {
     li {
       display: inline-block;
-      margin: 0 5px;
+      margin: 0 .3125rem;
 
       &:first-of-type {
-        margin: 0 5px 0 0;
+        margin: 0 .3125rem 0 0;
       }
 
       &:last-of-type {
-        margin: 0 0 0 5px;
+        margin: 0 0 0 .3125rem;
       }
     }
   }
