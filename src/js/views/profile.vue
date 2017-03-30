@@ -18,6 +18,7 @@
                     <i class="mdi mdi-file-document"></i> Download CV (da)
                     <nano-ripple></nano-ripple>
                 </a>
+
             </div>
             <div class="lg-7 xl-8">
                 <div class="widget tabs-widget">
