@@ -1,0 +1,17 @@
+// CARDS
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $rgba-black;
+  box-shadow: $box-shadow;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
