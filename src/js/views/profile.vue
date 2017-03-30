@@ -4,13 +4,20 @@
             <div class="lg-5 xl-4">
                 <div class="widget">
                     <div class="widget__body">
-                        <p>Hello World!</p>
-                        <button class="icon-button">
-                            <i class="mdi mdi-github-circle"></i>
-                            <nano-ripple></nano-ripple>
-                        </button>
+                        <moso-profile image="/images/profile.jpg" name="Morten Sørensen" position="Front-End Developer at Indexed">
+                            <profile-item link="https://github.com/moso" link-class="github" icon="mdi-github-circle"></profile-item>
+                            <profile-item link="https://codepen.io/moso" link-class="codepen" icon="mdi-codepen"></profile-item>
+                            <profile-item link="https://facebook.com/moso.profil" link-class="facebook" icon="mdi-facebook"></profile-item>
+                            <profile-item link="https://twitter.com/mosodotio" link-class="twitter" icon="mdi-twitter"></profile-item>
+                            <profile-item link="https://dk.linkedin.com/in/mosoio" link-class="linkedin" icon="mdi-linkedin"></profile-item>
+                        </moso-profile>
                     </div>
                 </div>
+
+                <a href="#!" class="button button-primary button--raised">
+                    <i class="mdi mdi-file-document"></i> Download CV (da)
+                    <nano-ripple></nano-ripple>
+                </a>
             </div>
             <div class="lg-7 xl-8">
                 <div class="widget tabs-widget">

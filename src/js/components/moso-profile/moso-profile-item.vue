@@ -1,6 +1,6 @@
 <template>
     <li>
-        <a :href="link" tabindex="-1">
+        <a :href="link" class="button icon-button" :class="linkClass" tabindex="-1">
             <i class="mdi" :class="icon"></i>
             <nano-ripple></nano-ripple>
         </a>
@@ -10,6 +10,10 @@
     export default {
         props: {
             link: {
+                type: String
+            },
+
+            linkClass: {
                 type: String
             },
 

@@ -1252,6 +1252,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = {
     mounted: function mounted() {}
@@ -2179,11 +2186,50 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "widget"
   }, [_c('div', {
     staticClass: "widget__body"
-  }, [_c('p', [_vm._v("Hello World!")]), _vm._v(" "), _c('button', {
-    staticClass: "icon-button"
+  }, [_c('moso-profile', {
+    attrs: {
+      "image": "/images/profile.jpg",
+      "name": "Morten Sørensen",
+      "position": "Front-End Developer at Indexed"
+    }
+  }, [_c('profile-item', {
+    attrs: {
+      "link": "https://github.com/moso",
+      "link-class": "github",
+      "icon": "mdi-github-circle"
+    }
+  }), _vm._v(" "), _c('profile-item', {
+    attrs: {
+      "link": "https://codepen.io/moso",
+      "link-class": "codepen",
+      "icon": "mdi-codepen"
+    }
+  }), _vm._v(" "), _c('profile-item', {
+    attrs: {
+      "link": "https://facebook.com/moso.profil",
+      "link-class": "facebook",
+      "icon": "mdi-facebook"
+    }
+  }), _vm._v(" "), _c('profile-item', {
+    attrs: {
+      "link": "https://twitter.com/mosodotio",
+      "link-class": "twitter",
+      "icon": "mdi-twitter"
+    }
+  }), _vm._v(" "), _c('profile-item', {
+    attrs: {
+      "link": "https://dk.linkedin.com/in/mosoio",
+      "link-class": "linkedin",
+      "icon": "mdi-linkedin"
+    }
+  })], 1)], 1)]), _vm._v(" "), _c('a', {
+    staticClass: "button button-primary button--raised",
+    attrs: {
+      "href": "#!"
+    }
   }, [_c('i', {
-    staticClass: "mdi mdi-github-circle"
-  }), _vm._v(" "), _c('nano-ripple')], 1)])])]), _vm._v(" "), _c('div', {
+    staticClass: "mdi mdi-file-document"
+  }), _vm._v(" Download CV (da)\n                "), _c('nano-ripple')], 1)]), _vm._v(" "), _c('div', {
     staticClass: "lg-7 xl-8"
   }, [_c('div', {
     staticClass: "widget tabs-widget"
@@ -14256,6 +14302,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             type: String
         },
 
+        linkClass: {
+            type: String
+        },
+
         icon: {
             type: String
         }
@@ -14406,6 +14456,8 @@ if (false) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('li', [_c('a', {
+    staticClass: "button icon-button",
+    class: _vm.linkClass,
     attrs: {
       "href": _vm.link,
       "tabindex": "-1"

@@ -1,7 +1,7 @@
 // BUTTONS
 //
 // BUTTON RESET
-button, .button {
+%button {
   display: inline-block;
   position: relative;
   margin: 0;
@@ -14,12 +14,17 @@ button, .button {
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 2px;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-tap-highlight-color: transparent;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   transition: background-color .2s ease-in-out;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+// STANDARD BUTTON
+button, .button {
+  @extend %button;
 
   &:hover,
   &:focus,
@@ -27,6 +32,10 @@ button, .button {
   &:hover:active {
     outline: none;
     text-decoration: none;
+  }
+
+  i.mdi {
+    margin-right: 5px;
   }
 
   &.icon-button {
@@ -39,6 +48,7 @@ button, .button {
     border-radius: 50%;
 
     i.mdi {
+      margin: 0;
       font-size: 1.5rem;
       vertical-align: middle;
     }
@@ -48,6 +58,7 @@ button, .button {
       height: 35px;
 
       i.mdi {
+        margin: 0;
         font-size: 1.125rem;
         vertical-align: middle;
       }
@@ -55,3 +66,60 @@ button, .button {
   }
 }
 
+// RAISED
+%raised {
+  border: none;
+  background-color: rgba(154,154,154,.2);
+  position: relative;
+  height: 36px;
+  min-width: 4rem;
+  padding: 0 1rem;
+  font-size: .875rem;
+  color: #000;
+  letter-spacing: 0;
+  line-height: 36px;
+  text-transform: uppercase;
+  overflow: hidden;
+  vertical-align: middle;
+  will-change: box-shadow;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  transition: box-shadow .2s cubic-bezier(.4,0,1,1), background-color .2s cubic-bezier(.4,0,.2,1);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(154,154,154,.4);
+    color: #000;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+  }
+}
+
+.button {
+  &--raised {
+    @extend %raised;
+  }
+}
+
+
+// COLORED BUTTONS MIXIN
+@mixin button-color($color, $background-color) {
+  @extend %button;
+  @extend %raised;
+  color: $color;
+  background-color: $background-color;
+
+  &:hover,
+  &:focus {
+    color: $color;
+    background-color: darken($background-color, 10%);
+  }
+}
+
+
+// COLORED BUTTONS
+.button {
+  &--raised {
+    &.button-primary {
+      @include button-color(#fff, $primary);
+    }
+  }
+}
