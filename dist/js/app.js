@@ -431,7 +431,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 
 
 // ROUTES
-var routes = [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_2__views_profile_vue___default.a, name: 'Profile ' }, { path: '/profile', component: __WEBPACK_IMPORTED_MODULE_2__views_profile_vue___default.a, name: 'Profile' }, { path: '/resume', component: __WEBPACK_IMPORTED_MODULE_3__views_resume_vue___default.a, name: 'Resume' }, { path: '/portfolio', component: __WEBPACK_IMPORTED_MODULE_4__views_portfolio_vue___default.a, name: 'Portfolio' }, { path: '/404', component: __WEBPACK_IMPORTED_MODULE_5__views_notfound_vue___default.a, name: '404 - page not found' }, { path: '*', redirect: '404' }];
+var routes = [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_2__views_profile_vue___default.a, name: 'Profile ' }, { path: '/profile', component: __WEBPACK_IMPORTED_MODULE_2__views_profile_vue___default.a, name: 'Profile' }, { path: '/resume', component: __WEBPACK_IMPORTED_MODULE_3__views_resume_vue___default.a, name: 'Resume' }, { path: '/portfolio', component: __WEBPACK_IMPORTED_MODULE_4__views_portfolio_vue___default.a, name: 'Portfolio' }, { path: '/404', component: __WEBPACK_IMPORTED_MODULE_5__views_notfound_vue___default.a, name: '404 - not found' }, { path: '*', redirect: '404' }];
 
 var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
     routes: routes

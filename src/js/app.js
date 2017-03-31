@@ -41,7 +41,7 @@ const routes = [
     { path: '/profile', component: profile, name: 'Profile' },
     { path: '/resume', component: resume, name: 'Resume' },
     { path: '/portfolio', component: portfolio, name: 'Portfolio' },
-    { path: '/404', component: notfound, name: '404 - page not found' },
+    { path: '/404', component: notfound, name: '404 - not found' },
     { path: '*', redirect: '404' }
 ]
 
