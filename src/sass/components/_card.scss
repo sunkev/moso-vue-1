@@ -65,13 +65,16 @@
       }
 
       .card-subtitle {
-        $color: #fff;
-
         margin: 0;
         font-size: .875rem;
         font-weight: 400;
         letter-spacing: .01em;
         line-height: 20px;
+      }
+
+      a.card-subtitle {
+        $color: #fff;
+
         text-decoration: none;
         transition: color .2s ease-in-out;
 
