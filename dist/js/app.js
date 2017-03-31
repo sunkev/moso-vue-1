@@ -1387,6 +1387,43 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = {
     mounted: function mounted() {}
@@ -2794,13 +2831,64 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "href": "https://hyper.is"
     }
   }, [_vm._v("Hyper")]), _vm._v(" terminal, replacing the clonky standard scrollbar with a pretty, modern one.")])])], 1)])])])]), _vm._v(" "), _c('nano-tab', {
+    staticClass: "demo",
     attrs: {
       "icon": "mdi-codepen",
       "name": "Demos"
     }
   }, [_c('div', {
-    staticClass: "tab-content"
-  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia nobis fugiat eius voluptatibus cumque dolorem, quas accusantium dignissimos magnam, ex enim. Pariatur ipsa ea cum asperiores incidunt. Ad, deleniti quaerat!")])])])], 1)], 1)])])])
+    staticClass: "tab-content demo-content"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "md-6 lg-4"
+  }, [_c('moso-card-cover', {
+    attrs: {
+      "image": "https://vuematerial.github.io/assets/card-sky.jpg",
+      "card-title": "Title",
+      "link": "https://codepen.io/moso/link"
+    }
+  })], 1), _vm._v(" "), _c('div', {
+    staticClass: "md-6 lg-4"
+  }, [_c('moso-card-cover', {
+    attrs: {
+      "image": "https://vuematerial.github.io/assets/card-sky.jpg",
+      "card-title": "Title",
+      "link": "https://codepen.io/moso/link"
+    }
+  })], 1), _vm._v(" "), _c('div', {
+    staticClass: "md-6 lg-4"
+  }, [_c('moso-card-cover', {
+    attrs: {
+      "image": "https://vuematerial.github.io/assets/card-sky.jpg",
+      "card-title": "Title",
+      "link": "https://codepen.io/moso/link"
+    }
+  })], 1), _vm._v(" "), _c('div', {
+    staticClass: "md-6 lg-4"
+  }, [_c('moso-card-cover', {
+    attrs: {
+      "image": "https://vuematerial.github.io/assets/card-sky.jpg",
+      "card-title": "Title",
+      "link": "https://codepen.io/moso/link"
+    }
+  })], 1), _vm._v(" "), _c('div', {
+    staticClass: "md-6 lg-4"
+  }, [_c('moso-card-cover', {
+    attrs: {
+      "image": "https://vuematerial.github.io/assets/card-sky.jpg",
+      "card-title": "Title",
+      "link": "https://codepen.io/moso/link"
+    }
+  })], 1), _vm._v(" "), _c('div', {
+    staticClass: "md-6 lg-4"
+  }, [_c('moso-card-cover', {
+    attrs: {
+      "image": "https://vuematerial.github.io/assets/card-sky.jpg",
+      "card-title": "Title",
+      "link": "https://codepen.io/moso/link"
+    }
+  })], 1)])])])], 1)], 1)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "widget__header"

@@ -160,9 +160,46 @@
                                 </div>
                             </div>
                         </nano-tab>
-                        <nano-tab icon="mdi-codepen" name="Demos">
-                            <div class="tab-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia nobis fugiat eius voluptatibus cumque dolorem, quas accusantium dignissimos magnam, ex enim. Pariatur ipsa ea cum asperiores incidunt. Ad, deleniti quaerat!</p>
+                        <nano-tab icon="mdi-codepen" name="Demos" class="demo">
+                            <div class="tab-content demo-content">
+                                <div class="row">
+                                    <div class="md-6 lg-4">
+                                        <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
+                                                         card-title="Title"
+                                                         link="https://codepen.io/moso/link">
+                                        </moso-card-cover>
+                                    </div>
+                                    <div class="md-6 lg-4">
+                                        <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
+                                                         card-title="Title"
+                                                         link="https://codepen.io/moso/link">
+                                        </moso-card-cover>
+                                    </div>
+                                    <div class="md-6 lg-4">
+                                        <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
+                                                         card-title="Title"
+                                                         link="https://codepen.io/moso/link">
+                                        </moso-card-cover>
+                                    </div>
+                                    <div class="md-6 lg-4">
+                                        <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
+                                                         card-title="Title"
+                                                         link="https://codepen.io/moso/link">
+                                        </moso-card-cover>
+                                    </div>
+                                    <div class="md-6 lg-4">
+                                        <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
+                                                         card-title="Title"
+                                                         link="https://codepen.io/moso/link">
+                                        </moso-card-cover>
+                                    </div>
+                                    <div class="md-6 lg-4">
+                                        <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
+                                                         card-title="Title"
+                                                         link="https://codepen.io/moso/link">
+                                        </moso-card-cover>
+                                    </div>
+                                </div>
                             </div>
                         </nano-tab>
                     </nano-tabs>
