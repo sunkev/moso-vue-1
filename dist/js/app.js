@@ -415,6 +415,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('timeline-item', __webpack
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('moso-profile', __webpack_require__(29));
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('profile-item', __webpack_require__(28));
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('moso-progressbar', __webpack_require__(30));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('moso-card-cover', __webpack_require__(75));
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('nano-ripple', __webpack_require__(36));
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('nano-tabs', __webpack_require__(38));
@@ -14614,6 +14615,126 @@ module.exports = g;
 __webpack_require__(3);
 module.exports = __webpack_require__(4);
 
+
+/***/ }),
+/* 66 */,
+/* 67 */,
+/* 68 */,
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */,
+/* 74 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    props: {
+        image: {
+            type: String
+        },
+
+        cardTitle: {
+            type: String
+        },
+
+        link: {
+            type: String
+        }
+    },
+
+    mounted: function mounted() {
+        //
+    }
+};
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(74),
+  /* template */
+  __webpack_require__(76),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/home/morten/Code/moso-vue/src/js/components/moso-card/moso-card-cover.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] moso-card-cover.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7d7c9c31", Component.options)
+  } else {
+    hotAPI.reload("data-v-7d7c9c31", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-img-cover"
+  }, [_c('div', {
+    staticClass: "card-img"
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.image
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "card-img-cover-content"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('div', {
+    staticClass: "card-title"
+  }, [_vm._v(_vm._s(_vm.cardTitle))]), _vm._v(" "), _c('a', {
+    staticClass: "card-subtitle",
+    attrs: {
+      "href": _vm.link
+    }
+  }, [_vm._v(_vm._s(_vm.link))])])])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-7d7c9c31", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

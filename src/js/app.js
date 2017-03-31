@@ -18,6 +18,7 @@ Vue.component('timeline-item', require('./components/moso-timeline/moso-timeline
 Vue.component('moso-profile', require('./components/moso-profile/moso-profile.vue'));
 Vue.component('profile-item', require('./components/moso-profile/moso-profile-item.vue'));
 Vue.component('moso-progressbar', require('./components/moso-progressbar/moso-progressbar.vue'));
+Vue.component('moso-card-cover', require('./components/moso-card/moso-card-cover.vue'));
 
 Vue.component('nano-ripple', require('./components/nano-ripple/nano-ripple.vue'));
 Vue.component('nano-tabs', require('./components/nano-tabs/nano-tabs.vue'));
