@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid">
         <div class="row">
-            <div class="lg-5 xl-4">
+            <div class="lg-5 xl-4 profile-widgets">
                 <div class="widget">
                     <div class="widget__body">
                         <moso-profile image="/images/profile.jpg" name="Morten Sørensen" position="Front-End Developer at Indexed">
@@ -14,11 +14,23 @@
                     </div>
                 </div>
 
-                <a href="#!" class="button button-primary button--raised">
-                    <i class="mdi mdi-file-document"></i> Download CV (da)
-                    <nano-ripple></nano-ripple>
-                </a>
+                <div class="widget">
+                    <div class="widget__header">
+                        <h3 class="title"><i class="mdi mdi-plus-one"></i> Skills</h3>
+                    </div>
+                    <div class="widget__body">
+                        <moso-progressbar name="HTML5/CSS3" percentage="100"></moso-progressbar>
+                        <moso-progressbar name="JS (jQuery/Vue)" percentage="75"></moso-progressbar>
+                        <moso-progressbar name="PHP" percentage="60"></moso-progressbar>
+                        <moso-progressbar name="CMS (WordPress)" percentage="75"></moso-progressbar>
+                        <moso-progressbar name="Graphics (Photoshop/Illustrator)" percentage="90"></moso-progressbar>
 
+                        <a href="#!" class="button button-primary button--raised">
+                            <i class="mdi mdi-file-document"></i> Download CV (da)
+                            <nano-ripple></nano-ripple>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="lg-7 xl-8">
                 <div class="widget tabs-widget">

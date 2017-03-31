@@ -34,6 +34,14 @@ main {
   }
 }
 
+.profile-widgets > .widget:last-of-type {
+  margin: 1rem 0;
+
+  @media (min-width: 992px) {
+    margin: 2rem 0;
+  }
+}
+
 .resume [class^="lg-"]:last-of-type .widget {
   margin-bottom: 0;
 }
