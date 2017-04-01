@@ -2845,48 +2845,48 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('moso-card-cover', {
     attrs: {
       "image": "https://vuematerial.github.io/assets/card-sky.jpg",
-      "card-title": "Title",
-      "link": "https://codepen.io/moso/link"
+      "card-title": "Collection with Bootstrap Collapse",
+      "link": "https://cdpn.io/JKGGBX"
     }
   })], 1), _vm._v(" "), _c('div', {
     staticClass: "md-6 xl-4"
   }, [_c('moso-card-cover', {
     attrs: {
       "image": "https://vuematerial.github.io/assets/card-sky.jpg",
-      "card-title": "Title",
-      "link": "https://codepen.io/moso/link"
+      "card-title": "Bootstrap FAQ Example",
+      "link": "https://cdpn.io/vKGxMx"
     }
   })], 1), _vm._v(" "), _c('div', {
     staticClass: "md-6 xl-4"
   }, [_c('moso-card-cover', {
     attrs: {
       "image": "https://vuematerial.github.io/assets/card-sky.jpg",
-      "card-title": "Title",
-      "link": "https://codepen.io/moso/link"
+      "card-title": "Material Design Pricing Tables",
+      "link": "https://cdpn.io/xZyGPj"
     }
   })], 1), _vm._v(" "), _c('div', {
     staticClass: "md-6 xl-4"
   }, [_c('moso-card-cover', {
     attrs: {
       "image": "https://vuematerial.github.io/assets/card-sky.jpg",
-      "card-title": "Title",
-      "link": "https://codepen.io/moso/link"
+      "card-title": "Simple Timeline",
+      "link": "https://cdpn.io/MpPRgg"
     }
   })], 1), _vm._v(" "), _c('div', {
     staticClass: "md-6 xl-4"
   }, [_c('moso-card-cover', {
     attrs: {
       "image": "https://vuematerial.github.io/assets/card-sky.jpg",
-      "card-title": "Title",
-      "link": "https://codepen.io/moso/link"
+      "card-title": "Material Design Floating Labels",
+      "link": "https://cdpn.io/rVdbXB"
     }
   })], 1), _vm._v(" "), _c('div', {
     staticClass: "md-6 xl-4"
   }, [_c('moso-card-cover', {
     attrs: {
       "image": "https://vuematerial.github.io/assets/card-sky.jpg",
-      "card-title": "Title",
-      "link": "https://codepen.io/moso/link"
+      "card-title": "Material Design Progress \"Switches\"",
+      "link": "https://cdpn.io/evQxRE"
     }
   })], 1)])])])], 1)], 1)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
