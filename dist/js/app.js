@@ -2546,7 +2546,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "widget__body"
   }, [_c('moso-progressbar', {
     attrs: {
-      "name": "HTML5/CSS3",
+      "name": "HTML5/CSS3/Sass",
       "percentage": "100"
     }
   }), _vm._v(" "), _c('moso-progressbar', {
@@ -2841,7 +2841,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "row"
   }, [_c('div', {
-    staticClass: "md-6 lg-4"
+    staticClass: "md-6 xl-4"
   }, [_c('moso-card-cover', {
     attrs: {
       "image": "https://vuematerial.github.io/assets/card-sky.jpg",
@@ -2849,7 +2849,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "link": "https://codepen.io/moso/link"
     }
   })], 1), _vm._v(" "), _c('div', {
-    staticClass: "md-6 lg-4"
+    staticClass: "md-6 xl-4"
   }, [_c('moso-card-cover', {
     attrs: {
       "image": "https://vuematerial.github.io/assets/card-sky.jpg",
@@ -2857,7 +2857,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "link": "https://codepen.io/moso/link"
     }
   })], 1), _vm._v(" "), _c('div', {
-    staticClass: "md-6 lg-4"
+    staticClass: "md-6 xl-4"
   }, [_c('moso-card-cover', {
     attrs: {
       "image": "https://vuematerial.github.io/assets/card-sky.jpg",
@@ -2865,7 +2865,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "link": "https://codepen.io/moso/link"
     }
   })], 1), _vm._v(" "), _c('div', {
-    staticClass: "md-6 lg-4"
+    staticClass: "md-6 xl-4"
   }, [_c('moso-card-cover', {
     attrs: {
       "image": "https://vuematerial.github.io/assets/card-sky.jpg",
@@ -2873,7 +2873,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "link": "https://codepen.io/moso/link"
     }
   })], 1), _vm._v(" "), _c('div', {
-    staticClass: "md-6 lg-4"
+    staticClass: "md-6 xl-4"
   }, [_c('moso-card-cover', {
     attrs: {
       "image": "https://vuematerial.github.io/assets/card-sky.jpg",
@@ -2881,7 +2881,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "link": "https://codepen.io/moso/link"
     }
   })], 1), _vm._v(" "), _c('div', {
-    staticClass: "md-6 lg-4"
+    staticClass: "md-6 xl-4"
   }, [_c('moso-card-cover', {
     attrs: {
       "image": "https://vuematerial.github.io/assets/card-sky.jpg",
@@ -14808,11 +14808,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "card-header"
   }, [_c('div', {
-    staticClass: "card-title"
+    staticClass: "card-title",
+    attrs: {
+      "title": _vm.cardTitle
+    }
   }, [_vm._v(_vm._s(_vm.cardTitle))]), _vm._v(" "), _c('a', {
     staticClass: "card-subtitle",
     attrs: {
-      "href": _vm.link
+      "href": _vm.link,
+      "title": _vm.link
     }
   }, [_vm._v(_vm._s(_vm.link))])])])])
 },staticRenderFns: []}

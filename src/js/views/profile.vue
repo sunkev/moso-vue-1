@@ -19,7 +19,7 @@
                         <h3 class="title"><i class="mdi mdi-plus-one"></i> Skills</h3>
                     </div>
                     <div class="widget__body">
-                        <moso-progressbar name="HTML5/CSS3" percentage="100"></moso-progressbar>
+                        <moso-progressbar name="HTML5/CSS3/Sass" percentage="100"></moso-progressbar>
                         <moso-progressbar name="JS (jQuery/Vue)" percentage="75"></moso-progressbar>
                         <moso-progressbar name="PHP" percentage="60"></moso-progressbar>
                         <moso-progressbar name="CMS (WordPress)" percentage="75"></moso-progressbar>
@@ -163,37 +163,37 @@
                         <nano-tab icon="mdi-codepen" name="Demos" class="demo">
                             <div class="tab-content demo-content">
                                 <div class="row">
-                                    <div class="md-6 lg-4">
+                                    <div class="md-6 xl-4">
                                         <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
                                                          card-title="Title"
                                                          link="https://codepen.io/moso/link">
                                         </moso-card-cover>
                                     </div>
-                                    <div class="md-6 lg-4">
+                                    <div class="md-6 xl-4">
                                         <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
                                                          card-title="Title"
                                                          link="https://codepen.io/moso/link">
                                         </moso-card-cover>
                                     </div>
-                                    <div class="md-6 lg-4">
+                                    <div class="md-6 xl-4">
                                         <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
                                                          card-title="Title"
                                                          link="https://codepen.io/moso/link">
                                         </moso-card-cover>
                                     </div>
-                                    <div class="md-6 lg-4">
+                                    <div class="md-6 xl-4">
                                         <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
                                                          card-title="Title"
                                                          link="https://codepen.io/moso/link">
                                         </moso-card-cover>
                                     </div>
-                                    <div class="md-6 lg-4">
+                                    <div class="md-6 xl-4">
                                         <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
                                                          card-title="Title"
                                                          link="https://codepen.io/moso/link">
                                         </moso-card-cover>
                                     </div>
-                                    <div class="md-6 lg-4">
+                                    <div class="md-6 xl-4">
                                         <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
                                                          card-title="Title"
                                                          link="https://codepen.io/moso/link">

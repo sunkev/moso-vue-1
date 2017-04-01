@@ -7,8 +7,8 @@
         </div>
         <div class="card-img-cover-content">
             <div class="card-header">
-                <div class="card-title">{{ cardTitle }}</div>
-                <a class="card-subtitle" :href="link">{{ link }}</a>
+                <div class="card-title" :title="cardTitle">{{ cardTitle }}</div>
+                <a class="card-subtitle" :href="link" :title="link">{{ link }}</a>
             </div>
         </div>
     </div>
