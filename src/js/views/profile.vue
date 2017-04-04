@@ -164,37 +164,37 @@
                             <div class="tab-content demo-content">
                                 <div class="row">
                                     <div class="md-6 xl-4">
-                                        <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
+                                        <moso-card-cover image="/images/assets/demos/collections.jpg"
                                                          card-title="Collection with Bootstrap Collapse"
                                                          link="https://cdpn.io/JKGGBX">
                                         </moso-card-cover>
                                     </div>
                                     <div class="md-6 xl-4">
-                                        <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
+                                        <moso-card-cover image="/images/assets/demos/faq-example.jpg"
                                                          card-title="Bootstrap FAQ Example"
                                                          link="https://cdpn.io/vKGxMx">
                                         </moso-card-cover>
                                     </div>
                                     <div class="md-6 xl-4">
-                                        <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
+                                        <moso-card-cover image="/images/assets/demos/pricing-tables.jpg"
                                                          card-title="Material Design Pricing Tables"
                                                          link="https://cdpn.io/xZyGPj">
                                         </moso-card-cover>
                                     </div>
                                     <div class="md-6 xl-4">
-                                        <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
+                                        <moso-card-cover image="/images/assets/demos/timeline.jpg"
                                                          card-title="Simple Timeline"
                                                          link="https://cdpn.io/MpPRgg">
                                         </moso-card-cover>
                                     </div>
                                     <div class="md-6 xl-4">
-                                        <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
+                                        <moso-card-cover image="/images/assets/demos/floating-labels.jpg"
                                                          card-title="Material Design Floating Labels"
                                                          link="https://cdpn.io/rVdbXB">
                                         </moso-card-cover>
                                     </div>
                                     <div class="md-6 xl-4">
-                                        <moso-card-cover image="https://vuematerial.github.io/assets/card-sky.jpg"
+                                        <moso-card-cover image="/images/assets/demos/progress-switches.jpg"
                                                          card-title="Material Design Progress &quot;Switches&quot;"
                                                          link="https://cdpn.io/evQxRE">
                                         </moso-card-cover>
