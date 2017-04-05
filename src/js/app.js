@@ -19,6 +19,7 @@ Vue.component('moso-profile', require('./components/moso-profile/moso-profile.vu
 Vue.component('profile-item', require('./components/moso-profile/moso-profile-item.vue'));
 Vue.component('moso-progressbar', require('./components/moso-progressbar/moso-progressbar.vue'));
 Vue.component('moso-card-cover', require('./components/moso-card/moso-card-cover.vue'));
+Vue.component('moso-card-reveal', require('./components/moso-card/moso-card-reveal.vue'));
 
 Vue.component('nano-ripple', require('./components/nano-ripple/nano-ripple.vue'));
 Vue.component('nano-tabs', require('./components/nano-tabs/nano-tabs.vue'));
@@ -56,6 +57,10 @@ const app = new Vue({
     methods: {
         toggleSidenav() {
             this.$refs.sidenav.toggle();
+        },
+
+        toggleCardReveal() {
+            this.$refs.cardReveal.toggle();
         }
     }
 }).$mount('#app')

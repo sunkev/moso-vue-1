@@ -416,6 +416,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('moso-profile', __webpack_
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('profile-item', __webpack_require__(30));
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('moso-progressbar', __webpack_require__(32));
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('moso-card-cover', __webpack_require__(27));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('moso-card-reveal', __webpack_require__(78));
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('nano-ripple', __webpack_require__(38));
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('nano-tabs', __webpack_require__(40));
@@ -444,6 +445,9 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
     methods: {
         toggleSidenav: function toggleSidenav() {
             this.$refs.sidenav.toggle();
+        },
+        toggleCardReveal: function toggleCardReveal() {
+            this.$refs.cardReveal.toggle();
         }
     }
 }).$mount('#app');
@@ -1240,6 +1244,47 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3195,7 +3240,73 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "container-fluid"
-  })
+  }, [_c('div', {
+    staticClass: "row portfolio"
+  }, [_c('div', {
+    staticClass: "sm-12 md-6 lg-6 xl-3"
+  }, [_c('moso-card-reveal', {
+    attrs: {
+      "image": "https://moso.io/images/assets/reveal/vkons.jpg",
+      "card-title": "Title",
+      "link": "https://link"
+    }
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quam, molestias magnam cumque placeat nisi nam necessitatibus vitae minima, quaerat, autem quas alias esse! Molestiae aperiam ab aliquid necessitatibus, eius.")])])], 1), _vm._v(" "), _c('div', {
+    staticClass: "sm-12 md-6 lg-6 xl-3"
+  }, [_c('moso-card-reveal', {
+    attrs: {
+      "image": "https://moso.io/images/assets/reveal/vkons.jpg",
+      "card-title": "Title",
+      "link": "https://link"
+    }
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis rem suscipit officia. Nam similique, dolores sint, incidunt soluta earum iste consequatur. Perspiciatis accusamus nihil voluptates harum libero perferendis magnam, vitae!")])])], 1), _vm._v(" "), _c('div', {
+    staticClass: "sm-12 md-6 lg-6 xl-3"
+  }, [_c('moso-card-reveal', {
+    attrs: {
+      "image": "https://moso.io/images/assets/reveal/vkons.jpg",
+      "card-title": "Title",
+      "link": "https://link"
+    }
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto consequuntur quaerat fugiat, accusantium qui, officiis debitis mollitia ipsam blanditiis, quae sed amet nemo impedit. Placeat commodi in, repellat rem id.")])])], 1), _vm._v(" "), _c('div', {
+    staticClass: "sm-12 md-6 lg-6 xl-3"
+  }, [_c('moso-card-reveal', {
+    attrs: {
+      "image": "https://moso.io/images/assets/reveal/vkons.jpg",
+      "card-title": "Title",
+      "link": "https://link"
+    }
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae minima quaerat, officiis commodi voluptate repellendus vero laboriosam rem ratione ut! Libero beatae minima quaerat, eveniet, quia illo. Qui culpa, magnam.")])])], 1), _vm._v(" "), _c('div', {
+    staticClass: "sm-12 md-6 lg-6 xl-3"
+  }, [_c('moso-card-reveal', {
+    attrs: {
+      "image": "https://moso.io/images/assets/reveal/vkons.jpg",
+      "card-title": "Title",
+      "link": "https://link"
+    }
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla molestias, beatae numquam excepturi magni dolorum, ex exercitationem consequuntur veniam ut ipsam id quod explicabo minima quo tempore commodi placeat voluptates.")])])], 1), _vm._v(" "), _c('div', {
+    staticClass: "sm-12 md-6 lg-6 xl-3"
+  }, [_c('moso-card-reveal', {
+    attrs: {
+      "image": "https://moso.io/images/assets/reveal/vkons.jpg",
+      "card-title": "Title",
+      "link": "https://link"
+    }
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum beatae quam, adipisci consequuntur impedit omnis, natus, eaque porro debitis cupiditate maiores. Ipsam blanditiis, rem eum voluptatem id a dignissimos.")])])], 1), _vm._v(" "), _c('div', {
+    staticClass: "sm-12 md-6 lg-6 xl-3"
+  }, [_c('moso-card-reveal', {
+    attrs: {
+      "image": "https://moso.io/images/assets/reveal/vkons.jpg",
+      "card-title": "Title",
+      "link": "https://link"
+    }
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus voluptatum reprehenderit sed quidem sit quod ullam, laudantium sunt, omnis dolores nisi, quisquam vel nulla. Earum nam eveniet reprehenderit consequatur accusamus.")])])], 1), _vm._v(" "), _c('div', {
+    staticClass: "sm-12 md-6 lg-6 xl-3"
+  }, [_c('moso-card-reveal', {
+    attrs: {
+      "image": "https://moso.io/images/assets/reveal/vkons.jpg",
+      "card-title": "Title",
+      "link": "https://link"
+    }
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse suscipit vero neque nihil doloremque maxime voluptas alias aspernatur eum quas quibusdam earum velit blanditiis minus fuga voluptate accusantium ut, perferendis!")])])], 1)])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -14819,6 +14930,230 @@ module.exports = g;
 __webpack_require__(3);
 module.exports = __webpack_require__(4);
 
+
+/***/ }),
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */,
+/* 77 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    data: function data() {
+        return {
+            cardReveal: false
+        };
+    },
+
+
+    props: {
+        image: {
+            type: String
+        },
+
+        cardTitle: {
+            type: String
+        },
+
+        link: {
+            type: String
+        }
+    },
+
+    computed: {
+        classes: function classes() {
+            return this.cardReveal && 'revealed';
+        }
+    },
+
+    methods: {
+        reveal: function reveal() {
+            this.open();
+        },
+        open: function open() {
+            this.$el.classList.add('revealed');
+            this.cardReveal = true;
+            //this.$el.focus();
+            this.$emit('open');
+        },
+        close: function close() {
+            this.$el.classList.remove('revealed');
+            this.cardReveal = false;
+            //this.$el.blur();
+            this.$emit('close');
+        },
+        toggle: function toggle() {
+            if (this.cardReveal) {
+                this.close();
+            } else {
+                this.open();
+            }
+        }
+    },
+
+    // toggleCard: function() {
+    //     var target = this.$.reveal;
+    //     target.style.display = 'block';
+    //     target.style.top = target.offsetHeight + 'px';
+
+    //     setTimeout(function() {
+    //         target.style.top = '0';
+    //     }, 10);
+
+    //     target.querySelector('.close').addEventListener('click', function() {
+    //         target.style.top = target.offsetHeight + 'px';
+    //         setTimeout(function() {
+    //             target.style.display = 'none';
+    //         }, 200);
+    //     });
+    // },
+
+    // _htmlChanged: function() {
+    //     this.$$('.card-description').innerHTML = this.cardDescription;
+    // }
+
+    mounted: function mounted() {
+        //
+    }
+};
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(77),
+  /* template */
+  __webpack_require__(79),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/home/morten/Code/moso-vue/src/js/components/moso-card/moso-card-reveal.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] moso-card-reveal.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-c402627a", Component.options)
+  } else {
+    hotAPI.reload("data-v-c402627a", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "card card-reveal"
+  }, [_c('div', {
+    staticClass: "card-image",
+    on: {
+      "click": function($event) {
+        _vm.toggle();
+      }
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.image,
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('nano-ripple')], 1), _vm._v(" "), _c('div', {
+    staticClass: "card-content"
+  }, [_c('h2', {
+    staticClass: "card-title",
+    on: {
+      "click": function($event) {
+        _vm.toggle();
+      }
+    }
+  }, [_vm._v(_vm._s(_vm.cardTitle))]), _vm._v(" "), _c('p', {
+    staticClass: "card-url"
+  }, [_c('a', {
+    attrs: {
+      "href": _vm.link
+    }
+  }, [_vm._v(_vm._s(_vm.link))])]), _vm._v(" "), _c('div', {
+    staticClass: "card-button"
+  }, [_c('button', {
+    staticClass: "button button--raised button-primary",
+    on: {
+      "click": function($event) {
+        _vm.toggle();
+      }
+    }
+  }, [_vm._v("\n                Read more\n                "), _c('nano-ripple')], 1)])]), _vm._v(" "), _c('div', {
+    staticClass: "card-reveal",
+    class: _vm.classes
+  }, [_c('p', {
+    staticClass: "card-title"
+  }, [_vm._v(_vm._s(_vm.cardTitle))]), _vm._v(" "), _c('span', {
+    staticClass: "close",
+    on: {
+      "click": function($event) {
+        _vm.close();
+      }
+    }
+  }, [_c('i', {
+    staticClass: "mdi mdi-close"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "card-description"
+  }, [_vm._t("default")], 2)])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-c402627a", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

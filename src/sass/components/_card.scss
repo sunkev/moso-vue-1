@@ -95,3 +95,148 @@
     }
   }
 }
+
+
+// CARD REVEAL
+.card {
+  &.card-reveal {
+    margin-bottom: 2rem;
+
+    .card-image {
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border: 0;
+        vertical-align: middle;
+      }
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+      }
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      padding: 1rem;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+
+      .card-title {
+        margin: 0;
+        font-size: 1.1875rem;
+        font-weight: 400;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        @media (min-width: 1600px) {
+          font-size: 1.5rem;
+        }
+      }
+
+      .card-button {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -20px;
+
+        .button {
+          position: relative;
+          font-size: .6875rem;
+
+          @media (max-width: 767px) {
+            top: 47%;
+            right: 14px;
+          }
+
+          @media (min-width: 1600px) {
+            font-size: .8125rem;
+          }
+        }
+      }
+
+      .card-url {
+        margin: -7px 0 0;
+
+        a {
+          font-size: .8125rem;
+          font-weight: 400;
+          color: rgba(0,0,0,.54);
+          text-decoration: none;
+          transition: color .2s ease-in-out;
+
+          &:hover,
+          &:focus {
+            color: $rgba-black;
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .card-reveal {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      height: 100%;
+      padding: .625rem 1.25rem 1.25rem;
+      background-color: #fff;
+      overflow-y: auto;
+      transition: .2s ease-in-out;
+
+      &.revealed {
+        transform: translateY(-100%);
+      }
+
+      .card-title {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+
+      .close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        left: auto;
+
+        i.mdi {
+          font-size: 1.25rem;
+          color: rgba(0,0,0,.25);
+          transition: color .2s ease-in-out;
+
+          &:hover,
+          &:focus {
+            color: rgba(0,0,0,.54);
+            cursor: pointer;
+          }
+        }
+      }
+
+      .card-description {
+        font-size: .875rem;
+        color: rgba(0,0,0,.54);
+        margin: 9px 0 0;
+
+        a {
+          font-size: .875rem;
+          font-weight: 500;
+          color: $rgba-black;
+          text-decoration: none;
+          transition: .2s ease-in-out;
+
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
