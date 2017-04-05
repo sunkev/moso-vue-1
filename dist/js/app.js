@@ -15008,13 +15008,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         open: function open() {
             this.$el.classList.add('revealed');
             this.cardReveal = true;
-            //this.$el.focus();
             this.$emit('open');
         },
         close: function close() {
             this.$el.classList.remove('revealed');
             this.cardReveal = false;
-            //this.$el.blur();
             this.$emit('close');
         },
         toggle: function toggle() {
@@ -15025,27 +15023,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }
         }
     },
-
-    // toggleCard: function() {
-    //     var target = this.$.reveal;
-    //     target.style.display = 'block';
-    //     target.style.top = target.offsetHeight + 'px';
-
-    //     setTimeout(function() {
-    //         target.style.top = '0';
-    //     }, 10);
-
-    //     target.querySelector('.close').addEventListener('click', function() {
-    //         target.style.top = target.offsetHeight + 'px';
-    //         setTimeout(function() {
-    //             target.style.display = 'none';
-    //         }, 200);
-    //     });
-    // },
-
-    // _htmlChanged: function() {
-    //     this.$$('.card-description').innerHTML = this.cardDescription;
-    // }
 
     mounted: function mounted() {
         //
