@@ -150,16 +150,7 @@
 
         .button {
           position: relative;
-          font-size: .6875rem;
-
-          @media (max-width: 767px) {
-            //top: 47%;
-            //right: 14px;
-          }
-
-          @media (min-width: 1600px) {
-            font-size: 1rem;
-          }
+          font-size: .8125rem;
         }
       }
 
