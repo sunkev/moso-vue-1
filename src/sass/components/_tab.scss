@@ -143,6 +143,10 @@
   p {
     font-size: .875rem;
     color: rgba(0,0,0,.65);
+
+    @media (min-width: 1600px) {
+      font-size: 1rem;
+    }
   }
 
   .column {
@@ -157,6 +161,10 @@
       font-size: .875rem;
       color: rgba(0,0,0,.65);
       vertical-align: middle;
+
+      @media (min-width: 1600px) {
+        font-size: 1rem;
+      }
 
       &--left {
         flex: 2;
