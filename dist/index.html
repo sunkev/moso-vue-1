@@ -26,7 +26,7 @@
         <div class="row">
           <moso-sidenav ref="sidenav">
             <div class="logo">
-              <a href="/">
+              <a href="/" @click="toggleSidenav">
                 <img src="/images/logo.svg" alt="">
               </a>
             </div>
@@ -37,17 +37,23 @@
             <moso-drawer-list ref="drawerList">
               <li>
                 <router-link to="/profile" :class="{'router-link-active': $route.fullPath ==='/' || $route.fullPath === '/profile'}">
-                  <i class="mdi mdi-account"></i> Profile
+                  <span @click="toggleSidenav">
+                    <i class="mdi mdi-account"></i> Profile
+                  </span>
                 </router-link>
               </li>
               <li>
                 <router-link to="/resume">
-                  <i class="mdi mdi-file-document"></i> Resume
+                  <span @click="toggleSidenav">
+                    <i class="mdi mdi-file-document"></i> Resume
+                  </span>
                 </router-link>
               </li>
               <li>
                 <router-link to="/portfolio">
-                  <i class="mdi mdi-image-filter-hdr"></i> Portfolio
+                  <span @click="toggleSidenav">
+                    <i class="mdi mdi-image-filter-hdr"></i> Portfolio
+                  </span>
                 </router-link>
               </li>
             </moso-drawer-list>

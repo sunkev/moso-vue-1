@@ -59,8 +59,8 @@ const app = new Vue({
             this.$refs.sidenav.toggle();
         },
 
-        toggleCardReveal() {
-            this.$refs.cardReveal.toggle();
+        closeSidenav() {
+            this.$refs.sidenav.close();
         }
     }
 }).$mount('#app')
