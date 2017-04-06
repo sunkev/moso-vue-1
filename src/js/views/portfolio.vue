@@ -39,14 +39,14 @@
             </div>
             <div class="sm-12 md-6 lg-6 xl-3">
                 <moso-card-reveal image="/images/assets/portfolio/eyespot.jpg" card-title="Eyespot" link="https://eyespot.io">
-                    ><p>Eyespot is a custom built platform for suppliers to market their product to as many as possible. A customer single products, or packages of, eg, a website, hosting, SEO, and marketing from different suppliers - all in one place.</p>
+                    <p>Eyespot is a custom built platform for suppliers to market their product to as many as possible. A customer single products, or packages of, eg, a website, hosting, SEO, and marketing from different suppliers - all in one place.</p>
                     <p>Built with <a href="https://laravel.com">Laravel</a>, and a heavily modified <a href="http://getbootstrap.com">Bootstrap</a>.</p>
                 </moso-card-reveal>
             </div>
             <div class="sm-12 md-6 lg-6 xl-3">
                 <moso-card-reveal image="/images/assets/portfolio/3up.jpg" card-title="3up CDN" link="https://cdn.3up.dk">
-                    <p>3up CDN is a <a href="http://www.symkat.com/cookieless-domains">cookieless</a> <a href="https://en.wikipedia.org/wiki/Content_delivery_network">content delivery network</a> that handles static content. However, 3up only caches URL's from <a href="https://npmjs.org">NPM</a>, and then instructs the browser to cache the content for 4 hours. We support tags and versions, like &quot;<em>3.0.0</em>&quot; or &quot;<em>latest</em>&quot;, as well as queries like json-ified lists</p>
-                    <p>3up is based on <a href="https://unpkg.com">unpkg</a>'s <a href="http://expressjs.com/">expressjs</a>-server technology with some modifications, and the front-end is built with <a href="https://vuejs.org">Vue.js</a>-components.</p>
+                    <p>3up CDN is a <a href="http://www.symkat.com/cookieless-domains">cookieless</a> <a href="https://en.wikipedia.org/wiki/Content_delivery_network">content delivery network</a> that handles static content. However, 3up only caches URL's from <a href="https://npmjs.org">NPM</a>, and then instructs the browser to cache the content. We support tags and versions, like &quot;<em>3.0.0</em>&quot; or &quot;<em>latest</em>&quot;, as well as json-ified lists</p>
+                    <p>3up is based on <a href="https://unpkg.com">unpkg</a>'s <a href="http://expressjs.com/">expressjs</a>-server with modifications, and the front-end is built with <a href="https://v4-alpha.getbootstrap.com/">Bootstrap 4</a> and <a href="https://vuejs.org">Vue.js</a>.</p>
                 </moso-card-reveal>
             </div>
         </div>

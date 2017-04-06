@@ -2761,7 +2761,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "image": "/images/profile.jpg",
       "name": "Morten Sørensen",
-      "position": "Front-End Developer at Indexed"
+      "position": "Lead Front-End Developer at Indexed"
     }
   }, [_c('profile-item', {
     attrs: {
@@ -2810,12 +2810,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _vm._v(" "), _c('moso-progressbar', {
     attrs: {
       "name": "PHP",
-      "percentage": "60"
+      "percentage": "70"
     }
   }), _vm._v(" "), _c('moso-progressbar', {
     attrs: {
       "name": "CMS (WordPress)",
-      "percentage": "75"
+      "percentage": "80"
     }
   }), _vm._v(" "), _c('moso-progressbar', {
     attrs: {
@@ -3482,7 +3482,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "card-title": "Eyespot",
       "link": "https://eyespot.io"
     }
-  }, [_vm._v("\n                >"), _c('p', [_vm._v("Eyespot is a custom built platform for suppliers to market their product to as many as possible. A customer single products, or packages of, eg, a website, hosting, SEO, and marketing from different suppliers - all in one place.")]), _vm._v(" "), _c('p', [_vm._v("Built with "), _c('a', {
+  }, [_c('p', [_vm._v("Eyespot is a custom built platform for suppliers to market their product to as many as possible. A customer single products, or packages of, eg, a website, hosting, SEO, and marketing from different suppliers - all in one place.")]), _vm._v(" "), _c('p', [_vm._v("Built with "), _c('a', {
     attrs: {
       "href": "https://laravel.com"
     }
@@ -3510,7 +3510,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "href": "https://npmjs.org"
     }
-  }, [_vm._v("NPM")]), _vm._v(", and then instructs the browser to cache the content for 4 hours. We support tags and versions, like \""), _c('em', [_vm._v("3.0.0")]), _vm._v("\" or \""), _c('em', [_vm._v("latest")]), _vm._v("\", as well as queries like json-ified lists")]), _vm._v(" "), _c('p', [_vm._v("3up is based on "), _c('a', {
+  }, [_vm._v("NPM")]), _vm._v(", and then instructs the browser to cache the content. We support tags and versions, like \""), _c('em', [_vm._v("3.0.0")]), _vm._v("\" or \""), _c('em', [_vm._v("latest")]), _vm._v("\", as well as json-ified lists")]), _vm._v(" "), _c('p', [_vm._v("3up is based on "), _c('a', {
     attrs: {
       "href": "https://unpkg.com"
     }
@@ -3518,11 +3518,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "href": "http://expressjs.com/"
     }
-  }, [_vm._v("expressjs")]), _vm._v("-server technology with some modifications, and the front-end is built with "), _c('a', {
+  }, [_vm._v("expressjs")]), _vm._v("-server with modifications, and the front-end is built with "), _c('a', {
+    attrs: {
+      "href": "https://v4-alpha.getbootstrap.com/"
+    }
+  }, [_vm._v("Bootstrap 4")]), _vm._v(" and "), _c('a', {
     attrs: {
       "href": "https://vuejs.org"
     }
-  }, [_vm._v("Vue.js")]), _vm._v("-components.")])])], 1)])])
+  }, [_vm._v("Vue.js")]), _vm._v(".")])])], 1)])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {

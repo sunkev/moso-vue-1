@@ -100,7 +100,11 @@
 // CARD REVEAL
 .card {
   &.card-reveal {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+
+    @media (min-width: 992px) {
+      margin-bottom: 2rem;
+    }
 
     .card-image {
       img {
@@ -142,15 +146,15 @@
       .card-button {
         display: flex;
         justify-content: flex-end;
-        margin-top: -20px;
+        margin-top: -.75rem;
 
         .button {
           position: relative;
           font-size: .6875rem;
 
           @media (max-width: 767px) {
-            top: 47%;
-            right: 14px;
+            //top: 47%;
+            //right: 14px;
           }
 
           @media (min-width: 1600px) {
@@ -160,7 +164,7 @@
       }
 
       .card-url {
-        margin: -7px 0 0;
+        margin: 0;
 
         a {
           font-size: .8125rem;
@@ -227,7 +231,7 @@
         a {
           font-size: .875rem;
           font-weight: 500;
-          color: $rgba-black;
+          //color: $rgba-black;
           text-decoration: none;
           transition: .2s ease-in-out;
 

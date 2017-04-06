@@ -4,7 +4,7 @@
             <div class="lg-5 xl-4 profile-widgets">
                 <div class="widget">
                     <div class="widget__body">
-                        <moso-profile image="/images/profile.jpg" name="Morten Sørensen" position="Front-End Developer at Indexed">
+                        <moso-profile image="/images/profile.jpg" name="Morten Sørensen" position="Lead Front-End Developer at Indexed">
                             <profile-item link="https://github.com/moso" link-class="github" icon="mdi-github-circle"></profile-item>
                             <profile-item link="https://codepen.io/moso" link-class="codepen" icon="mdi-codepen"></profile-item>
                             <profile-item link="https://facebook.com/moso.profil" link-class="facebook" icon="mdi-facebook"></profile-item>
@@ -21,8 +21,8 @@
                     <div class="widget__body">
                         <moso-progressbar name="HTML5/CSS3/Sass" percentage="100"></moso-progressbar>
                         <moso-progressbar name="JS (jQuery/Vue)" percentage="75"></moso-progressbar>
-                        <moso-progressbar name="PHP" percentage="60"></moso-progressbar>
-                        <moso-progressbar name="CMS (WordPress)" percentage="75"></moso-progressbar>
+                        <moso-progressbar name="PHP" percentage="70"></moso-progressbar>
+                        <moso-progressbar name="CMS (WordPress)" percentage="80"></moso-progressbar>
                         <moso-progressbar name="Graphics (Photoshop/Illustrator)" percentage="90"></moso-progressbar>
 
                         <a href="#!" class="button button-primary button--raised">

@@ -24,6 +24,7 @@
         &:hover:active {
           color: lighten($sidenav-link-color, 10%);
           outline: none;
+          text-decoration: none;
         }
 
         i.mdi {
