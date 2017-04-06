@@ -37,21 +37,21 @@
             <moso-drawer-list ref="drawerList">
               <li>
                 <router-link to="/profile" :class="{'router-link-active': $route.fullPath ==='/' || $route.fullPath === '/profile'}">
-                  <span @click="toggleSidenav">
+                  <span @click="closeSidenav">
                     <i class="mdi mdi-account"></i> Profile
                   </span>
                 </router-link>
               </li>
               <li>
                 <router-link to="/resume">
-                  <span @click="toggleSidenav">
+                  <span @click="closeSidenav">
                     <i class="mdi mdi-file-document"></i> Resume
                   </span>
                 </router-link>
               </li>
               <li>
                 <router-link to="/portfolio">
-                  <span @click="toggleSidenav">
+                  <span @click="closeSidenav">
                     <i class="mdi mdi-image-filter-hdr"></i> Portfolio
                   </span>
                 </router-link>

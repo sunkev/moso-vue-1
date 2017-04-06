@@ -1380,6 +1380,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {}
@@ -3370,67 +3378,151 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "sm-12 md-6 lg-6 xl-3"
   }, [_c('moso-card-reveal', {
     attrs: {
-      "image": "https://moso.io/images/assets/reveal/vkons.jpg",
-      "card-title": "Title",
-      "link": "https://link"
+      "image": "/images/assets/portfolio/boligadmin.jpg",
+      "card-title": "Boligadmin",
+      "link": "https://boligadmin.com"
     }
-  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quam, molestias magnam cumque placeat nisi nam necessitatibus vitae minima, quaerat, autem quas alias esse! Molestiae aperiam ab aliquid necessitatibus, eius.")])])], 1), _vm._v(" "), _c('div', {
+  }, [_c('p', [_vm._v("Administration, including a landingpage built with "), _c('a', {
+    attrs: {
+      "href": "http://getbootstrap.com"
+    }
+  }, [_vm._v("Bootstrap")]), _vm._v(", and an app that handles, eg, landlord/tenant contracts, as well as a large administration part for landlords and associations.")]), _vm._v(" "), _c('p', [_vm._v("The administration part is built with "), _c('a', {
+    attrs: {
+      "href": "https://www.w3schools.com/css/css3_flexbox.asp"
+    }
+  }, [_vm._v("Flexbox")]), _vm._v(" and "), _c('a', {
+    attrs: {
+      "href": "https://material.google.com"
+    }
+  }, [_vm._v("Material Design")]), _vm._v(".")])])], 1), _vm._v(" "), _c('div', {
     staticClass: "sm-12 md-6 lg-6 xl-3"
   }, [_c('moso-card-reveal', {
     attrs: {
-      "image": "https://moso.io/images/assets/reveal/vkons.jpg",
-      "card-title": "Title",
-      "link": "https://link"
+      "image": "/images/assets/portfolio/vkons.jpg",
+      "card-title": "Vestergaard Konstruktion",
+      "link": "http://vkons.dk"
     }
-  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis rem suscipit officia. Nam similique, dolores sint, incidunt soluta earum iste consequatur. Perspiciatis accusamus nihil voluptates harum libero perferendis magnam, vitae!")])])], 1), _vm._v(" "), _c('div', {
+  }, [_c('p', [_vm._v("Website built for a construction company, showing, eg, individual house-types, aswell as inspiration sections.")]), _vm._v(" "), _c('p', [_vm._v("Built with "), _c('a', {
+    attrs: {
+      "href": "https://laravel.com"
+    }
+  }, [_vm._v("Laravel")]), _vm._v(" and "), _c('a', {
+    attrs: {
+      "href": "http://getbootstrap.com"
+    }
+  }, [_vm._v("Bootstrap")]), _vm._v(", and special-designed elements.")])])], 1), _vm._v(" "), _c('div', {
     staticClass: "sm-12 md-6 lg-6 xl-3"
   }, [_c('moso-card-reveal', {
     attrs: {
-      "image": "https://moso.io/images/assets/reveal/vkons.jpg",
-      "card-title": "Title",
-      "link": "https://link"
+      "image": "/images/assets/portfolio/boligstart.jpg",
+      "card-title": "Boligstart",
+      "link": "http://boligstart.dk"
     }
-  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto consequuntur quaerat fugiat, accusantium qui, officiis debitis mollitia ipsam blanditiis, quae sed amet nemo impedit. Placeat commodi in, repellat rem id.")])])], 1), _vm._v(" "), _c('div', {
+  }, [_c('p', [_vm._v("Resident portal with user registration, house- and news view, and specially designed partner-pages. A unique backend administration was designed that makes it easy to handle statistics on everything from buildings and tenants, to banners and other different areas.")]), _vm._v(" "), _c('p', [_vm._v("Built with "), _c('a', {
+    attrs: {
+      "href": "https://laravel.com"
+    }
+  }, [_vm._v("Laravel")]), _vm._v(" and "), _c('a', {
+    attrs: {
+      "href": "http://getbootstrap.com"
+    }
+  }, [_vm._v("Bootstrap")]), _vm._v(".")])])], 1), _vm._v(" "), _c('div', {
     staticClass: "sm-12 md-6 lg-6 xl-3"
   }, [_c('moso-card-reveal', {
     attrs: {
-      "image": "https://moso.io/images/assets/reveal/vkons.jpg",
-      "card-title": "Title",
-      "link": "https://link"
+      "image": "/images/assets/portfolio/facet.jpg",
+      "card-title": "Facet Herning",
+      "link": "http://facet-herning.dk"
     }
-  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae minima quaerat, officiis commodi voluptate repellendus vero laboriosam rem ratione ut! Libero beatae minima quaerat, eveniet, quia illo. Qui culpa, magnam.")])])], 1), _vm._v(" "), _c('div', {
+  }, [_c('p', [_vm._v("Jewelry store website built with "), _c('a', {
+    attrs: {
+      "href": "https://laravel.com"
+    }
+  }, [_vm._v("Laravel")]), _vm._v(" and "), _c('a', {
+    attrs: {
+      "href": "http://getbootstrap.com"
+    }
+  }, [_vm._v("Bootstrap")]), _vm._v(".")]), _vm._v(" "), _c('p', [_vm._v("Every part of the site is a section that is inserted in the CMS, and can be pulled out and plugged into another Laravel site.")])])], 1), _vm._v(" "), _c('div', {
     staticClass: "sm-12 md-6 lg-6 xl-3"
   }, [_c('moso-card-reveal', {
     attrs: {
-      "image": "https://moso.io/images/assets/reveal/vkons.jpg",
-      "card-title": "Title",
-      "link": "https://link"
+      "image": "/images/assets/portfolio/scratcher.jpg",
+      "card-title": "Scratcher",
+      "link": "https://scratcher.dk"
     }
-  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla molestias, beatae numquam excepturi magni dolorum, ex exercitationem consequuntur veniam ut ipsam id quod explicabo minima quo tempore commodi placeat voluptates.")])])], 1), _vm._v(" "), _c('div', {
+  }, [_c('p', [_vm._v("Landingpage for a company that works with selling online scratching card campaigns for businesses as marketing.")]), _vm._v(" "), _c('p', [_vm._v("Built with "), _c('a', {
+    attrs: {
+      "href": "https://laravel.com"
+    }
+  }, [_vm._v("Laravel")]), _vm._v(" sections, "), _c('a', {
+    attrs: {
+      "href": "http://getbootstrap.com"
+    }
+  }, [_vm._v("Bootstrap")]), _vm._v(", and specially designed Flexbox elements.")])])], 1), _vm._v(" "), _c('div', {
     staticClass: "sm-12 md-6 lg-6 xl-3"
   }, [_c('moso-card-reveal', {
     attrs: {
-      "image": "https://moso.io/images/assets/reveal/vkons.jpg",
-      "card-title": "Title",
-      "link": "https://link"
+      "image": "/images/assets/portfolio/viborggulvforum.jpg",
+      "card-title": "Viborg Gulvforum",
+      "link": "http://viborggulvforum.dk"
     }
-  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum beatae quam, adipisci consequuntur impedit omnis, natus, eaque porro debitis cupiditate maiores. Ipsam blanditiis, rem eum voluptatem id a dignissimos.")])])], 1), _vm._v(" "), _c('div', {
+  }, [_c('p', [_vm._v("Website for a flooring company, displaying their product catalog, and product view.")]), _vm._v(" "), _c('p', [_vm._v("Built with "), _c('a', {
+    attrs: {
+      "href": "https://laravel.com"
+    }
+  }, [_vm._v("Laravel")]), _vm._v(", "), _c('a', {
+    attrs: {
+      "href": "http://getbootstrap.com"
+    }
+  }, [_vm._v("Bootstrap")]), _vm._v(", and a few specially designed elements.")])])], 1), _vm._v(" "), _c('div', {
     staticClass: "sm-12 md-6 lg-6 xl-3"
   }, [_c('moso-card-reveal', {
     attrs: {
-      "image": "https://moso.io/images/assets/reveal/vkons.jpg",
-      "card-title": "Title",
-      "link": "https://link"
+      "image": "/images/assets/portfolio/eyespot.jpg",
+      "card-title": "Eyespot",
+      "link": "https://eyespot.io"
     }
-  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus voluptatum reprehenderit sed quidem sit quod ullam, laudantium sunt, omnis dolores nisi, quisquam vel nulla. Earum nam eveniet reprehenderit consequatur accusamus.")])])], 1), _vm._v(" "), _c('div', {
+  }, [_vm._v("\n                >"), _c('p', [_vm._v("Eyespot is a custom built platform for suppliers to market their product to as many as possible. A customer single products, or packages of, eg, a website, hosting, SEO, and marketing from different suppliers - all in one place.")]), _vm._v(" "), _c('p', [_vm._v("Built with "), _c('a', {
+    attrs: {
+      "href": "https://laravel.com"
+    }
+  }, [_vm._v("Laravel")]), _vm._v(", and a heavily modified "), _c('a', {
+    attrs: {
+      "href": "http://getbootstrap.com"
+    }
+  }, [_vm._v("Bootstrap")]), _vm._v(".")])])], 1), _vm._v(" "), _c('div', {
     staticClass: "sm-12 md-6 lg-6 xl-3"
   }, [_c('moso-card-reveal', {
     attrs: {
-      "image": "https://moso.io/images/assets/reveal/vkons.jpg",
-      "card-title": "Title",
-      "link": "https://link"
+      "image": "/images/assets/portfolio/3up.jpg",
+      "card-title": "3up CDN",
+      "link": "https://cdn.3up.dk"
     }
-  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse suscipit vero neque nihil doloremque maxime voluptas alias aspernatur eum quas quibusdam earum velit blanditiis minus fuga voluptate accusantium ut, perferendis!")])])], 1)])])
+  }, [_c('p', [_vm._v("3up CDN is a "), _c('a', {
+    attrs: {
+      "href": "http://www.symkat.com/cookieless-domains"
+    }
+  }, [_vm._v("cookieless")]), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": "https://en.wikipedia.org/wiki/Content_delivery_network"
+    }
+  }, [_vm._v("content delivery network")]), _vm._v(" that handles static content. However, 3up only caches URL's from "), _c('a', {
+    attrs: {
+      "href": "https://npmjs.org"
+    }
+  }, [_vm._v("NPM")]), _vm._v(", and then instructs the browser to cache the content for 4 hours. We support tags and versions, like \""), _c('em', [_vm._v("3.0.0")]), _vm._v("\" or \""), _c('em', [_vm._v("latest")]), _vm._v("\", as well as queries like json-ified lists")]), _vm._v(" "), _c('p', [_vm._v("3up is based on "), _c('a', {
+    attrs: {
+      "href": "https://unpkg.com"
+    }
+  }, [_vm._v("unpkg")]), _vm._v("'s "), _c('a', {
+    attrs: {
+      "href": "http://expressjs.com/"
+    }
+  }, [_vm._v("expressjs")]), _vm._v("-server technology with some modifications, and the front-end is built with "), _c('a', {
+    attrs: {
+      "href": "https://vuejs.org"
+    }
+  }, [_vm._v("Vue.js")]), _vm._v("-components.")])])], 1)])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
