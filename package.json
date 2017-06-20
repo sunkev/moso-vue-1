@@ -11,19 +11,19 @@
     "url": "https://github.com/moso/moso-vue/issues"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
-    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
-    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
-    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "keywords": [],
   "author": "moso <morten@moso.io>",
   "license": "MIT",
   "devDependencies": {
-    "flexgrid.co": "^2.1.1",
-    "laravel-mix": "^0.8.8",
-    "mdi": "^1.8.36",
-    "vue": "^2.2.4",
-    "vue-router": "^2.3.0"
+    "flexgrid.co": "^2.2.1",
+    "laravel-mix": "^1.0.3",
+    "mdi": "^1.9.33",
+    "vue": "^2.3.4",
+    "vue-router": "^2.6.0"
   }
 }

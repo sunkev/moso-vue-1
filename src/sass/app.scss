@@ -1,10 +1,16 @@
+/*!
+ * Base CSS for the moso.io vue app
+ * Copyright 2016-2017 Morten Sørensen (morten@moso.io)
+ * Licensed under MIT (https://github.com/moso/moso-vue/blob/master/LICENSE)
+ */
+
 // ROBOTO & MATERIAL ICON FONTS IMPORT
-@import url(https://cdn.cloudcache.dk/fonts/roboto-draft/css/roboto-draft.css);
-@import 'node_modules/mdi/scss/materialdesignicons';
+@import 'components/roboto-draft';
+@import 'components/mdi';
 
 
 // FLEXGRID
-@import 'node_modules/flexgrid.co/scss/flexgrid';
+@import 'node_modules/flexgrid.co/src/flexgrid';
 
 
 // VARIABLES, BASE, AND LAYOUT SPECIFIC STYLES
