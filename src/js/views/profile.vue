@@ -25,7 +25,7 @@
                         <moso-progressbar name="CMS (WordPress)" percentage="80"></moso-progressbar>
                         <moso-progressbar name="Graphics (Photoshop/Illustrator)" percentage="90"></moso-progressbar>
 
-                        <a href="#!" class="button button-primary button--raised">
+                        <a href="/files/morten-sorensen-cv-2017.pdf" target="_blank" class="button button-primary button--raised">
                             <i class="mdi mdi-file-document"></i> Download CV (da)
                             <nano-ripple></nano-ripple>
                         </a>
@@ -81,7 +81,7 @@
                                 </div>
                                 <div class="column">
                                     <div class="column-item column-item--left">Phone:</div>
-                                    <div class="column-item column-item--right">(+45) 28 91 49 39</div>
+                                    <div class="column-item column-item--right">&nbsp;</div>
                                 </div>
                                 <div class="column">
                                     <div class="column-item column-item--left">Social:</div>
