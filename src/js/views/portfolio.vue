@@ -38,9 +38,9 @@
                 </moso-card-reveal>
             </div>
             <div class="sm-12 md-6 lg-6 xl-3">
-                <moso-card-reveal image="/images/assets/portfolio/eyespot.jpg" card-title="Eyespot" link="https://eyespot.io">
-                    <p>Eyespot is a custom built platform for suppliers to market their product to as many as possible. A customer single products, or packages of, eg, a website, hosting, SEO, and marketing from different suppliers - all in one place.</p>
-                    <p>Built with <a href="https://laravel.com">Laravel</a>, and a heavily modified <a href="http://getbootstrap.com">Bootstrap</a>.</p>
+                <moso-card-reveal image="/images/assets/portfolio/rush.jpg" card-title="Rush Danmark" link="https://rushdanmark.dk">
+                    <p>WordPress theme for the Danish branch of the popular trampoline park. Built completely from scratch, as the customer wanted something unique.</p>
+                    <p>Built with <a href="http://getbootstrap.com">Bootstrap</a> for responsiveness, a few Flexbox elements, and the sourcecode is bundled with <a href="https://webpackjs.org">webpack</a>.</p>
                 </moso-card-reveal>
             </div>
             <div class="sm-12 md-6 lg-6 xl-3">
