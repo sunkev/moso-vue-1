@@ -1,7 +1,7 @@
 <template>
     <div class="profile">
         <div class="profile-image">
-            <img :src="image">
+            <img v-lazy-load="image">
         </div>
         <h4>{{ name }}</h4>
         <h6>{{ position }}</h6>

@@ -1,7 +1,7 @@
 <template>
     <div class="card card-reveal">
         <div class="card-image" @click="toggle();">
-            <img :src="image" alt="">
+            <img v-lazy-load="image" alt="">
             <nano-ripple></nano-ripple>
         </div>
         <div class="card-content">

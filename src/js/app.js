@@ -1,5 +1,6 @@
 // VUE IMPORTS
 import Vue from 'vue';
+import LazyImg from 'v-lazy-img';
 import VueRouter from 'vue-router';
 
 
@@ -26,6 +27,10 @@ Vue.component('nano-tabs', require('./components/nano-tabs/nano-tabs.vue'));
 Vue.component('nano-tab', require('./components/nano-tabs/nano-tab.vue'));
 
 Vue.component('version-badge', require('./components/version-badge/version-badge.vue'));
+
+
+// V-LAZY-IMG
+Vue.use(LazyImg)
 
 
 // VUE-ROUTER
