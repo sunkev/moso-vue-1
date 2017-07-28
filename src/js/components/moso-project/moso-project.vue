@@ -1,7 +1,7 @@
 <template>
     <div class="project">
         <div class="project-icon">
-            <img v-lazy-load="image" alt="">
+            <img v-lazy-load="image" :alt="name">
         </div>
         <div class="project-content">
             <h3 class="project-title">{{ name }}</h3>

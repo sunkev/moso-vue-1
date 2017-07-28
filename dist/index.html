@@ -1,8 +1,8 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta property="og:description" content="Portfolio made with Vue.js">
     <meta property="og:image" content="https://moso.io/images/og_image.png">
     <meta property="og:image:secure_url" content="https://moso.io/images/og_image.png">
@@ -64,7 +64,7 @@
           <div class="app-layout">
             <div class="header">
               <moso-toolbar fixed>
-                <button class="nav-toggle" @click="toggleSidenav"><i class="mdi mdi-menu"></i></button>
+                <button class="nav-toggle" @click="toggleSidenav" aria-label="Toggle navigation"><i class="mdi mdi-menu"></i></button>
                 <div class="page-title"><h1>{{ this.$route.name }}</h1></div>
                 <version-badge version="v4.2-vue"></version-badge>
               </moso-toolbar>

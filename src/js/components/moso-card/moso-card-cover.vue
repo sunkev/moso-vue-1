@@ -2,7 +2,7 @@
     <div class="card">
         <div class="card-img-cover">
             <div class="card-img">
-                <img v-lazy-load="image">
+                <img v-lazy-load="image" :alt="cardTitle">
             </div>
         </div>
         <div class="card-img-cover-content">

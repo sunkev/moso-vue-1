@@ -1,14 +1,14 @@
 <template>
     <div class="card card-reveal">
         <div class="card-image" @click="toggle();">
-            <img v-lazy-load="image" alt="">
+            <img v-lazy-load="image" :alt="cardTitle">
             <nano-ripple></nano-ripple>
         </div>
         <div class="card-content">
             <h2 class="card-title" @click="toggle();">{{ cardTitle }}</h2>
-            <p class="card-url"><a :href="link">{{ link }}</a></p>
+            <p class="card-url"><a :href="link" :title="cardTitle">{{ link }}</a></p>
             <div class="card-button">
-                <button class="button button--raised button-primary" @click="toggle();">
+                <button class="button button--raised button-primary" @click="toggle();" aria-label="Read more">
                     Read more
                     <nano-ripple></nano-ripple>
                 </button>
