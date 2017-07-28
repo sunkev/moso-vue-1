@@ -1,6 +1,6 @@
 <template>
     <li>
-        <a :href="link" class="button icon-button" :class="linkClass" tabindex="-1" :title="title">
+        <a :href="link" class="button icon-button" :class="linkClass" tabindex="-1" :title="title" rel="noopener">
             <i class="mdi" :class="icon"></i>
             <nano-ripple></nano-ripple>
         </a>
