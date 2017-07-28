@@ -25,7 +25,7 @@
                         <moso-progressbar name="CMS (WordPress)" percentage="80"></moso-progressbar>
                         <moso-progressbar name="Graphics (Photoshop/Illustrator)" percentage="90"></moso-progressbar>
 
-                        <a href="/files/morten-sorensen-cv-2017.pdf" target="_blank" class="button button-primary button--raised" title="Download CV (da)">
+                        <a href="/files/morten-sorensen-cv-2017.pdf" class="button button-primary button--raised" title="Download CV (da)" rel="noopener">
                             <i class="mdi mdi-file-document"></i> Download CV (da)
                             <nano-ripple></nano-ripple>
                         </a>
