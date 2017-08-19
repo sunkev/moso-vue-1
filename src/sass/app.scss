@@ -8,13 +8,13 @@
 @import 'components/roboto-draft';
 
 
-// FLEXGRID
-@import 'node_modules/flexgrid.co/src/flexgrid';
-
-
 // VARIABLES, BASE, AND LAYOUT SPECIFIC STYLES
 @import 'components/variables';
 @import 'components/base';
+
+
+// FLEXGRID AND LAYOUT
+@import 'node_modules/flexgrid.co/src/flexgrid';
 @import 'components/layout';
 
 

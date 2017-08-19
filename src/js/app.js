@@ -36,10 +36,11 @@ Vue.use(LazyImg)
 // VUE-ROUTER
 Vue.use(VueRouter);
 
+// IMPORT FOR FIRST/MOST IMPORTANT COMPONENT, CONST FOR ASYNC LOADING
 import profile from './views/profile.vue';
-import resume from './views/resume.vue';
-import portfolio from './views/portfolio.vue';
-import notfound from './views/notfound.vue';
+const resume = require('./views/resume.vue');
+const portfolio = require('./views/portfolio.vue');
+const notfound = require('./views/notfound.vue');
 
 
 // ROUTES

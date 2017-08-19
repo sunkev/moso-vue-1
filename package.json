@@ -20,6 +20,8 @@
   "author": "moso <morten@moso.io>",
   "license": "MIT",
   "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
     "flexgrid.co": "^2.2.1",
     "laravel-mix": "^1.4.2",
     "mdi": "^2.0.46",

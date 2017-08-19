@@ -13,12 +13,21 @@ let mix = require('laravel-mix');
 
 mix.setPublicPath('dist');
 
-mix.options({
-    processCssUrls: false
-});
+mix;
 
 mix.js('src/js/app.js', 'js/')
-   .sass('src/sass/app.scss', 'css/');
+   .sass('src/sass/app.scss', 'css/')
+   .options({
+        processCssUrls: false
+    })
+   .extract(['vue'])
+   .browserSync({
+       proxy: false,
+       port: '3000',
+       server: {
+           baseDir: 'dist'
+       }
+   });
 
 // Full API
 // mix.js(src, output);
