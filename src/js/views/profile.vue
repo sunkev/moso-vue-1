@@ -4,6 +4,9 @@
             <div class="lg-5 xl-4 profile-widgets">
                 <div class="widget">
                     <div class="widget__body">
+                        <!--
+                        <moso-profile image="/images/profile.jpg" name="Morten Sørensen" position="Interface Consultant at Netcompany">
+                        -->
                         <moso-profile image="/images/profile.jpg" name="Morten Sørensen" position="Lead Front-End Developer at Indexed">
                             <profile-item link="https://github.com/moso" link-class="github" icon="mdi-github-circle" title="GitHub"></profile-item>
                             <profile-item link="https://codepen.io/moso" link-class="codepen" icon="mdi-codepen" title="CodePen"></profile-item>
@@ -58,7 +61,7 @@
                                 </div>
                                 <div class="column">
                                     <div class="column-item column-item--left">Position:</div>
-                                    <div class="column-item column-item--right">Front-End Developer</div>
+                                    <div class="column-item column-item--right"><!-- Interface Consultant -->Front-End Developer</div>
                                 </div>
                                 <div class="column">
                                     <div class="column-item column-item--left">Nationality:</div>
