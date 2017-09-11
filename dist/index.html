@@ -1,87 +1,100 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta property="og:description" content="Portfolio made with Vue.js">
-    <meta property="og:image" content="https://moso.io/images/og_image.png">
-    <meta property="og:image:secure_url" content="https://moso.io/images/og_image.png">
-    <meta property="og:image:width" content="700">
-    <meta property="og:image:height" content="500">
-    <meta property="og:title" content="Morten Sørensen | moso.io">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://moso.io">
-    <meta name="description" content="Portfolio made with Vue.js">
-    <meta name="author" content="Morten Sørensen">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Morten Sørensen | moso.io">
-    <meta name="theme-color" content="#263238">
-    <link rel="manifest" href="/manifest.json">
-    <title>Morten Sørensen | moso.io</title>
-    <link rel="stylesheet" href="/css/app.css">
-  </head>
-  <body>
-    <div id="app">
-      <div class="container-fluid">
-        <div class="row">
-          <moso-sidenav ref="sidenav">
-            <div class="logo">
-              <a href="/" @click="closeSidenav" title="Home" rel="noopener">
-                <img src="/images/logo.svg" alt="Logo">
-              </a>
-            </div>
-            <moso-profile-picture image="/images/profile.jpg">
-              <p slot="name">Morten Sørensen</p>
-              <p slot="position">Front-End Developer, Website Magician</p>
-            </moso-profile-picture>
-            <moso-drawer-list ref="drawerList">
-              <li>
-                <router-link to="/profile" :class="{'router-link-active': $route.fullPath ==='/' || $route.fullPath === '/profile'}">
-                  <span @click="closeSidenav">
-                    <i class="mdi mdi-account"></i> Profile
-                  </span>
-                </router-link>
-              </li>
-              <li>
-                <router-link to="/resume">
-                  <span @click="closeSidenav">
-                    <i class="mdi mdi-file-document"></i> Resume
-                  </span>
-                </router-link>
-              </li>
-              <li>
-                <router-link to="/portfolio">
-                  <span @click="closeSidenav">
-                    <i class="mdi mdi-image-filter-hdr"></i> Portfolio
-                  </span>
-                </router-link>
-              </li>
-            </moso-drawer-list>
-            <div class="made-with">
-              <p>Made with <i class="mdi mdi-heart"></i> and <a href="https://vuejs.org" title="Vue.js" rel="noopener"><img src="/images/vue-logo.svg" alt=""></a></p>
-            </div>
-          </moso-sidenav>
-          <div class="app-layout">
-            <div class="header">
-              <moso-toolbar fixed>
-                <button class="nav-toggle" @click="toggleSidenav" aria-label="Toggle navigation"><i class="mdi mdi-menu"></i></button>
-                <div class="page-title"><h1>{{ this.$route.name }}</h1></div>
-                <version-badge version="v4.2-vue"></version-badge>
-              </moso-toolbar>
-            </div>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta property="og:description" content="Portfolio made with Vue.js">
+        <meta property="og:image" content="https://moso.io/images/og_image.png">
+        <meta property="og:image:secure_url" content="https://moso.io/images/og_image.png">
+        <meta property="og:image:width" content="700">
+        <meta property="og:image:height" content="500">
+        <meta property="og:title" content="Morten Sørensen | moso.io">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://moso.io">
+        <meta name="description" content="Portfolio made with Vue.js">
+        <meta name="author" content="Morten Sørensen">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="Morten Sørensen | moso.io">
+        <meta name="theme-color" content="#263238">
+        <link rel="manifest" href="/manifest.json">
+        <title>Morten Sørensen | moso.io</title>
+        <link rel="stylesheet" href="/css/app.css">
+    </head>
+    <body>
+        <div id="app">
+            <div class="container-fluid">
+                <div class="row">
+                    <moso-sidenav ref="sidenav">
+                        <div class="logo">
+                            <a href="/" @click="closeSidenav" title="Home" rel="noopener">
+                                <img src="/images/logo.svg" alt="Logo">
+                            </a>
+                        </div>
+                        <moso-profile-picture image="/images/profile.jpg">
+                            <p slot="name">Morten Sørensen</p>
+                            <p slot="position">Front-End Developer, Website Magician</p>
+                        </moso-profile-picture>
+                        <moso-drawer-list ref="drawerList">
+                            <li>
+                                <router-link to="/profile" :class="{'router-link-active': $route.fullPath ==='/' || $route.fullPath === '/profile'}">
+                                    <span @click="closeSidenav">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+                                        </svg>
+                                        Profile
+                                    </span>
+                                </router-link>
+                            </li>
+                            <li>
+                                <router-link to="/resume">
+                                    <span @click="closeSidenav">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z" />
+                                        </svg>
+                                        Resume
+                                    </span>
+                                </router-link>
+                            </li>
+                            <li>
+                                <router-link to="/portfolio">
+                                    <span @click="closeSidenav">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M14,6L10.25,11L13.1,14.8L11.5,16C9.81,13.75 7,10 7,10L1,18H23L14,6Z" />
+                                        </svg>
+                                        Portfolio
+                                    </span>
+                                </router-link>
+                            </li>
+                        </moso-drawer-list>
+                        <div class="made-with">
+                            <p>Made with <img src="/images/heart.svg" alt=""> and <a href="https://vuejs.org" title="Vue.js" rel="noopener"><img src="/images/vue-logo.svg" alt=""></a></p>
+                        </div>
+                    </moso-sidenav>
+                    <div class="app-layout">
+                        <div class="header">
+                            <moso-toolbar fixed>
+                                <button class="nav-toggle" @click="toggleSidenav" aria-label="Toggle navigation">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                                    </svg>
+                                </button>
+                                <div class="page-title"><h1>{{ this.$route.name }}</h1></div>
+                                <version-badge version="v4.2-vue"></version-badge>
+                            </moso-toolbar>
+                        </div>
 
-            <main>
-              <router-view></router-view>
-            </main>
+                        <main>
+                            <router-view></router-view>
+                        </main>
 
-          </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <script src="/js/manifest.js"></script>
-    <script src="/js/vendor.js"></script>
-    <script src="/js/app.js"></script>
-  </body>
+        <script src="/js/manifest.js"></script>
+        <script src="/js/vendor.js"></script>
+        <script src="/js/app.js"></script>
+    </body>
 </html>

@@ -4,14 +4,19 @@
             <div class="lg-6">
                 <div class="widget">
                     <div class="widget__header">
-                        <h3 class="title"><i class="mdi mdi-briefcase"></i> Experience</h3>
+                        <h3 class="title">
+                            <svg viewBox="0 0 24 24">
+                                <path fill="#000000" fill-opacity="0.87" d="M14,6H10V4H14M20,6H16V4L14,2H10L8,4V6H4C2.89,6 2,6.89 2,8V19A2,2 0 0,0 4,21H20A2,2 0 0,0 22,19V8C22,6.89 21.1,6 20,6Z" />
+                            </svg>
+                            Experience
+                        </h3>
                     </div>
                     <div class="widget__body">
                         <moso-timeline>
-                            <!--<timeline-item entry="Interface Consultant" location="Netcompany A/S" time="Oct, 2017 -">
+                            <timeline-item entry="Interface Consultant" location="Netcompany A/S" time="Oct, 2017 -">
                                 <p>Development and consultancy on front-end- and UI design of larger, webbased projects for both the private- and public sector.</p>
-                            </timeline-item>-->
-                            <timeline-item entry="Lead Front-End Developer" location="Indexed" time="Apr, 2017 -">
+                            </timeline-item>
+                            <timeline-item entry="Lead Front-End Developer" location="Indexed" time="Apr, 2017 - Oct, 2017">
                                 <p>Development and design of responsive, mobile-friendly websites and webshops - mostly WordPress, with Bootstrap and Sass/CSS3 as front-end - now with much more responsibility and freedom of expression. Development of small plugins and custom things and bits for WordPress based on customer demands - all with version control (Git), of course. Conversion of design (typically a PSD) into real front-end. Serveradministration (Debian/Ubuntu).</p>
                             </timeline-item>
                             <timeline-item entry="Front-End Developer" location="Eyeforce ApS" time="Apr, 2015 - Mar, 2017">
@@ -27,7 +32,12 @@
             <div class="lg-6">
                 <div class="widget">
                     <div class="widget__header">
-                        <h3 class="title"><i class="mdi mdi-school"></i> Education</h3>
+                        <h3 class="title">
+                            <svg viewBox="0 0 24 24">
+                                <path fill="#000000" fill-opacity="0.87" d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" />
+                            </svg>
+                            Education
+                        </h3>
                     </div>
                     <div class="widget__body">
                         <moso-timeline>

@@ -19,6 +19,10 @@
 
             icon: {
                 type: String
+            },
+
+            svg: {
+                type: String
             }
         },
 

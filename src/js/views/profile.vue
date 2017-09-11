@@ -4,22 +4,19 @@
             <div class="lg-5 xl-4 profile-widgets">
                 <div class="widget">
                     <div class="widget__body">
-                        <!--
                         <moso-profile image="/images/profile.jpg" name="Morten Sørensen" position="Interface Consultant at Netcompany">
-                        -->
-                        <moso-profile image="/images/profile.jpg" name="Morten Sørensen" position="Lead Front-End Developer at Indexed">
-                            <profile-item link="https://github.com/moso" link-class="github" icon="mdi-github-circle" title="GitHub"></profile-item>
-                            <profile-item link="https://codepen.io/moso" link-class="codepen" icon="mdi-codepen" title="CodePen"></profile-item>
-                            <profile-item link="https://facebook.com/moso.profil" link-class="facebook" icon="mdi-facebook" title="Facebook"></profile-item>
-                            <profile-item link="https://twitter.com/mosodotio" link-class="twitter" icon="mdi-twitter" title="Twitter"></profile-item>
-                            <profile-item link="https://dk.linkedin.com/in/mosoio" link-class="linkedin" icon="mdi-linkedin" title="LinkedIn"></profile-item>
+                            <profile-item link="https://github.com/moso" link-class="github" svg="/images/github.svg" title="GitHub"></profile-item>
+                            <profile-item link="https://codepen.io/moso" link-class="codepen" svg="/images/codepen.svg" title="CodePen"></profile-item>
+                            <profile-item link="https://facebook.com/moso.profil" link-class="facebook" svg="/images/facebook.svg" title="Facebook"></profile-item>
+                            <profile-item link="https://twitter.com/mosodotio" link-class="twitter" svg="/images/twitter.svg" title="Twitter"></profile-item>
+                            <profile-item link="https://dk.linkedin.com/in/mosoio" link-class="linkedin" svg="/images/linkedin.svg" title="LinkedIn"></profile-item>
                         </moso-profile>
                     </div>
                 </div>
 
                 <div class="widget">
                     <div class="widget__header">
-                        <h3 class="title"><i class="mdi mdi-plus-one"></i> Skills</h3>
+                        <h3 class="title"><img src="/images/plus-one.svg" alt=""> Skills</h3>
                     </div>
                     <div class="widget__body">
                         <moso-progressbar name="HTML5/CSS3/Sass" percentage="100"></moso-progressbar>
@@ -29,7 +26,10 @@
                         <moso-progressbar name="Graphics (Photoshop/Illustrator)" percentage="90"></moso-progressbar>
 
                         <a href="/files/morten-sorensen-cv-2017.pdf" class="button button-primary button--raised" title="Download CV (da)" rel="noopener">
-                            <i class="mdi mdi-file-document"></i> Download CV (da)
+                            <svg viewBox="0 0 24 24">
+                                <path fill="#ffffff" d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z" />
+                            </svg>
+                            Download CV (da)
                             <nano-ripple></nano-ripple>
                         </a>
                     </div>
@@ -38,7 +38,7 @@
             <div class="lg-7 xl-8">
                 <div class="widget tabs-widget">
                     <nano-tabs transparent fixed>
-                        <nano-tab icon="mdi-account-circle" name="About">
+                        <nano-tab svg="<path d='M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z' />" name="About">
                             <div class="tab-content bio">
                                 <h4>Bio</h4>
                                 <p>With 15+ years of experience with making websites, I see myself as a veteran. I often tell people around me that I'm from the generation that designed websites for IE6 in XHTML Strict, which, for the unfamiliar, was utterly horrible. It's something we can all laugh about now but back then, it was the challenge that drove us.</p>
@@ -61,7 +61,7 @@
                                 </div>
                                 <div class="column">
                                     <div class="column-item column-item--left">Position:</div>
-                                    <div class="column-item column-item--right"><!-- Interface Consultant -->Front-End Developer</div>
+                                    <div class="column-item column-item--right">Interface Consultant</div>
                                 </div>
                                 <div class="column">
                                     <div class="column-item column-item--left">Nationality:</div>
@@ -92,31 +92,31 @@
                                         <ul class="list list--inline list--social">
                                             <li>
                                                 <a href="https://github.com/moso" class="button icon-button icon-button--small" title="GitHub" rel="noopener">
-                                                    <i class="mdi mdi-github-circle"></i>
+                                                    <img src="/images/github.svg" alt="">
                                                     <nano-ripple></nano-ripple>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="https://codepen.io/moso" class="button icon-button icon-button--small" title="CodePen" rel="noopener">
-                                                    <i class="mdi mdi-codepen"></i>
+                                                    <img src="/images/codepen.svg" alt="">
                                                     <nano-ripple></nano-ripple>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="https://facebook.com/moso.profil" class="button icon-button icon-button--small facebook" title="Facebook" rel="noopener">
-                                                    <i class="mdi mdi-facebook"></i>
+                                                    <img src="/images/facebook.svg" alt="">
                                                     <nano-ripple></nano-ripple>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="https://twitter.com/mosodotio" class="button icon-button icon-button--small twitter" title="Twitter" rel="noopener">
-                                                    <i class="mdi mdi-twitter"></i>
+                                                    <img src="/images/twitter.svg" alt="">
                                                     <nano-ripple></nano-ripple>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="https://dk.linkedin.com/in/mosoio" class="button icon-button icon-button--small linkedin" title="LinkedIn" rel="noopener">
-                                                    <i class="mdi mdi-linkedin"></i>
+                                                    <img src="/images/linkedin.svg" alt="">
                                                     <nano-ripple></nano-ripple>
                                                 </a>
                                             </li>
@@ -125,7 +125,7 @@
                                 </div>
                             </div>
                         </nano-tab>
-                        <nano-tab icon="mdi-file-tree" name="Projects">
+                        <nano-tab svg="<path d='M3,3H9V7H3V3M15,10H21V14H15V10M15,17H21V21H15V17M13,13H7V18H13V20H7L5,20V9H7V11H13V13Z' />" name="Projects">
                             <div class="tab-content projects">
                                 <div class="container-fluid">
                                     <div class="row">
@@ -163,7 +163,7 @@
                                 </div>
                             </div>
                         </nano-tab>
-                        <nano-tab icon="mdi-codepen" name="Demos" class="demo">
+                        <nano-tab svg="<path d='M19.45,13.29L17.5,12L19.45,10.71M12.77,18.78V15.17L16.13,12.93L18.83,14.74M12,13.83L9.26,12L12,10.17L14.74,12M11.23,18.78L5.17,14.74L7.87,12.93L11.23,15.17M4.55,10.71L6.5,12L4.55,13.29M11.23,5.22V8.83L7.87,11.07L5.17,9.26M12.77,5.22L18.83,9.26L16.13,11.07L12.77,8.83M21,9.16C21,9.15 21,9.13 21,9.12C21,9.1 21,9.08 20.97,9.06C20.97,9.05 20.97,9.03 20.96,9C20.96,9 20.95,9 20.94,8.96C20.94,8.95 20.93,8.94 20.92,8.93C20.92,8.91 20.91,8.89 20.9,8.88C20.89,8.86 20.88,8.85 20.88,8.84C20.87,8.82 20.85,8.81 20.84,8.79C20.83,8.78 20.83,8.77 20.82,8.76A0.04,0.04 0 0,0 20.78,8.72C20.77,8.71 20.76,8.7 20.75,8.69C20.73,8.67 20.72,8.66 20.7,8.65C20.69,8.64 20.68,8.63 20.67,8.62C20.66,8.62 20.66,8.62 20.66,8.61L12.43,3.13C12.17,2.96 11.83,2.96 11.57,3.13L3.34,8.61C3.34,8.62 3.34,8.62 3.33,8.62C3.32,8.63 3.31,8.64 3.3,8.65C3.28,8.66 3.27,8.67 3.25,8.69C3.24,8.7 3.23,8.71 3.22,8.72C3.21,8.73 3.2,8.74 3.18,8.76C3.17,8.77 3.17,8.78 3.16,8.79C3.15,8.81 3.13,8.82 3.12,8.84C3.12,8.85 3.11,8.86 3.1,8.88C3.09,8.89 3.08,8.91 3.08,8.93C3.07,8.94 3.06,8.95 3.06,8.96C3.05,9 3.05,9 3.04,9C3.03,9.03 3.03,9.05 3.03,9.06C3,9.08 3,9.1 3,9.12C3,9.13 3,9.15 3,9.16C3,9.19 3,9.22 3,9.26V14.74C3,14.78 3,14.81 3,14.84C3,14.85 3,14.87 3,14.88C3,14.9 3,14.92 3.03,14.94C3.03,14.95 3.03,14.97 3.04,15C3.05,15 3.05,15 3.06,15.04C3.06,15.05 3.07,15.06 3.08,15.07C3.08,15.09 3.09,15.11 3.1,15.12C3.11,15.14 3.12,15.15 3.12,15.16C3.13,15.18 3.15,15.19 3.16,15.21C3.17,15.22 3.17,15.23 3.18,15.24C3.2,15.25 3.21,15.27 3.22,15.28C3.23,15.29 3.24,15.3 3.25,15.31C3.27,15.33 3.28,15.34 3.3,15.35C3.31,15.36 3.32,15.37 3.33,15.38C3.34,15.38 3.34,15.38 3.34,15.39L11.57,20.87C11.7,20.96 11.85,21 12,21C12.15,21 12.3,20.96 12.43,20.87L20.66,15.39C20.66,15.38 20.66,15.38 20.67,15.38C20.68,15.37 20.69,15.36 20.7,15.35C20.72,15.34 20.73,15.33 20.75,15.31C20.76,15.3 20.77,15.29 20.78,15.28C20.79,15.27 20.8,15.25 20.82,15.24C20.83,15.23 20.83,15.22 20.84,15.21C20.85,15.19 20.87,15.18 20.88,15.16C20.88,15.15 20.89,15.14 20.9,15.12C20.91,15.11 20.92,15.09 20.92,15.07C20.93,15.06 20.94,15.05 20.94,15.04C20.95,15 20.96,15 20.96,15C20.97,14.97 20.97,14.95 20.97,14.94C21,14.92 21,14.9 21,14.88C21,14.87 21,14.85 21,14.84C21,14.81 21,14.78 21,14.74V9.26C21,9.22 21,9.19 21,9.16Z' />" name="Demos" class="demo">
                             <div class="tab-content demo-content">
                                 <div class="row">
                                     <div class="md-6 xl-4">

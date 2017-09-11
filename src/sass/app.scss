@@ -1,10 +1,14 @@
 /*!
  * Base CSS for the moso.io vue app
- * Copyright 2016-2017 Morten Sørensen (morten@moso.io)
+ * Copyright 2016-present Morten Sørensen (morten@moso.io)
  * Licensed under MIT (https://github.com/moso/moso-vue/blob/master/LICENSE)
+ *
+ * TODO:
+ * - Add svg path fill styles/transitions
+ * - Compile for production
  */
 
-// ROBOTO & MATERIAL ICON FONTS IMPORT
+// ROBOTO DRAFT IMPORT
 @import 'components/roboto-draft';
 
 
@@ -36,7 +40,3 @@
 @import 'components/notfound';
 
 @import 'components/utilities';
-
-
-// MATERIAL DESIGN ICONS
-@import 'components/mdi';
