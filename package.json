@@ -24,7 +24,6 @@
     "browser-sync-webpack-plugin": "^1.2.0",
     "flexgrid.co": "^2.2.1",
     "laravel-mix": "^1.4.2",
-    "mdi": "^2.0.46",
     "v-lazy-img": "^0.1.0",
     "vue": "^2.4.2",
     "vue-router": "^2.7.0"
