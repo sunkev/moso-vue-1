@@ -1,6 +1,7 @@
 // VUE IMPORTS
 import Vue from 'vue';
 import LazyImg from 'v-lazy-img';
+import VueMasonryPlugin from 'vue-masonry';
 import VueRouter from 'vue-router';
 
 
@@ -19,8 +20,8 @@ Vue.component('timeline-item', require('./components/moso-timeline/moso-timeline
 Vue.component('moso-profile', require('./components/moso-profile/moso-profile.vue'));
 Vue.component('profile-item', require('./components/moso-profile/moso-profile-item.vue'));
 Vue.component('moso-progressbar', require('./components/moso-progressbar/moso-progressbar.vue'));
-Vue.component('moso-card-cover', require('./components/moso-card/moso-card-cover.vue'));
-Vue.component('moso-card-reveal', require('./components/moso-card/moso-card-reveal.vue'));
+//Vue.component('moso-card-cover', require('./components/moso-card/moso-card-cover.vue'));
+//Vue.component('moso-card-reveal', require('./components/moso-card/moso-card-reveal.vue'));
 
 Vue.component('nano-ripple', require('./components/nano-ripple/nano-ripple.vue'));
 Vue.component('nano-tabs', require('./components/nano-tabs/nano-tabs.vue'));
@@ -30,16 +31,19 @@ Vue.component('version-badge', require('./components/version-badge/version-badge
 
 
 // V-LAZY-IMG
-Vue.use(LazyImg)
+Vue.use(LazyImg);
 
+// VUE-MASONRY
+Vue.use(VueMasonryPlugin);
 
 // VUE-ROUTER
 Vue.use(VueRouter);
 
+
 // IMPORT FOR FIRST/MOST IMPORTANT COMPONENT, CONST FOR ASYNC LOADING
 import profile from './views/profile.vue';
 const resume = require('./views/resume.vue');
-const portfolio = require('./views/portfolio.vue');
+const projects = require('./views/projects.vue');
 const notfound = require('./views/notfound.vue');
 
 
@@ -48,7 +52,7 @@ const routes = [
     { path: '/', component: profile, name: 'Profile ' },
     { path: '/profile', component: profile, name: 'Profile' },
     { path: '/resume', component: resume, name: 'Resume' },
-    { path: '/portfolio', component: portfolio, name: 'Portfolio' },
+    { path: '/projects', component: projects, name: 'Projects' },
     { path: '/404', component: notfound, name: '404 - not found' },
     { path: '*', redirect: '404' }
 ]

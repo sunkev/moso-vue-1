@@ -62,3 +62,12 @@ main {
 .portfolio .md-6:last-of-type .card-reveal {
   margin-bottom: 0;
 }
+
+
+.row > .masonry-column {
+  margin-bottom: 2rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
