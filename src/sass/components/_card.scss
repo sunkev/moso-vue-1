@@ -1,240 +1,101 @@
 // CARDS
 %card {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: #fff;
-  border-radius: 2px;
-  font-size: 1rem;
-  font-weight: 400;
-  color: $rgba-black;
-  box-shadow: $box-shadow;
-  overflow: hidden;
-  z-index: 1;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-tap-highlight-color: rgba(255,255,255,0);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #fff;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $rgba-black;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
 }
 
 .card {
-  @extend %card;
+    @extend %card;
 
-  .card-img-cover {
-    position: relative;
-    color: #fff;
+    .card-img-cover {
+        position: relative;
+        color: #fff;
 
-    .card-img {
-      position: relative;
-      overflow: hidden;
+        .card-img {
+            position: relative;
+            overflow: hidden;
 
-      &:before {
-        display: block;
-        width: 100%;
-        padding-top: 100%;
-        content: '';
-      }
+            &:before {
+                display: block;
+                width: 100%;
+                padding-top: 100%;
+                content: '';
+            }
 
-      img {
+            img {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                transform: translateY(-50%)
+            }
+        }
+    }
+
+    .card-img-cover-content {
         position: absolute;
-        top: 50%;
         right: 0;
         left: 0;
-        width: 100%;
-        height: auto;
-        transform: translateY(-50%)
-      }
-    }
-  }
-
-  .card-img-cover-content {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,.7);
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    z-index: 2;
-    text-overflow: ellipsis;
-
-    .card-header {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 1rem;
-      color: #fff;
-
-      .card-title {
-        margin: 0;
-        font-size: 1.125rem;
-        font-weight: 400;
-        letter-spacing: 0;
-        line-height: 32px;
-        overflow: hidden;
+        bottom: 0;
+        background-color: rgba(0,0,0,.7);
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        z-index: 2;
         text-overflow: ellipsis;
-      }
 
-      .card-subtitle {
-        margin: 0;
-        font-size: .875rem;
-        font-weight: 400;
-        letter-spacing: .01em;
-        line-height: 20px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
+        .card-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1rem;
+            color: #fff;
 
-      a.card-subtitle {
-        $color: #fff;
+            .card-title {
+                margin: 0;
+                font-size: 1.125rem;
+                font-weight: 400;
+                letter-spacing: 0;
+                line-height: 32px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
 
-        color: $color;
-        text-decoration: none;
-        transition: color .2s ease-in-out;
+            .card-subtitle {
+                margin: 0;
+                font-size: .875rem;
+                font-weight: 400;
+                letter-spacing: .01em;
+                line-height: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
 
-        &:hover,
-        &:focus,
-        &:active {
-          color: darken($color, 15%);
+            a.card-subtitle {
+                $color: #fff;
+
+                color: $color;
+                text-decoration: none;
+                transition: color .2s ease-in-out;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    color: darken($color, 15%);
+                }
+            }
         }
-      }
     }
-  }
-}
-
-
-// CARD REVEAL
-.card {
-  &.card-reveal {
-    margin-bottom: 1rem;
-
-    @media (min-width: 992px) {
-      margin-bottom: 2rem;
-    }
-
-    .card-image {
-      img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        border: 0;
-        vertical-align: middle;
-      }
-
-      &:hover,
-      &:focus {
-        cursor: pointer;
-      }
-    }
-
-    .card-content {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      padding: 1rem;
-      background-color: #fff;
-      border-top: 1px solid #ddd;
-
-      .card-title {
-        margin: 0;
-        font-size: 1.1875rem;
-        font-weight: 400;
-
-        &:hover {
-          cursor: pointer;
-        }
-
-        @media (min-width: 1600px) {
-          font-size: 1.5rem;
-        }
-      }
-
-      .card-button {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: -.75rem;
-
-        .button {
-          position: relative;
-          font-size: .8125rem;
-        }
-      }
-
-      .card-url {
-        margin: 0;
-
-        a {
-          font-size: .8125rem;
-          font-weight: 400;
-          color: rgba(0,0,0,.54);
-          text-decoration: none;
-          transition: color .2s ease-in-out;
-
-          &:hover,
-          &:focus {
-            color: $rgba-black;
-            text-decoration: underline;
-            cursor: pointer;
-          }
-        }
-      }
-    }
-
-    .card-reveal {
-      position: absolute;
-      left: 0;
-      top: 100%;
-      width: 100%;
-      height: 100%;
-      padding: .625rem 1.25rem 1.25rem;
-      background-color: #fff;
-      overflow-y: auto;
-      transition: .2s ease-in-out;
-
-      &.revealed {
-        transform: translateY(-100%);
-      }
-
-      .card-title {
-        margin: 0;
-        font-size: 1.5rem;
-        font-weight: 400;
-      }
-
-      .close {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        left: auto;
-
-        i.mdi {
-          font-size: 1.25rem;
-          color: rgba(0,0,0,.25);
-          transition: color .2s ease-in-out;
-
-          &:hover,
-          &:focus {
-            color: rgba(0,0,0,.54);
-            cursor: pointer;
-          }
-        }
-      }
-
-      .card-description {
-        font-size: .875rem;
-        color: rgba(0,0,0,.54);
-        margin: 9px 0 0;
-
-        a {
-          font-size: .875rem;
-          font-weight: 500;
-          text-decoration: none;
-          transition: .2s ease-in-out;
-
-          &:hover,
-          &:focus {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-  }
 }

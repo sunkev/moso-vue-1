@@ -1,57 +1,58 @@
+// DRAWER LIST
 .drawer-list {
-  margin-top: 20px;
+    margin-top: 20px;
 
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
 
-    li {
-      display: flex;
-      height: 40px;
+        li {
+            display: flex;
+            height: 40px;
 
-      a {
-        display: block;
-        padding: 0 16px;
-        font-weight: 400;
-        color: $sidenav-link-color;
-        line-height: 40px;
-        text-decoration: none;
-        transition: color .2s ease-in-out;
+            a {
+                display: block;
+                padding: 0 2rem;
+                font-weight: 400;
+                color: $sidenav-link-color;
+                line-height: 40px;
+                text-decoration: none;
+                transition: color .2s ease-in-out;
 
-        svg {
-          position: relative;
-          top: 2px;
-          width: 1rem;
-          height: 1rem;
-          margin-right: 10px;
-          fill: $sidenav-link-color;
-          transition: fill .2s ease-in-out;
+                svg {
+                    position: relative;
+                    top: 2px;
+                    width: 1rem;
+                    height: 1rem;
+                    margin-right: 10px;
+                    fill: $sidenav-link-color;
+                    transition: fill .2s ease-in-out;
+                }
+
+                &:hover,
+                &:focus,
+                &:active,
+                &:hover:active {
+                    color: lighten($sidenav-link-color, 10%);
+                    outline: none;
+                    text-decoration: none;
+
+                    svg {
+                        fill: lighten($sidenav-link-color, 10%);
+                    }
+                }
+
+                &.router-link-active,
+                &.active {
+                    color: $sidenav-active-link-color;
+                    font-weight: 500;
+
+                    svg {
+                        fill: $sidenav-active-link-color;
+                    }
+                }
+            }
         }
-
-        &:hover,
-        &:focus,
-        &:active,
-        &:hover:active {
-          color: lighten($sidenav-link-color, 10%);
-          outline: none;
-          text-decoration: none;
-
-          svg {
-            fill: lighten($sidenav-link-color, 10%);
-          }
-        }
-
-        &.router-link-active,
-        &.active {
-          color: $sidenav-active-link-color;
-          font-weight: 500;
-
-          svg {
-            fill: $sidenav-active-link-color;
-          }
-        }
-      }
     }
-  }
 }

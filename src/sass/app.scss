@@ -2,10 +2,6 @@
  * Base CSS for the moso.io vue app
  * Copyright 2016-present Morten Sørensen (morten@moso.io)
  * Licensed under MIT (https://github.com/moso/moso-vue/blob/master/LICENSE)
- *
- * TODO:
- * - Add svg path fill styles/transitions
- * - Compile for production
  */
 
 // ROBOTO DRAFT IMPORT
@@ -28,8 +24,9 @@
 @import 'components/drawer-list';
 @import 'components/widget';
 @import 'components/card';
+//@import 'components/card-reveal';
 @import 'components/button';
-@import 'components/tab';
+//@import 'components/tab';
 @import 'components/project';
 @import 'components/timeline';
 @import 'components/profile';
