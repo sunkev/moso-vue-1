@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="lg-7 xl-8">
-                <div class="widget tabs-widget">
+                <!--<div class="widget tabs-widget">
                     <nano-tabs transparent fixed>
                         <nano-tab svg="<path d='M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z' />" name="About">
                             <div class="tab-content bio">
@@ -206,6 +206,99 @@
                             </div>
                         </nano-tab>
                     </nano-tabs>
+                </div>-->
+                <div class="widget">
+                    <div class="widget__header">
+                        <h3 class="title"><img src="/images/profile.svg" alt=""> Profile</h3>
+                    </div>
+                    <div class="widget__body widget__bio">
+                        <div class="bio">
+                            <h4>Bio</h4>
+                            <p>With 15+ years of experience with making websites, I see myself as a veteran. I often tell people around me that I'm from the generation that designed websites for IE6 in XHTML Strict, which, for the unfamiliar, was utterly horrible. It's something we can all laugh about now but back then, it was the challenge that drove us.</p>
+
+                            <p>That same challenge is still driving me today but in a different way. I could have built this website in any ordinary way, but I've decided to use <a href="https://vuejs.org" title="Vue.js" rel="noopener">Vue.js</a>-components, not to make it harder but to use the technology I have in front of me. I love using new technologies and (still) try my best to keep up with the latest trends. That's why this site is made with Google's <a href="https://material.google.com" title="Material Design" rel="noopener">Material Design</a>.</p>
+
+                            <p>When not coding at work, <a href="https://krve.io" title="@krve" rel="noopener">@krve</a> and I have a project called <a href="https://getnano.io" title="Nano" rel="noopener">Nano</a>. While there's nothing on that page but a logo, we're working creating a full-blown UI web-framework based on <a href="https://vuejs.org" title="Vue.js" rel="noopener">Vue.js</a>-components and <a href="https://sass-lang.org" title="Sass" rel="noopener">Sass</a>. We're not quite finished yet but if you're interested, we have a dev-branch on <a href="https://github.com/getnano/nano-framework/tree/dev" title="GitHub" rel="noopener">GitHub</a> that you can check out and follow.</p>
+
+                            <p>When I'm not building webexperiences, I love spending time with my family. I also have a hobby where I activate small computers, such as the two Raspberry Pi 3's I have, where one the family's media center, and is collecting data from my weatherstation, the other acts as my personal cloudstorage, an ODROID C2 that acts as my main server for various projects and services, and a C.H.I.P. that runs a tor relay.</p>
+                        </div>
+
+                        <div class="personal-information">
+                            <h4>Personal information</h4>
+                            <div class="column">
+                                <div class="column-item column-item--left">Name:</div>
+                                <div class="column-item column-item--right">Morten Sørensen</div>
+                            </div>
+                            <div class="column">
+                                <div class="column-item column-item--left">Age:</div>
+                                <div class="column-item column-item--right">33</div>
+                            </div>
+                            <div class="column">
+                                <div class="column-item column-item--left">Position:</div>
+                                <div class="column-item column-item--right">Interface Consultant</div>
+                            </div>
+                            <div class="column">
+                                <div class="column-item column-item--left">Nationality:</div>
+                                <div class="column-item column-item--right">Danish</div>
+                            </div>
+                            <div class="column">
+                                <div class="column-item column-item--left">Location:</div>
+                                <div class="column-item column-item--right">Vammen, Denmark</div>
+                            </div>
+                            <div class="column">
+                                <div class="column-item column-item--left">Web:</div>
+                                <div class="column-item column-item--right"><a href="https://moso.io" title="https://moso.io">https://moso.io</a></div>
+                            </div>
+                        </div>
+                        <div class="contact-information">
+                            <h4>Contact information</h4>
+                            <div class="column">
+                                <div class="column-item column-item--left">E-mail:</div>
+                                <div class="column-item column-item--right"><a href="mailto:morten@moso.io" title="morten@moso.io">morten&#64;moso.io</a></div>
+                            </div>
+                            <div class="column">
+                                <div class="column-item column-item--left">Phone:</div>
+                                <div class="column-item column-item--right">--- Removed ---</div>
+                            </div>
+                            <div class="column">
+                                <div class="column-item column-item--left">Social:</div>
+                                <div class="column-item column-item--right">
+                                    <ul class="list list--inline list--social">
+                                        <li>
+                                            <a href="https://github.com/moso" class="button icon-button icon-button--small" title="GitHub" rel="noopener">
+                                                <img src="/images/github.svg" alt="">
+                                                <nano-ripple></nano-ripple>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://codepen.io/moso" class="button icon-button icon-button--small" title="CodePen" rel="noopener">
+                                                <img src="/images/codepen.svg" alt="">
+                                                <nano-ripple></nano-ripple>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://facebook.com/moso.profil" class="button icon-button icon-button--small facebook" title="Facebook" rel="noopener">
+                                                <img src="/images/facebook.svg" alt="">
+                                                <nano-ripple></nano-ripple>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/mosodotio" class="button icon-button icon-button--small twitter" title="Twitter" rel="noopener">
+                                                <img src="/images/twitter.svg" alt="">
+                                                <nano-ripple></nano-ripple>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://dk.linkedin.com/in/mosoio" class="button icon-button icon-button--small linkedin" title="LinkedIn" rel="noopener">
+                                                <img src="/images/linkedin.svg" alt="">
+                                                <nano-ripple></nano-ripple>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
