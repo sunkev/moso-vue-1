@@ -13,8 +13,6 @@ let mix = require('laravel-mix');
 
 mix.setPublicPath('dist');
 
-mix;
-
 mix.js('src/js/app.js', 'js/')
    .sass('src/sass/app.scss', 'css/')
    .options({
