@@ -1,7 +1,8 @@
 <template>
     <li>
         <a :href="link" class="button icon-button" :class="linkClass" tabindex="-1" :title="title" rel="noopener">
-            <i class="mdi" :class="icon"></i>
+            <img :src="svg" alt="" v-if="svg">
+            <i class="mdi" :class="icon" v-if="icon"></i>
             <nano-ripple></nano-ripple>
         </a>
     </li>
@@ -18,6 +19,10 @@
             },
 
             icon: {
+                type: String
+            },
+
+            svg: {
                 type: String
             },
 

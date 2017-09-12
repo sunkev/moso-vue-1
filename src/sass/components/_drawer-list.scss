@@ -19,6 +19,16 @@
         text-decoration: none;
         transition: color .2s ease-in-out;
 
+        svg {
+          position: relative;
+          top: 2px;
+          width: 1rem;
+          height: 1rem;
+          margin-right: 10px;
+          fill: $sidenav-link-color;
+          transition: fill .2s ease-in-out;
+        }
+
         &:hover,
         &:focus,
         &:active,
@@ -26,19 +36,20 @@
           color: lighten($sidenav-link-color, 10%);
           outline: none;
           text-decoration: none;
-        }
 
-        i.mdi {
-          position: relative;
-          width: 18px;
-          height: 18px;
-          margin-right: 10px;
+          svg {
+            fill: lighten($sidenav-link-color, 10%);
+          }
         }
 
         &.router-link-active,
         &.active {
           color: $sidenav-active-link-color;
           font-weight: 500;
+
+          svg {
+            fill: $sidenav-active-link-color;
+          }
         }
       }
     }

@@ -27,17 +27,25 @@
         cursor: pointer;
         text-align: center;
         user-select: none;
+
+        svg {
+          position: relative;
+          top: 2px;
+          width: 1rem;
+          height: 1rem;
+          fill: $dark-blue-gray;
+          margin-right: .625rem;
+        }
       }
 
       &.active a,
       &:active a {
         color: rgba(255, 255, 255, .87);
         text-decoration: none;
-      }
 
-      i.mdi {
-        margin-right: .625rem;
-        font-size: 1rem;
+        svg {
+          fill: $dark-blue-gray;
+        }
       }
     }
 
@@ -77,10 +85,17 @@
         a {
           color: rgba(0, 0, 0, .54);
 
+          svg {
+            fill: rgba(0,0,0,.54);
+          }
         }
         &.active a,
         &:active a {
           color: $tabs-background;
+
+          svg {
+            fill: $dark-blue-gray;
+          }
         }
       }
       .tabs-indicator {

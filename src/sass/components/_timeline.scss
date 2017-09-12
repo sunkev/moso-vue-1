@@ -64,14 +64,23 @@
         font-size: .75rem;
         color: rgba(0,0,0,.54);
 
-        i.mdi {
+        i.mdi,
+        img {
           margin-right: .125rem;
+        }
+
+        img {
+          position: relative;
+          top: 1px;
+          width: .75rem;
+          height: .75rem;
+          opacity: .35;
         }
       }
 
       .time {
         margin-left: auto;
-        font-size: .75rem;
+        font-size: .875rem;
         font-weight: 300;
         color: rgba(0,0,0,.54);
       }

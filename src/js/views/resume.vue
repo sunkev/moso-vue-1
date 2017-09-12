@@ -14,7 +14,7 @@
                     <div class="widget__body">
                         <moso-timeline>
                             <timeline-item entry="Interface Consultant" location="Netcompany A/S" time="Oct, 2017 -">
-                                <p>Development and consultancy on front-end- and UI design of larger, webbased projects for both the private- and public sector.</p>
+                                <p>Development and consultancy on front-end- and UI design of larger, webbased projects for both the private- and the public sector.</p>
                             </timeline-item>
                             <timeline-item entry="Lead Front-End Developer" location="Indexed" time="Apr, 2017 - Oct, 2017">
                                 <p>Development and design of responsive, mobile-friendly websites and webshops - mostly WordPress, with Bootstrap and Sass/CSS3 as front-end - now with much more responsibility and freedom of expression. Development of small plugins and custom things and bits for WordPress based on customer demands - all with version control (Git), of course. Conversion of design (typically a PSD) into real front-end. Serveradministration (Debian/Ubuntu).</p>

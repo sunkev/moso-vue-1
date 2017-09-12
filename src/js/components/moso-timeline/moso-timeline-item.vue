@@ -3,7 +3,7 @@
         <h3 class="title">{{ entry }}</h3>
         <div class="information">
             <span class="location" v-if="location">
-                <i class="mdi mdi-map-marker"></i> {{ location }}
+                <img src="/images/map-marker.svg" alt=""> {{ location }}
             </span>
             <span class="time">{{ time }}</span>
         </div>

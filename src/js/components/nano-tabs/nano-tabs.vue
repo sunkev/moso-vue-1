@@ -3,12 +3,12 @@
         <ul>
             <li v-for="tab in tabs" :id="tab.id" ref="tabHeader" :class="getTabClass(tab)" :disabled="tab.disabled">
                 <a :href="tab.href" @click="selectTab(tab)" v-if="hashes" v-ripple>
-                    <svg viewBox="0 0 24 24" v-if="tab.svg">{{ tab.svg }}</svg>
+                    <svg viewBox="0 0 24 24" v-if="tab.svg" v-html="tab.svg"></svg>
                     <i class="hidden-xs hidden-sm mdi" :class="tab.icon" v-if="tab.icon"></i>
                     {{ tab.name }}
                 </a>
                 <a @click.prevent="selectTab(tab)" v-else v-ripple>
-                    <svg viewBox="0 0 24 24" v-if="tab.svg">{{ tab.svg }}</svg>
+                    <svg viewBox="0 0 24 24" v-if="tab.svg" v-html="tab.svg"></svg>
                     <i class="hidden-xs hidden-sm mdi" :class="tab.icon" v-if="tab.icon"></i>
                     {{ tab.name }}
                 </a>
