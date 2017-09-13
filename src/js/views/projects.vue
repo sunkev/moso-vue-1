@@ -70,7 +70,7 @@
                         </moso-project>
                     </div>
                     <div class="md-12 lg-6 xl-3 masonry-column" v-masonry-tile>
-                        <moso-project class="single" image="/images/assets/boligadmin.svg" project-title="Boligadmin" sub-title="Landlord/tenant administration system">
+                        <moso-project class="single" image="/images/assets/boligadmin.svg" project-title="Boligadmin" sub-title="Administration system">
                             <span></span>
                         </moso-project>
                     </div>
