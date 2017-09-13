@@ -1,15 +1,17 @@
 <template>
     <div class="project">
         <div class="project-header">
-            <div class="project-icon">
-                <img :src="icon" alt="">
+            <div class="project-image" v-if="image">
+                <img :src="image" alt="">
             </div>
-            <div class="project-title">
+            <div class="project-title" v-if="projectTitle">
                 <h4>{{ projectTitle }}</h4>
             </div>
-            <div class="project-link">
-                <span class="sub-title">{{ subTitle }}</span>
-                <a class="sub-link" :href="link">{{ link | stripHTTP }}</a>
+            <div class="project-link" v-if="link || subTitle">
+                <span class="sub-title" v-if="subTitle">{{ subTitle }}</span>
+                <a class="sub-link" :href="link" :title="link" v-if="link">
+                    <svg viewBox="0 0 24 24" v-html="icon"></svg>
+                </a>
             </div>
         </div>
         <div class="project-body">
@@ -20,7 +22,7 @@
 <script>
     export default {
         props: {
-            icon: {
+            image: {
                 type: String
             },
 
@@ -36,7 +38,7 @@
                 type: String
             },
 
-            image: {
+            icon: {
                 type: String
             }
         },

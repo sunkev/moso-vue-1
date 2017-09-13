@@ -11,7 +11,7 @@
             height: 50px;
         }
 
-        .project-icon {
+        .project-image {
             position: absolute;
             top: 0;
             left: 0;
@@ -44,46 +44,50 @@
         }
 
         .project-link {
-            display: flex;
-            flex-direction: column;
             margin-left: 3.75rem;
 
             @media (min-width: 992px) {
+                display: flex;
                 flex-direction: row;
             }
 
             .sub-title {
+                display: block;
                 font-size: .8125rem;
                 color: rgba(0,0,0,.54);
                 margin-bottom: .1rem;
 
                 @media (min-width: 992px) {
+                    display: initial;
                     margin-bottom: 0;
                 }
             }
 
             .sub-link {
-                padding: .25rem .625rem;
-                background-color: $primary;
-                border-radius: 1rem;
-                font-size: .8125rem;
-                color: rgba(255,255,255,.87);
-                transition: background-color .2s ease-in-out;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
+                position: absolute;
+                top: -0.5rem;
+                right: -0.5rem;
 
                 @media (min-width: 992px) {
+                    top: 0;
+                    right: 0;
                     margin-left: auto;
-                    max-width: 32%;
                 }
 
-                &:hover,
-                &:focus,
-                &:active,
-                &:hover:active {
-                    background-color: darken($primary, 10%);
-                    text-decoration: none;
+                svg {
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    fill: #000;
+                    opacity: 0.54;
+                    transition: opacity .2s ease-in-out;
+
+                    &:hover,
+                    &:focus,
+                    &:active,
+                    &:hover:active {
+                        fill: #000;
+                        opacity: 0.87;
+                    }
                 }
             }
         }
@@ -101,6 +105,30 @@
             &:last-of-type {
                 margin: 0;
             }
+        }
+    }
+
+    &.single {
+        .project-header {
+            height: 50px;
+            margin: 0;
+
+            .project-title {
+                h4 {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .project-link {
+                position: absolute;
+                bottom: 0;
+                margin-left: 3.75rem;
+            }
+        }
+
+        .project-body {
+            padding: 0;
+            border: 0;
         }
     }
 }

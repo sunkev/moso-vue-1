@@ -54,6 +54,14 @@ main {
     margin-bottom: 0;
 }
 
+.resume > .row:last-of-type {
+    margin-top: 1rem;
+
+    @media (min-width: 992px) {
+        margin-top: 2rem;
+    }
+}
+
 // MASONRY
 .row > .masonry-column {
     margin-bottom: 1rem;
@@ -66,3 +74,4 @@ main {
         margin-bottom: 0;
     }
 }
+

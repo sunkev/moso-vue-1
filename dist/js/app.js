@@ -3344,10 +3344,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: {
-        icon: {
+        image: {
             type: String
         },
 
@@ -3363,7 +3365,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             type: String
         },
 
-        image: {
+        icon: {
             type: String
         }
     },
@@ -3393,25 +3395,33 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "project"
   }, [_c('div', {
     staticClass: "project-header"
-  }, [_c('div', {
-    staticClass: "project-icon"
+  }, [(_vm.image) ? _c('div', {
+    staticClass: "project-image"
   }, [_c('img', {
     attrs: {
-      "src": _vm.icon,
+      "src": _vm.image,
       "alt": ""
     }
-  })]), _vm._v(" "), _c('div', {
+  })]) : _vm._e(), _vm._v(" "), (_vm.projectTitle) ? _c('div', {
     staticClass: "project-title"
-  }, [_c('h4', [_vm._v(_vm._s(_vm.projectTitle))])]), _vm._v(" "), _c('div', {
+  }, [_c('h4', [_vm._v(_vm._s(_vm.projectTitle))])]) : _vm._e(), _vm._v(" "), (_vm.link || _vm.subTitle) ? _c('div', {
     staticClass: "project-link"
-  }, [_c('span', {
+  }, [(_vm.subTitle) ? _c('span', {
     staticClass: "sub-title"
-  }, [_vm._v(_vm._s(_vm.subTitle))]), _vm._v(" "), _c('a', {
+  }, [_vm._v(_vm._s(_vm.subTitle))]) : _vm._e(), _vm._v(" "), (_vm.link) ? _c('a', {
     staticClass: "sub-link",
     attrs: {
-      "href": _vm.link
+      "href": _vm.link,
+      "title": _vm.link
     }
-  }, [_vm._v(_vm._s(_vm._f("stripHTTP")(_vm.link)))])])]), _vm._v(" "), _c('div', {
+  }, [_c('svg', {
+    attrs: {
+      "viewBox": "0 0 24 24"
+    },
+    domProps: {
+      "innerHTML": _vm._s(_vm.icon)
+    }
+  })]) : _vm._e()]) : _vm._e()]), _vm._v(" "), _c('div', {
     staticClass: "project-body"
   }, [_vm._t("default")], 2)])
 },staticRenderFns: []}
@@ -4729,6 +4739,37 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {}
@@ -4779,7 +4820,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "entry": "Front-End Developer",
       "location": "Eyeforce ApS",
-      "time": "Apr, 2015 - Mar, 2017"
+      "time": "Apr, 2015 - Apr, 2017"
     }
   }, [_c('p', [_vm._v("Development and design of responsive, mobile-friendly websites, webshops, and Android apps, with Bootstrap and Sass/CSS3 as front-end, and Laravel as backend. Front-end design for small and large Laravel-systems, all with version control (Git), of course. Conversion of design (typically a PSD) into real front-end. Development and design of catalogues and brochures for print. Graphic design of logos, og cropping/adjusting of misc web-elements to, eg, Facebook. Serveradministration (Debian/Ubuntu).")])]), _vm._v(" "), _c('timeline-item', {
     attrs: {
@@ -4825,8 +4866,82 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "location": "Mercantec",
       "time": "Sep, 2012"
     }
-  }, [_c('p', [_vm._v("As part of the IT-Supporter exam, I passed the CCNA exam with a final score of 82.6.")])])], 1)], 1)])])])])
-},staticRenderFns: []}
+  }, [_c('p', [_vm._v("As part of the IT-Supporter exam, I passed the CCNA exam with a final score of 82.6.")])])], 1)], 1)])])]), _vm._v(" "), _c('div', {
+    staticClass: "row mt-2"
+  }, [_c('div', {
+    staticClass: "xs-12"
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "masonry",
+      rawName: "v-masonry"
+    }],
+    staticClass: "row",
+    attrs: {
+      "transition-duration": "0.2s",
+      "item-selector": ".lg-3"
+    }
+  }, [_c('div', {
+    directives: [{
+      name: "masonry-tile",
+      rawName: "v-masonry-tile"
+    }],
+    staticClass: "sm-12 md-4 lg-3 masonry-column"
+  }, [_c('moso-project', {
+    staticClass: "single",
+    attrs: {
+      "image": "/images/assets/scratcher.svg",
+      "project-title": "Scratcher",
+      "sub-title": "Gamification platform"
+    }
+  }, [_c('span')])], 1), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "masonry-tile",
+      rawName: "v-masonry-tile"
+    }],
+    staticClass: "sm-12 md-4 lg-3 masonry-column"
+  }, [_c('moso-project', {
+    staticClass: "single",
+    attrs: {
+      "image": "/images/assets/vestergaard.svg",
+      "project-title": "Vestergaard Huse",
+      "sub-title": "House construction"
+    }
+  }, [_c('span')])], 1), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "masonry-tile",
+      rawName: "v-masonry-tile"
+    }],
+    staticClass: "sm-12 md-4 lg-3 masonry-column"
+  }, [_c('moso-project', {
+    staticClass: "single",
+    attrs: {
+      "image": "/images/assets/boligadmin.svg",
+      "project-title": "Boligadmin",
+      "sub-title": "Landlord/tenant administration system"
+    }
+  }, [_c('span')])], 1), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "masonry-tile",
+      rawName: "v-masonry-tile"
+    }],
+    staticClass: "sm-12 md-4 lg-3 masonry-column"
+  }, [_c('moso-project', {
+    staticClass: "single",
+    attrs: {
+      "image": "/images/assets/rush.png",
+      "project-title": "Rush Danmark",
+      "sub-title": "Indoor trampoline park"
+    }
+  }, [_c('span')])], 1)])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "sm-12"
+  }, [_c('h2', {
+    staticClass: "stuff-headline"
+  }, [_vm._v("I've also made stuff for")])])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
@@ -4969,10 +5084,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "sm-12 xl-6 masonry-column"
   }, [_c('moso-project', {
     attrs: {
-      "icon": "/images/assets/flexgrid-logo.png",
+      "image": "/images/assets/flexgrid-logo.png",
       "project-title": "Flexgrid",
       "sub-title": "Flexbox grid",
-      "link": "https://flexgrid.co"
+      "link": "https://flexgrid.co",
+      "icon": "<path d='M17.9,17.39C17.64,16.59 16.89,16 16,16H15V13A1,1 0 0,0 14,12H8V10H10A1,1 0 0,0 11,9V7H13A2,2 0 0,0 15,5V4.59C17.93,5.77 20,8.64 20,12C20,14.08 19.2,15.97 17.9,17.39M11,19.93C7.05,19.44 4,16.08 4,12C4,11.38 4.08,10.78 4.21,10.21L9,15V16A2,2 0 0,0 11,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z' />"
     }
   }, [_c('p', [_vm._v("Flexgrid is a simple CSS grid entirely based on  flexbox"), _vm._v(" layout. If not modified, Flexgrid use "), _c('a', {
     attrs: {
@@ -4996,10 +5112,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "sm-12 xl-6 masonry-column"
   }, [_c('moso-project', {
     attrs: {
-      "icon": "/images/assets/nano-logo.png",
+      "image": "/images/assets/nano-logo.png",
       "project-title": "Nano",
       "sub-title": "CSS framework & Vue.js components",
-      "link": "https://getnano.io"
+      "link": "https://getnano.io",
+      "icon": "<path d='M17.9,17.39C17.64,16.59 16.89,16 16,16H15V13A1,1 0 0,0 14,12H8V10H10A1,1 0 0,0 11,9V7H13A2,2 0 0,0 15,5V4.59C17.93,5.77 20,8.64 20,12C20,14.08 19.2,15.97 17.9,17.39M11,19.93C7.05,19.44 4,16.08 4,12C4,11.38 4.08,10.78 4.21,10.21L9,15V16A2,2 0 0,0 11,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z' />"
     }
   }, [_c('p', [_vm._v("Nano is going to be a full-blown mobile-first, responsive front-end framework made with custom-made "), _c('a', {
     attrs: {
@@ -5033,10 +5150,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "sm-12 xl-6 masonry-column"
   }, [_c('moso-project', {
     attrs: {
-      "icon": "/images/assets/3up-logo.png",
+      "image": "/images/assets/3up-logo.png",
       "project-title": "3up CDN",
       "sub-title": "Fast, global CDN",
-      "link": "https://cdn.3up.dk"
+      "link": "https://cdn.3up.dk",
+      "icon": "<path d='M17.9,17.39C17.64,16.59 16.89,16 16,16H15V13A1,1 0 0,0 14,12H8V10H10A1,1 0 0,0 11,9V7H13A2,2 0 0,0 15,5V4.59C17.93,5.77 20,8.64 20,12C20,14.08 19.2,15.97 17.9,17.39M11,19.93C7.05,19.44 4,16.08 4,12C4,11.38 4.08,10.78 4.21,10.21L9,15V16A2,2 0 0,0 11,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z' />"
     }
   }, [_c('p', [_vm._v("3up CDN is a "), _c('a', {
     attrs: {
@@ -5092,10 +5210,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "sm-12 xl-6 masonry-column"
   }, [_c('moso-project', {
     attrs: {
-      "icon": "/images/assets/shade-theme.png",
+      "image": "/images/assets/shade-theme.png",
       "project-title": "Shade Ghost theme",
       "sub-title": "Dark theme for Ghost",
-      "link": "https://github.com/moso/shade-ghost-theme"
+      "link": "https://github.com/moso/shade-ghost-theme",
+      "icon": "<path d='M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z' />"
     }
   }, [_c('p', [_vm._v("Theme originally made for my "), _c('a', {
     attrs: {
@@ -5134,10 +5253,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "sm-12 xl-6 masonry-column"
   }, [_c('moso-project', {
     attrs: {
-      "icon": "/images/assets/hyper-logo.png",
+      "image": "/images/assets/hyper-logo.png",
       "project-title": "hyper-arc-dark-controls",
       "sub-title": "Arc window controls for Hyper",
-      "link": "https://github.com/moso/hyper-arc-dark-controls"
+      "link": "https://github.com/moso/hyper-arc-dark-controls",
+      "icon": "<path d='M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z' />"
     }
   }, [_c('p', [_vm._v("When I'm developing stuff, I love using "), _c('a', {
     attrs: {
@@ -5189,10 +5309,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "sm-12 xl-6 masonry-column"
   }, [_c('moso-project', {
     attrs: {
-      "icon": "/images/assets/hyper-logo.png",
+      "image": "/images/assets/hyper-logo.png",
       "project-title": "hyper-dark-scrollbar",
       "sub-title": "Pretty scrollbar for Hyper",
-      "link": "https://github.com/moso/hyper-dark-scrollbar"
+      "link": "https://github.com/moso/hyper-dark-scrollbar",
+      "icon": "<path d='M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z' />"
     }
   }, [_c('p', [_vm._v("The "), _c('a', {
     attrs: {
