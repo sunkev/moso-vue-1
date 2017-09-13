@@ -54,7 +54,7 @@ main {
     margin-bottom: 0;
 }
 
-.resume > .row:last-of-type {
+.resume > [class^="md-"] > .row:first-of-type {
     margin-top: 1rem;
 
     @media (min-width: 992px) {
