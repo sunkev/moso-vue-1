@@ -19,7 +19,7 @@
                             <timeline-item entry="Lead Front-End Developer" location="Indexed" time="Apr, 2017 - Oct, 2017">
                                 <p>Development and design of responsive, mobile-friendly websites and webshops - mostly WordPress, with Bootstrap and Sass/CSS3 as front-end - now with much more responsibility and freedom of expression. Development of small plugins and custom things and bits for WordPress based on customer demands - all with version control (Git), of course. Conversion of design (typically a PSD) into real front-end. Serveradministration (Debian/Ubuntu).</p>
                             </timeline-item>
-                            <timeline-item entry="Front-End Developer" location="Eyeforce ApS" time="Apr, 2015 - Mar, 2017">
+                            <timeline-item entry="Front-End Developer" location="Eyeforce ApS" time="Apr, 2015 - Apr, 2017">
                                 <p>Development and design of responsive, mobile-friendly websites, webshops, and Android apps, with Bootstrap and Sass/CSS3 as front-end, and Laravel as backend. Front-end design for small and large Laravel-systems, all with version control (Git), of course. Conversion of design (typically a PSD) into real front-end. Development and design of catalogues and brochures for print. Graphic design of logos, og cropping/adjusting of misc web-elements to, eg, Facebook. Serveradministration (Debian/Ubuntu).</p>
                             </timeline-item>
                             <timeline-item entry="Freelance Webdeveloper" location="3up" time="Jan, 2014 - Apr, 2015">
