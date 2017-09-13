@@ -58,23 +58,23 @@
                         <h2 class="stuff-headline">I've also made stuff for</h2>
                     </div>
                 </div>
-                <div class="row" v-masonry transition-duration="0.2s" item-selector=".xl-3">
-                    <div class="md-12 lg-6 xl-3 masonry-column" v-masonry-tile>
+                <div class="row" v-masonry transition-duration="0.2s" item-selector=".lg-6">
+                    <div class="md-12 lg-6 masonry-column" v-masonry-tile>
                         <moso-project class="single" image="/images/assets/scratcher.svg" project-title="Scratcher" sub-title="Gamification platform">
                             <span></span>
                         </moso-project>
                     </div>
-                    <div class="md-12 lg-6 xl-3 masonry-column" v-masonry-tile>
+                    <div class="md-12 lg-6 masonry-column" v-masonry-tile>
                         <moso-project class="single" image="/images/assets/vestergaard.svg" project-title="Vestergaard Huse" sub-title="House construction">
                             <span></span>
                         </moso-project>
                     </div>
-                    <div class="md-12 lg-6 xl-3 masonry-column" v-masonry-tile>
+                    <div class="md-12 lg-6 masonry-column" v-masonry-tile>
                         <moso-project class="single" image="/images/assets/boligadmin.svg" project-title="Boligadmin" sub-title="Administration system">
                             <span></span>
                         </moso-project>
                     </div>
-                    <div class="md-12 lg-6 xl-3 masonry-column" v-masonry-tile>
+                    <div class="md-12 lg-6 masonry-column" v-masonry-tile>
                         <moso-project class="single" image="/images/assets/rush.png" project-title="Rush Danmark" sub-title="Indoor trampoline park">
                             <span></span>
                         </moso-project>
