@@ -6,15 +6,14 @@
             </div>
             <div class="project-title">
                 <h4>{{ projectTitle }}</h4>
-                <span class="sub-title">{{ subTitle }}</span>
             </div>
             <div class="project-link">
+                <span class="sub-title">{{ subTitle }}</span>
                 <a class="sub-link" :href="link">{{ link }}</a>
             </div>
         </div>
         <div class="project-body">
             <slot></slot>
-            <img :src="image" alt="">
         </div>
     </div>
 </template>

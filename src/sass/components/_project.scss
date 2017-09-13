@@ -4,82 +4,98 @@
     padding: 1rem;
 
     .project-header {
-        display: flex;
-        height: 50px;
-        margin-bottom: 2rem;
+        position: relative;
+        margin-bottom: 1rem;
+
+        @media (min-width: 992px) {
+            height: 50px;
+        }
 
         .project-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+
             img {
                 width: 50px;
                 height: 50px;
                 margin-right: .625rem;
-                border: 1px solid #ddd;
+                border: 2px solid #ddd;
                 border-radius: 50%;
             }
-
         }
 
         .project-title {
-            display: flex;
-            flex-direction: column;
+            margin-left: 3.75rem;
 
             h4 {
                 margin: 0;
-                font-size: 1.875rem;
+                font-size: 1.25rem;
                 font-weight: 500;
                 color: rgba(0,0,0,.87);
-            }
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
 
-            .sub-title {
-                margin-top: auto;
-                margin-bottom: .5rem;
-                font-size: .8125rem;
-                color: rgba(0,0,0,.54);
-
-                @media (min-width: 768px) {
-                    margin-bottom: 0;
+                @media (min-width: 992px) {
+                    font-size: 1.875rem;
                 }
             }
         }
 
         .project-link {
             display: flex;
-            align-items: flex-end;
+            flex-direction: column;
+            margin-left: 3.75rem;
 
-            @media (min-width: 768px) {
-                margin-left: auto;
+            @media (min-width: 992px) {
+                flex-direction: row;
+            }
+
+            .sub-title {
+                font-size: .8125rem;
+                color: rgba(0,0,0,.54);
+                margin-bottom: .1rem;
+
+                @media (min-width: 992px) {
+                    margin-bottom: 0;
+                }
             }
 
             .sub-link {
                 font-size: .8125rem;
-                color: rgba(0,0,0,.54);
                 transition: color .2s ease-in-out;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+                @media (min-width: 992px) {
+                    margin-left: auto;
+                    max-width: 32%;
+                }
 
                 &:hover,
                 &:focus,
                 &:active,
                 &:hover:active {
-                    color: rgba(0,0,0,.75);
-                    text-decoration: underline;
+                    text-decoration: none;
                 }
             }
         }
     }
 
     .project-body {
+        padding-top: 1rem;
+        border-top: 1px solid #ddd;
 
         p {
-            margin: 0 0 2rem;
-            font-size: .875rem;
+            margin: 0 0 1rem;
+            font-size: .9375rem;
             color: rgba(0,0,0,.65);
-        }
 
-        img {
-            width: 100%;
-            height: auto;
-            margin: 0;
-            border: 1px solid #ddd;
-            border-radius: 2px;
+            &:last-of-type {
+                margin: 0;
+            }
         }
     }
 }

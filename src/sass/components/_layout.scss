@@ -56,7 +56,11 @@ main {
 
 // MASONRY
 .row > .masonry-column {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+
+    @media (min-width: 992px) {
+        margin-bottom: 2rem;
+    }
 
     &:last-of-type {
         margin-bottom: 0;

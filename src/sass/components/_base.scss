@@ -59,6 +59,16 @@ p {
     margin: 0 0 .625rem;
 }
 
+.code {
+    font-family: $font-family-code;
+    font-size: .75rem;
+    color: $blue;
+    display: inline-block;
+    padding: .1875rem .375rem;
+    background-color: #eee;
+    border-radius: 3px;
+}
+
 .list {
     margin: 0 0 .625rem;
     padding: 0;
@@ -87,5 +97,13 @@ p {
 
     .header {
         width: 100%;
+    }
+
+    .nav-toggle {
+        svg {
+            top: initial;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
 }
