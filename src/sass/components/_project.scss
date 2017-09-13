@@ -63,8 +63,12 @@
             }
 
             .sub-link {
+                padding: .25rem .625rem;
+                background-color: $primary;
+                border-radius: 1rem;
                 font-size: .8125rem;
-                transition: color .2s ease-in-out;
+                color: rgba(255,255,255,.87);
+                transition: background-color .2s ease-in-out;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
@@ -78,6 +82,7 @@
                 &:focus,
                 &:active,
                 &:hover:active {
+                    background-color: darken($primary, 10%);
                     text-decoration: none;
                 }
             }

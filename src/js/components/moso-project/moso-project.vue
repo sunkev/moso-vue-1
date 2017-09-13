@@ -9,7 +9,7 @@
             </div>
             <div class="project-link">
                 <span class="sub-title">{{ subTitle }}</span>
-                <a class="sub-link" :href="link">{{ link }}</a>
+                <a class="sub-link" :href="link">{{ link | stripHTTP }}</a>
             </div>
         </div>
         <div class="project-body">
@@ -38,6 +38,17 @@
 
             image: {
                 type: String
+            }
+        },
+
+        filters: {
+            stripHTTP: function(value) {
+
+                value = value.toString();
+
+                if (value.match(/https?:\/\//)) {
+                    return value.replace(/https?:\/\//, '');
+                }
             }
         },
 
