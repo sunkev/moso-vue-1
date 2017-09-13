@@ -24,8 +24,8 @@ Vue.component('moso-progressbar', require('./components/moso-progressbar/moso-pr
 //Vue.component('moso-card-reveal', require('./components/moso-card/moso-card-reveal.vue'));
 
 Vue.component('nano-ripple', require('./components/nano-ripple/nano-ripple.vue'));
-Vue.component('nano-tabs', require('./components/nano-tabs/nano-tabs.vue'));
-Vue.component('nano-tab', require('./components/nano-tabs/nano-tab.vue'));
+//Vue.component('nano-tabs', require('./components/nano-tabs/nano-tabs.vue'));
+//Vue.component('nano-tab', require('./components/nano-tabs/nano-tab.vue'));
 
 Vue.component('version-badge', require('./components/version-badge/version-badge.vue'));
 
