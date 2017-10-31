@@ -1,8 +1,7 @@
 {
   "name": "moso-vue",
   "version": "1.0.0",
-  "description": "moso.io built with vue.js",
-  "main": "index.js",
+  "description": "Personal portfolio made with Vue.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/moso/moso-vue.git"
@@ -16,17 +15,36 @@
     "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
-  "keywords": [],
-  "author": "moso <morten@moso.io>",
+  "keywords": [
+    "vue",
+    "vue.js",
+    "vue components",
+    "flex",
+    "flexbox",
+    "flexgrid",
+    "css",
+    "scss",
+    "sass",
+    "personal website",
+    "portfolio",
+    "resume",
+    "custom components"
+  ],
+  "author": {
+    "name": "Morten Sørensen",
+    "email": "morten@moso.io",
+    "url": "https://moso.io"
+  },
+  "homepage": "https://moso.io",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "browser-sync-webpack-plugin": "^1.2.0",
-    "flexgrid.co": "^2.2.1",
-    "laravel-mix": "^1.4.2",
+    "flexgrid.co": "^2.2.2",
+    "laravel-mix": "^1.5.1",
     "v-lazy-img": "^0.1.0",
-    "vue": "^2.4.2",
+    "vue": "^2.5.2",
     "vue-masonry": "^0.10.12",
-    "vue-router": "^2.7.0"
+    "vue-router": "^3.0.1"
   }
 }
