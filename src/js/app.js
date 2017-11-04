@@ -3,6 +3,7 @@ import Vue from 'vue';
 import LazyImg from 'v-lazy-img';
 import VueMasonryPlugin from 'vue-masonry';
 import VueRouter from 'vue-router';
+window.axios = require('axios');
 
 
 // DIRECTIVES

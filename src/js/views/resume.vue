@@ -13,17 +13,8 @@
                     </div>
                     <div class="widget__body">
                         <moso-timeline>
-                            <timeline-item entry="Interface Consultant" location="Netcompany A/S" time="Oct, 2017 -">
-                                <p>Development and consultancy on front-end- and UI design of larger, webbased projects for both the private- and the public sector.</p>
-                            </timeline-item>
-                            <timeline-item entry="Lead Front-End Developer" location="Indexed" time="Apr, 2017 - Oct, 2017">
-                                <p>Development and design of responsive, mobile-friendly websites and webshops - mostly WordPress, with Bootstrap and Sass/CSS3 as front-end - now with much more responsibility and freedom of expression. Development of small plugins and custom things and bits for WordPress based on customer demands - all with version control (Git), of course. Conversion of design (typically a PSD) into real front-end. Serveradministration (Debian/Ubuntu).</p>
-                            </timeline-item>
-                            <timeline-item entry="Front-End Developer" location="Eyeforce ApS" time="Apr, 2015 - Apr, 2017">
-                                <p>Development and design of responsive, mobile-friendly websites, webshops, and Android apps, with Bootstrap and Sass/CSS3 as front-end, and Laravel as backend. Front-end design for small and large Laravel-systems, all with version control (Git), of course. Conversion of design (typically a PSD) into real front-end. Development and design of catalogues and brochures for print. Graphic design of logos, og cropping/adjusting of misc web-elements to, eg, Facebook. Serveradministration (Debian/Ubuntu).</p>
-                            </timeline-item>
-                            <timeline-item entry="Freelance Webdeveloper" location="3up" time="Jan, 2014 - Apr, 2015">
-                                <p>I started my own company to pick up experience during my education as Webintegrator. During that time I got to work with optimization of webshops, and redesigning logos and social media buttons to fasten up the website.</p>
+                            <timeline-item v-for="experience in experiences" :key="experience.id" :entry="experience.entry" :location="experience.location" :time="experience.time">
+                                <p>{{experience.content}}</p>
                             </timeline-item>
                         </moso-timeline>
                     </div>
@@ -41,14 +32,8 @@
                     </div>
                     <div class="widget__body">
                         <moso-timeline>
-                            <timeline-item entry="Webintegrator" location="Mercantec" time="Mar, 2016">
-                                <p>In 2016 I passed the Webintegrator exam by making a project that looked a bit like Stack Overflow (that was actually in the assignment), just with a dash of Material Design.</p>
-                            </timeline-item>
-                            <timeline-item entry="IT-Supporter" location="Mercantec" time="Sep, 2012">
-                                <p>In 2012 I passed the IT-Supporter exam by doing a bit of troubleshooting on an exam-machine, and telling the examiners how much I knew about group policies and heritance. They told me I should have told them about this magical thing called a Raspberry Pi, that I had set up as a small webserver integrated perfectly with Active Directory. But I thought it was too simple, and since it wasn't in the assignment, I thought I'd fail if I did. Oh well...</p>
-                            </timeline-item>
-                            <timeline-item entry="CCNA" location="Mercantec" time="Sep, 2012">
-                                <p>As part of the IT-Supporter exam, I passed the CCNA exam with a final score of 82.6.</p>
+                            <timeline-item v-for="education in educations" :key="education.id" :entry="education.entry" :location="education.location" :time="education.time">
+                                <p>{{education.content}}</p>
                             </timeline-item>
                         </moso-timeline>
                     </div>
@@ -57,10 +42,33 @@
         </div>
     </div>
 </template>
+
 <script>
     export default {
-        mounted() {
+        data: function() {
+            return {
+                experiences: '',
+                educations: ''
+            }
+        },
 
+        mounted() {
+            this.fetchExperience();
+            this.fetchEducation();
+        },
+
+        methods: {
+            fetchExperience() {
+                axios.get('/api/v1/experience').then(response => {
+                    this.experiences = response.data;
+                });
+            },
+
+            fetchEducation() {
+                axios.get('/api/v1/education').then(response => {
+                    this.educations = response.data;
+                });
+            }
         }
     }
 </script>

@@ -38,6 +38,7 @@
   "homepage": "https://moso.io",
   "license": "MIT",
   "devDependencies": {
+    "axios": "^0.17.0",
     "browser-sync": "^2.18.13",
     "browser-sync-webpack-plugin": "^1.2.0",
     "flexgrid.co": "^2.2.2",

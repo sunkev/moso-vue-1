@@ -18,7 +18,7 @@ mix.js('src/js/app.js', 'js/')
    .options({
         processCssUrls: false
     })
-   .extract(['vue'])
+   .extract(['vue', 'axios'])
    .browserSync({
        proxy: false,
        port: '3000',
