@@ -116,42 +116,42 @@
 
         methods: {
             fetchProfileItems() {
-                axios.get('/api/v1/profileitem')
+                axios.get('https://api.moso.io/api/v1/profileitem')
                 .then(response => {
                     this.profileitems = response.data;
                 });
             },
 
             fetchProgressBars() {
-                axios.get('/api/v1/progressbar')
+                axios.get('https://api.moso.io/api/v1/progressbar')
                 .then(response => {
                     this.progressbars = response.data;
                 });
             },
 
             fetchBioItems() {
-                axios.get('/api/v1/bioitem')
+                axios.get('https://api.moso.io/api/v1/bioitem')
                 .then(response => {
                     this.bioitems = response.data;
                 });
             },
 
             fetchInformationItems() {
-                axios.get('/api/v1/informationitem')
+                axios.get('https://api.moso.io/api/v1/informationitem')
                 .then(response => {
                     this.informationitems = response.data;
                 });
             },
 
             fetchContactItems() {
-                axios.get('/api/v1/contactitem')
+                axios.get('https://api.moso.io/api/v1/contactitem')
                 .then(response => {
                     this.contactitems = response.data;
                 });
             },
 
             fetchSocialIcons() {
-                axios.get('/api/v1/socialicon')
+                axios.get('https://api.moso.io/api/v1/socialicon')
                 .then(response => {
                     this.socialicons = response.data;
                 });

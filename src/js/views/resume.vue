@@ -58,13 +58,13 @@
 
         methods: {
             fetchExperience() {
-                axios.get('/api/v1/experience').then(response => {
+                axios.get('https://api.moso.io/api/v1/experience').then(response => {
                     this.experiences = response.data;
                 });
             },
 
             fetchEducation() {
-                axios.get('/api/v1/education').then(response => {
+                axios.get('https://api.moso.io/api/v1/education').then(response => {
                     this.educations = response.data;
                 });
             }

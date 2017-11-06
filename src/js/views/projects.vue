@@ -44,13 +44,13 @@
 
         methods: {
             fetchProjects() {
-                axios.get('/api/v1/projectitems').then(response => {
+                axios.get('https://api.moso.io/api/v1/projectitems').then(response => {
                     this.projects = response.data;
                 });
             },
 
             fetchSmallProjects() {
-                axios.get('/api/v1/smallprojects').then(response => {
+                axios.get('https://api.moso.io/api/v1/smallprojects').then(response => {
                     this.smallprojects = response.data;
                 });
             }
