@@ -47,10 +47,42 @@ In the `dist`-folder are:
 
 When you upload your website, just upload the contents of the `dist`-folder.
 
+# Editing content
+You probably want to edit the content, if you want to copy the site and just change some stuff.
+However, since this repo started to get forked, I decided to move my data away from the views and fetch them through a small api.
+
+*That means you need to change stuff*
+Otherwise you'll get my data, which will just look silly. It's on my todo-list to throw an error, if the api-request isn't coming from my own server, so you'll notice once you boot up the page.
+
+Unless you want to utilize the power of an api, you need to change the following lines inside each `src/js/views/*.vue`-file:
+```js
+data: function() {
+    return: {
+        something: '' // REMOVE THESE
+    }
+}
+mounted() {
+    this.fetchSomething(); // REMOVE THESE
+},
+
+methods: {
+    fetchSomething() { // REMOVE THESE FUNCTIONS
+        axios.get('https://api.moso.io/api/v1/something')
+        .then(response => {
+            this.something = response.data;
+        });
+    }
+}
+```
+
+You can then go through each `src/js/views/*.vue`-file and remove `v-for` and `:key`, remove the colons (`:`) infront of each property (like `:image`), as the colon (again `:`) is a shorthand for `v-bind:`, which you won't need if you're filling in your own content.
+
+You may also remove the `axios`-import from `src/js/app.js`.
+
 # Custom components
 This project is full of custom and homemade components. Some of them aren't used but are kept in, so I have a hosted copy of a working component. Unused components are, of course, not being loaded, to keep `app.js` at a minimum.
 
-Perhaps I will write some documentation on how they're used, if this is needed. However, since this is just to show my Vue-skills, and since this is a personal website just for me, I haven't written any.
+Perhaps I will write some documentation on how they're used, if this is needed. However, since this is just to show my Vue-skills, and since this is a personal website just for me, I haven't written any. **They should be straight forward, though**.
 
 The list are as follows:
 
