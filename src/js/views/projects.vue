@@ -3,8 +3,10 @@
         <div class="row portfolio">
             <div class="md-12 xl-10 xl-offset-1">
                 <div class="row" v-masonry transition-duration="0.2s" item-selector=".xl-6">
-                    <div class="sm-12 xl-6 masonry-column" v-masonry-tile v-for="project in projects">
-                        <moso-project :image="project.image" :project-title="project.title" :sub-title="project.subtitle" :link="project.link" :icon="project.icon" v-html="project.content"></moso-project>
+                    <div class="sm-12 xl-6 masonry-column" v-masonry-tile v-for="project in projects" :key="project.id">
+                        <moso-project :image="project.image" :project-title="project.title" :sub-title="project.subtitle" :link="project.link" :icon="project.icon">
+                            <span v-html="project.content"></span>
+                        </moso-project>
                     </div>
                 </div>
             </div>
@@ -44,13 +46,13 @@
 
         methods: {
             fetchProjects() {
-                axios.get('https://api.moso.io/api/v1/projectitems').then(response => {
+                axios.get('https://api.moso.io/api/v1/project').then(response => {
                     this.projects = response.data;
                 });
             },
 
             fetchSmallProjects() {
-                axios.get('https://api.moso.io/api/v1/smallprojects').then(response => {
+                axios.get('https://api.moso.io/api/v1/smallproject').then(response => {
                     this.smallprojects = response.data;
                 });
             }
