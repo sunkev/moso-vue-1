@@ -40,20 +40,15 @@
         },
 
         mounted() {
-            this.fetchProjects();
-            this.fetchSmallProjects();
+            this.fetchData();
         },
 
         methods: {
-            fetchProjects() {
-                axios.get('https://api.moso.io/api/v1/project').then(response => {
-                    this.projects = response.data;
-                });
-            },
-
-            fetchSmallProjects() {
-                axios.get('https://api.moso.io/api/v1/smallproject').then(response => {
-                    this.smallprojects = response.data;
+            fetchData() {
+                axios.get('https://api.moso.io/api/v1/projectsdata')
+                .then(response => {
+                    this.projects = response.data.projects;
+                    this.smallprojects = response.data.smallprojects;
                 });
             }
         }

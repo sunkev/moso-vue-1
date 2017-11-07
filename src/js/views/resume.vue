@@ -52,20 +52,15 @@
         },
 
         mounted() {
-            this.fetchExperience();
-            this.fetchEducation();
+            this.fetchData();
         },
 
         methods: {
-            fetchExperience() {
-                axios.get('https://api.moso.io/api/v1/experience').then(response => {
-                    this.experiences = response.data;
-                });
-            },
-
-            fetchEducation() {
-                axios.get('https://api.moso.io/api/v1/education').then(response => {
-                    this.educations = response.data;
+            fetchData() {
+                axios.get('https://api.moso.io/api/v1/resumedata')
+                .then(response => {
+                    this.experiences = response.data.experience;
+                    this.educations = response.data.education;
                 });
             }
         }

@@ -106,54 +106,19 @@
         },
 
         mounted() {
-            this.fetchProfileItems();
-            this.fetchProgressBars();
-            this.fetchBioItems();
-            this.fetchInformationItems();
-            this.fetchContactItems();
-            this.fetchSocialIcons();
+            this.fetchData();
         },
 
         methods: {
-            fetchProfileItems() {
-                axios.get('https://api.moso.io/api/v1/profileitem')
+            fetchData() {
+                axios.get('https://api.moso.io/api/v1/profiledata')
                 .then(response => {
-                    this.profileitems = response.data;
-                });
-            },
-
-            fetchProgressBars() {
-                axios.get('https://api.moso.io/api/v1/progressbar')
-                .then(response => {
-                    this.progressbars = response.data;
-                });
-            },
-
-            fetchBioItems() {
-                axios.get('https://api.moso.io/api/v1/bioitem')
-                .then(response => {
-                    this.bioitems = response.data;
-                });
-            },
-
-            fetchInformationItems() {
-                axios.get('https://api.moso.io/api/v1/informationitem')
-                .then(response => {
-                    this.informationitems = response.data;
-                });
-            },
-
-            fetchContactItems() {
-                axios.get('https://api.moso.io/api/v1/contactitem')
-                .then(response => {
-                    this.contactitems = response.data;
-                });
-            },
-
-            fetchSocialIcons() {
-                axios.get('https://api.moso.io/api/v1/socialicon')
-                .then(response => {
-                    this.socialicons = response.data;
+                    this.profileitems = response.data.profileitems;
+                    this.progressbars = response.data.progressbars;
+                    this.bioitems = response.data.bioitems;
+                    this.informationitems = response.data.informationitems;
+                    this.contactitems = response.data.contactitems;
+                    this.socialicons = response.data.socialicons;
                 });
             }
         }
