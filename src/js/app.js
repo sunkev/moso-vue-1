@@ -54,7 +54,8 @@ const routes = [
     { path: '/profile', component: profile, name: 'Profile' },
     { path: '/resume', component: resume, name: 'Resume' },
     { path: '/projects', component: projects, name: 'Projects' },
-    { path: '/404', component: notfound, name: '404 - not found' }
+    { path: '/404', component: notfound, name: '404 - not found' },
+    { path: '*', redirect: '404' }
 ]
 
 const router = new VueRouter({
