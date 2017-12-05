@@ -40,12 +40,20 @@ main {
     }
 }
 
-// PROFILE WIDGETS
+// LAYOUT WIDGETS
 .profile-widgets > .widget:last-of-type {
     margin: 1rem 0;
 
     @media (min-width: 992px) {
         margin: 2rem 0;
+    }
+}
+
+.info-widgets > .widget:first-of-type {
+    margin: 0 0 1rem;
+
+    @media (min-width: 992px) {
+        margin: 0 0 2rem;
     }
 }
 

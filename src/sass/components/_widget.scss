@@ -53,18 +53,11 @@
 
     .widget__body {
         padding: 1rem;
-    }
 
-    .widget__bio {
-        h4 {
+        h4.sub-title {
             margin-bottom: .625rem;
             font-weight: 400;
             color: #9e9e9e;
-        }
-
-        p {
-            font-size: .875rem;
-            color: rgba(0,0,0,.65);
         }
 
         .column {
@@ -82,7 +75,7 @@
                 vertical-align: middle;
 
                 &--left {
-                    flex: 2;
+                    flex: 1;
                     max-width: 28%;
                     font-weight: 500;
 
@@ -92,15 +85,54 @@
                 }
 
                 &--right {
-                    flex: 3;
+                    flex: 5;
+                }
+            }
+        }
+
+        .toolbox-list {
+            margin: 0;
+            padding-left: 1rem;
+
+            li {
+                padding: .21rem 0;
+
+                &:first-of-type {
+                    padding: 0 0 .21rem;
+                }
+
+                &:last-of-type {
+                    padding: .21rem 0 0;
                 }
             }
         }
     }
 
-    .bio,
-    .personal-information {
-        margin-bottom: 2rem;
+    .widget__bio {
+        p {
+            font-size: .875rem;
+            color: rgba(0,0,0,.65);
+        }
+
+        .bio {
+            p:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+
+    .widget__information {
+        font-size: .875rem;
+        color: rgba(0,0,0,.65);
+
+        .personal-information {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .widget__toolbox {
+        font-size: .875rem;
+        color: rgba(0,0,0,.65);
     }
 
     .contact-information {

@@ -27,63 +27,101 @@
                     </div>
                 </div>
             </div>
-            <div class="lg:7 xl:8">
+            <div class="lg:7 xl:8 info-widgets">
                 <div class="widget">
                     <div class="widget__header">
                         <h3 class="title"><img src="/images/profile.svg" alt=""> Profile</h3>
                     </div>
                     <div class="widget__body widget__bio">
                         <div class="bio" v-for="item in bioitems" :key="item.id" v-html="item.content"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="lg:6">
+                        <div class="widget">
+                            <div class="widget__header">
+                                <h3 class="title"><img src="/images/profile.svg" alt=""> Information</h3>
+                            </div>
+                            <div class="widget__body widget__information">
+                                <div class="personal-information" v-for="item in informationitems" :key="item.id">
+                                    <h4 class="sub-title">Personal information</h4>
+                                    <div class="column">
+                                        <div class="column-item column-item--left">Name:</div>
+                                        <div class="column-item column-item--right">{{item.name}}</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="column-item column-item--left">Age:</div>
+                                        <div class="column-item column-item--right">{{item.age}}</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="column-item column-item--left">Position:</div>
+                                        <div class="column-item column-item--right">{{item.position}}</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="column-item column-item--left">Nationality:</div>
+                                        <div class="column-item column-item--right">{{item.nationality}}</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="column-item column-item--left">Location:</div>
+                                        <div class="column-item column-item--right">{{item.location}}</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="column-item column-item--left">Web:</div>
+                                        <div class="column-item column-item--right"><a :href="item.url" :title="item.url">{{item.url}}</a></div>
+                                    </div>
+                                </div>
 
-                        <div class="personal-information" v-for="item in informationitems" :key="item.id">
-                            <h4>Personal information</h4>
-                            <div class="column">
-                                <div class="column-item column-item--left">Name:</div>
-                                <div class="column-item column-item--right">{{item.name}}</div>
-                            </div>
-                            <div class="column">
-                                <div class="column-item column-item--left">Age:</div>
-                                <div class="column-item column-item--right">{{item.age}}</div>
-                            </div>
-                            <div class="column">
-                                <div class="column-item column-item--left">Position:</div>
-                                <div class="column-item column-item--right">{{item.position}}</div>
-                            </div>
-                            <div class="column">
-                                <div class="column-item column-item--left">Nationality:</div>
-                                <div class="column-item column-item--right">{{item.nationality}}</div>
-                            </div>
-                            <div class="column">
-                                <div class="column-item column-item--left">Location:</div>
-                                <div class="column-item column-item--right">{{item.location}}</div>
-                            </div>
-                            <div class="column">
-                                <div class="column-item column-item--left">Web:</div>
-                                <div class="column-item column-item--right"><a :href="item.url" :title="item.url">{{item.url}}</a></div>
+                                <div class="contact-information" v-for="item in contactitems" :key="item.id">
+                                    <h4 class="sub-title">Contact information</h4>
+                                    <div class="column">
+                                        <div class="column-item column-item--left">E-mail:</div>
+                                        <div class="column-item column-item--right"><a :href="'mailto' + item.email" :title="item.email">{{item.email}}</a></div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="column-item column-item--left">Phone:</div>
+                                        <div class="column-item column-item--right">--- Removed ---</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="column-item column-item--left">Social:</div>
+                                        <div class="column-item column-item--right">
+                                            <ul class="list list--inline list--social" v-for="icon in socialicons" :key="icon.id">
+                                                <li>
+                                                    <a :href="icon.url" class="button icon-button icon-button--small" :title="icon.title" rel="noopener">
+                                                        <img :src="icon.img" alt="">
+                                                        <nano-ripple></nano-ripple>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="contact-information" v-for="item in contactitems" :key="item.id">
-                            <h4>Contact information</h4>
-                            <div class="column">
-                                <div class="column-item column-item--left">E-mail:</div>
-                                <div class="column-item column-item--right"><a :href="'mailto' + item.email" :title="item.email">{{item.email}}</a></div>
+                    </div>
+                    <div class="lg:6">
+                        <div class="widget">
+                            <div class="widget__header">
+                                <h3 class="title"><img src="/images/profile.svg" alt=""> Toolbox</h3>
                             </div>
-                            <div class="column">
-                                <div class="column-item column-item--left">Phone:</div>
-                                <div class="column-item column-item--right">--- Removed ---</div>
-                            </div>
-                            <div class="column">
-                                <div class="column-item column-item--left">Social:</div>
-                                <div class="column-item column-item--right">
-                                    <ul class="list list--inline list--social" v-for="icon in socialicons" :key="icon.id">
-                                        <li>
-                                            <a :href="icon.url" class="button icon-button icon-button--small" :title="icon.title" rel="noopener">
-                                                <img :src="icon.img" alt="">
-                                                <nano-ripple></nano-ripple>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="widget__body widget__toolbox">
+                                <p>Besides playing around with HTML, CSS, and jQuery, I more of less master a lot of frameworks and building tools to create great webapps. Here I have listed some of them:</p>
+                                <ul class="toolbox-list">
+                                    <li>Bootstrap 3 + 4</li>
+                                    <li>Material Design</li>
+                                    <li>Sass/SCSS/Less</li>
+                                    <li>SMACSS/BEM</li>
+                                    <li>JavaScript ES6 + ES7</li>
+                                    <li>XHR/ajax</li>
+                                    <li>Git</li>
+                                    <li>Node.js</li>
+                                    <li>Express.js</li>
+                                    <li>Webpack</li>
+                                    <li>Gulp</li>
+                                    <li>Laravel/Lumen</li>
+                                    <li>Vagrant</li>
+                                    <li>Nginx</li>
+                                    <li>MySQL</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
