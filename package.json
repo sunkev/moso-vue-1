@@ -38,14 +38,14 @@
   "homepage": "https://moso.io",
   "license": "MIT",
   "devDependencies": {
-    "axios": "^0.17.0",
+    "axios": "^0.17.1",
     "browser-sync": "^2.18.13",
     "browser-sync-webpack-plugin": "^1.2.0",
-    "flexgrid.co": "^2.2.2",
-    "laravel-mix": "^1.5.1",
+    "flexgrid.co": "^2.5.0",
+    "laravel-mix": "^1.6.2",
     "v-lazy-img": "^0.1.0",
-    "vue": "^2.5.2",
-    "vue-masonry": "^0.10.12",
+    "vue": "^2.5.9",
+    "vue-masonry": "^0.10.15",
     "vue-router": "^3.0.1"
   }
 }
