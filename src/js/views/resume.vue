@@ -1,7 +1,7 @@
 <template>
-    <div class="container-fluid resume">
+    <div class="container:fluid resume">
         <div class="row">
-            <div class="lg-6">
+            <div class="lg:6">
                 <div class="widget">
                     <div class="widget__header">
                         <h3 class="title">
@@ -20,7 +20,7 @@
                     </div>
                 </div>
             </div>
-            <div class="lg-6">
+            <div class="lg:6">
                 <div class="widget">
                     <div class="widget__header">
                         <h3 class="title">

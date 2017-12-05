@@ -7,11 +7,11 @@ body.open-sidenav {
 
 // APP CONTAINER + ROW
 #app,
-#app > .container-fluid {
+#app > .container\:fluid {
     height: 100%;
 }
 
-#app > .container-fluid {
+#app > .container\:fluid {
     @media (min-width: 992px) {
         padding-left: $sidenav-width + $root-font-size;
     }
@@ -50,11 +50,11 @@ main {
 }
 
 // RESUME
-.resume [class^="lg-"]:last-of-type .widget {
+.resume [class^="lg\:"]:last-of-type .widget {
     margin-bottom: 0;
 }
 
-.resume > [class^="md-"] > .row:first-of-type {
+.resume > [class^="md\:"] > .row:first-of-type {
     margin-top: 1rem;
 
     @media (min-width: 992px) {

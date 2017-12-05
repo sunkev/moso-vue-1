@@ -1,7 +1,7 @@
 <template>
-    <div class="container-fluid">
+    <div class="container:fluid">
         <div class="row">
-            <div class="lg-5 xl-4 profile-widgets">
+            <div class="lg:5 xl:4 profile-widgets">
                 <div class="widget">
                     <div class="widget__body">
                         <moso-profile image="/images/profile.jpg" name="Morten Sørensen" position="Interface Consultant at Netcompany">
@@ -27,7 +27,7 @@
                     </div>
                 </div>
             </div>
-            <div class="lg-7 xl-8">
+            <div class="lg:7 xl:8">
                 <div class="widget">
                     <div class="widget__header">
                         <h3 class="title"><img src="/images/profile.svg" alt=""> Profile</h3>
