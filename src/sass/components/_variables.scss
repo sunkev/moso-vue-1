@@ -1,40 +1,38 @@
 // VARIABLES
 //
 // TYPOGRAPHY
-$root-font-size: 16px;
-$font-family: "Roboto Draft", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-code: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$root-font-size:            16px;
+$font-family:               "Roboto Draft", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-code:          Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
 
 // COLORS
-$gray: #eee;
+$gray:                      #eee;
 
-$blue: #2196f3;
-$blue-hover: #1976d2;
+$primary:                   #455A64;
 
-$blue-gray: #B0BEC5;
-$text-color-sidenav: $blue-gray;
+$blue:                      #2196f3;
+$blue-hover:                #1976d2;
 
-$dark-blue-gray: #263238;
+$blue-gray:                 #B0BEC5;
+$text-color-sidenav:        $blue-gray;
 
-$rgba-black: rgba(0,0,0,.87);
+$dark-blue-gray:            #263238;
 
-$facebook: #3b5998;
-$twitter: #1da1f2;
-$linkedin: #0077b5;
+$rgba-black:                rgba(0,0,0,.87);
 
-$box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);
+$facebook:                  #3b5998;
+$twitter:                   #1da1f2;
+$linkedin:                  #0077b5;
 
-
-$primary: #455A64;
+$box-shadow:                0 1px 3px 0 rgba(0,0,0,.21);
 
 
 // SIDENAV
-$sidenav-width: 256px;
-$sidenav-link-color: #546E7A;
+$sidenav-width:             256px;
+$sidenav-link-color:        #546E7A;
 $sidenav-active-link-color: $blue-gray;
 
 
-// TABS
-$tabs-background: $dark-blue-gray;
-$tabs-indicator: $dark-blue-gray;
+// Flexgrid Tailwind override
+$enable-tailwind:           true;
