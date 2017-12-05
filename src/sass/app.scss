@@ -4,10 +4,6 @@
  * Licensed under MIT (https://github.com/moso/moso-vue/blob/master/LICENSE)
  */
 
-// ROBOTO DRAFT IMPORT
-@import 'components/roboto-draft';
-
-
 // VARIABLES, BASE, AND LAYOUT SPECIFIC STYLES
 @import 'components/variables';
 @import 'components/base';
@@ -37,3 +33,7 @@
 @import 'components/notfound';
 
 @import 'components/utilities';
+
+
+// ROBOTO DRAFT IMPORT
+@import 'components/roboto-draft';
