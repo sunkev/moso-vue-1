@@ -40,7 +40,7 @@
                     <div class="lg:6">
                         <div class="widget">
                             <div class="widget__header">
-                                <h3 class="title"><img src="/images/profile.svg" alt=""> Information</h3>
+                                <h3 class="title"><img src="/images/info.svg" alt=""> Information</h3>
                             </div>
                             <div class="widget__body widget__information">
                                 <div class="personal-information" v-for="item in informationitems" :key="item.id">
@@ -101,26 +101,13 @@
                     <div class="lg:6">
                         <div class="widget">
                             <div class="widget__header">
-                                <h3 class="title"><img src="/images/profile.svg" alt=""> Toolbox</h3>
+                                <h3 class="title"><img src="/images/wrench.svg" alt=""> Toolbox</h3>
                             </div>
                             <div class="widget__body widget__toolbox">
                                 <p>Besides playing around with HTML, CSS, and jQuery, I more of less master a lot of frameworks and building tools to create great webapps. Here I have listed some of them:</p>
+
                                 <ul class="toolbox-list">
-                                    <li>Bootstrap 3 + 4</li>
-                                    <li>Material Design</li>
-                                    <li>Sass/SCSS/Less</li>
-                                    <li>SMACSS/BEM</li>
-                                    <li>JavaScript ES6 + ES7</li>
-                                    <li>XHR/ajax</li>
-                                    <li>Git</li>
-                                    <li>Node.js</li>
-                                    <li>Express.js</li>
-                                    <li>Webpack</li>
-                                    <li>Gulp</li>
-                                    <li>Laravel/Lumen</li>
-                                    <li>Vagrant</li>
-                                    <li>Nginx</li>
-                                    <li>MySQL</li>
+                                    <li v-for="tool in toolitems">{{tool.item}}</li>
                                 </ul>
                             </div>
                         </div>
@@ -139,7 +126,8 @@
                 bioitems: '',
                 informationitems: '',
                 contactitems: '',
-                socialicons: ''
+                socialicons: '',
+                toolitems: ''
             }
         },
 
@@ -157,6 +145,7 @@
                     this.informationitems = response.data.informationitems;
                     this.contactitems = response.data.contactitems;
                     this.socialicons = response.data.socialicons;
+                    this.toolitems = response.data.toolitems;
                 });
             }
         }
