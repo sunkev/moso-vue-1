@@ -35,6 +35,20 @@ module.exports = {
     */
     loading: { color: '#263238' },
     /*
+    ** Custom routes
+    */
+    router: {
+        //mode: 'hash',
+        linkActiveClass: 'router-link-active',
+        extendedRoutes (routes, resolve) {
+            routes.push({
+                name: '404 - not found',
+                path: '*',
+                component: resolve(__dirname, 'pages/404.vue')
+            })
+        }
+    }
+    /*
     ** Build configuration
     */
     build: {
