@@ -54,6 +54,17 @@ module.exports = {
         /*
         ** Vendor plugins
         */
-        vendor: ['axios']
-    }
+        vendor: [
+            'axios',
+            'v-lazy-img',
+            'vue-masonry'
+        ]
+    },
+    /*
+    ** Plugins
+    */
+    plugins: [
+        '~/plugins/v-lazy-img',
+        '~/plugins/vue-masonry'
+    ]
 }
