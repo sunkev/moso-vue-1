@@ -31,6 +31,13 @@ module.exports = {
         ]
     },
     /*
+    ** CSS
+    */
+    css: [
+        '~/node_modules/flexgrid.co/css/flexgrid-tailwind.css',
+        '~/assets/sass/app.scss'
+    ],
+    /*
     ** Customize the progress bar color
     */
     loading: { color: '#263238' },
