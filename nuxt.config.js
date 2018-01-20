@@ -50,6 +50,10 @@ module.exports = {
                     exclude: /(node_modules)/
                 })
             }
-        }
+        },
+        /*
+        ** Vendor plugins
+        */
+        vendor: ['axios']
     }
 }
