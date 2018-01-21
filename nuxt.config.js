@@ -96,7 +96,7 @@ module.exports = {
     ** Plugins
     */
     plugins: [
-        '~/plugins/RippleDirective',
+        '~/plugins/Ripple',
         '~/plugins/v-lazy-img',
         '~/plugins/vue-masonry'
     ]
