@@ -45,7 +45,7 @@
                         </li>
                     </moso-drawer-list>
                     <div class="made-with">
-                        <p>Made with <img src="/images/heart.svg" alt="Love"> and <a href="https://vuejs.org" title="Vue.js" rel="noopener" target="_blank"><img src="~/assets/images/vue-logo.svg" alt="Vue.js"></a> &#43; <a href="https://nuxtjs.org" title="Nuxt.js" rel="noopener" target="_blank"><img src="~/assets/images/nuxt-logo.svg" alt="Nuxt.js"></a></p>
+                        <p>Made with <img src="/images/heart.svg" alt="Love"> and <a href="https://vuejs.org" title="Vue.js" rel="noopener" target="_blank"><img src="~/assets/images/vue-logo.svg" alt="Vue.js"></a></p>
                     </div>
                 </moso-sidenav>
                 <div class="app-layout">
