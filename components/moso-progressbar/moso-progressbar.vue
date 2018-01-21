@@ -30,6 +30,8 @@ export default {
 }
 </script>
 <style lang="scss">
+@import '~/assets/sass/variables';
+
 .progressbar-container {
     .progressbar-values {
         display: flex;

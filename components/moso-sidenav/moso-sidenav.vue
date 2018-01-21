@@ -83,6 +83,8 @@ export default {
 }
 </script>
 <style lang="scss">
+@import '~/assets/sass/variables';
+
 .sidenav {
     position: fixed;
     top: 0;
