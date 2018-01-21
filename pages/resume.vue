@@ -47,6 +47,7 @@ import MosoTimeline from '~/components/moso-timeline/moso-timeline.vue'
 import TimelineItem from '~/components/moso-timeline/moso-timeline-item.vue'
 
 export default {
+    name: 'Resume',
     components: {
         MosoTimeline,
         TimelineItem

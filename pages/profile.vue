@@ -125,6 +125,7 @@ import NanoRipple from '~/components/nano-ripple/nano-ripple.vue'
 
 
 export default {
+    name: 'Profile',
     components: {
         MosoProfile,
         ProfileItem,

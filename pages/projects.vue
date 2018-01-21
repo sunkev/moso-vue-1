@@ -34,6 +34,7 @@
 import MosoProject from '~/components/moso-project/moso-project.vue'
 
 export default {
+    name: 'Projects',
     components: {
         MosoProject
     },

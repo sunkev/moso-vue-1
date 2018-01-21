@@ -48,11 +48,22 @@ module.exports = {
         //mode: 'hash',
         linkActiveClass: 'router-link-active',
         extendedRoutes (routes, resolve) {
-            routes.push({
-                name: '404 - not found',
-                path: '*',
-                component: resolve(__dirname, 'pages/404.vue')
-            })
+            routes.push([
+                {
+                    name: 'Profile ',
+                    path: '/',
+                    component: resolve(__dirname, 'pages/profile.vue')
+                },
+                {
+                    name: '404 - not found',
+                    path: '/404',
+                    component: resolve(__dirname, 'pages/404.vue')
+                },
+                {
+                    path: '*',
+                    redirect: '404'
+                }
+            ])
         }
     }
     /*
