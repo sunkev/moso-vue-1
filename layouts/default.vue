@@ -95,3 +95,56 @@ export default {
     }
 }
 </script>
+<style lang="scss">
+@import '~/assets/sass/variables';
+
+moso-drawer-list {
+    li {
+        display: flex;
+        height: 40px;
+
+        a {
+            display: block;
+            padding: 0 2rem;
+            font-weight: 400;
+            color: $sidenav-link-color;
+            line-height: 40px;
+            text-decoration: none;
+            transition: color .2s ease-in-out;
+
+            svg {
+                position: relative;
+                top: 2px;
+                width: 1rem;
+                height: 1rem;
+                margin-right: 10px;
+                fill: $sidenav-link-color;
+                transition: fill .2s ease-in-out;
+            }
+
+            &:hover,
+            &:focus,
+            &:active,
+            &:hover:active {
+                color: lighten($sidenav-link-color, 10%);
+                outline: none;
+                text-decoration: none;
+
+                svg {
+                    fill: lighten($sidenav-link-color, 10%);
+                }
+            }
+
+            &.router-link-active,
+            &.active {
+                color: $sidenav-active-link-color;
+                font-weight: 500;
+
+                svg {
+                    fill: $sidenav-active-link-color;
+                }
+            }
+        }
+    }
+}
+</style>
