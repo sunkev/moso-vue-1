@@ -4,24 +4,64 @@
     </div>
 </template>
 <script>
-    export default {
-        props: {
-            fixed: {
-                default: false,
-                type: Boolean
-            }
-        },
+export default {
+    props: {
+        fixed: {
+            default: false,
+            type: Boolean
+        }
+    },
 
-        mounted() {
+    mounted() {
 
-        },
+    },
 
-        computed: {
-            classes() {
-                return {
-                    'fixed': this.fixed
-                }
+    computed: {
+        classes() {
+            return {
+                'fixed': this.fixed
             }
         }
     }
+}
 </script>
+<style lang="scss">
+@import '~/assets/sass/variables';
+
+.toolbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 65px;
+    padding: 0 1rem;
+    background-color: #fff;
+    font-size: 1.25rem;
+    color: $rgba-black;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);
+
+    @media (min-width: 992px) {
+        width: calc(100% - #{$sidenav-width});
+    }
+
+    &.fixed {
+        position: fixed;
+        top: 0;
+        z-index: 2;
+    }
+
+    & >>> .page-title {
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: 0 0 0 1rem;
+        }
+    }
+
+    & >>> .version-badge {
+        margin-left: auto;
+    }
+}
+</style>
