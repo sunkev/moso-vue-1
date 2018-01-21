@@ -8,10 +8,15 @@
                             <img src="~/assets/images/logo.svg" alt="Logo">
                         </a>
                     </div>
-                    <moso-profile-picture image="~/assets/images/profile.jpg">
-                        <p slot="name">Morten S&oslash;rensen</p>
-                        <p slot="position">Front-End Engineer, Website Magician</p>
-                    </moso-profile-picture>
+                    <div class="profile-picture">
+                        <div class="media">
+                            <div class="image">
+                                <img src="~/assets/images/profile.jpg" alt="Morten Sørensen">
+                            </div>
+                            <p>Morten S&oslash;rensen</p>
+                            <p>Front-End Engineer, Website Magician</p>
+                        </div>
+                    </div>
                     <moso-drawer-list ref="drawerList">
                         <li>
                             <nuxt-link to="/profile" :class="{'router-link-active': $route.fullPath ==='/' || $route.fullPath === '/profile'}">
@@ -45,7 +50,7 @@
                         </li>
                     </moso-drawer-list>
                     <div class="made-with">
-                        <p>Made with <img src="/images/heart.svg" alt="Love"> and <a href="https://vuejs.org" title="Vue.js" rel="noopener" target="_blank"><img src="~/assets/images/vue-logo.svg" alt="Vue.js"></a></p>
+                        <p>Made with <img src="~/assets/images/heart.svg" alt="Love"> and <a href="https://vuejs.org" title="Vue.js" rel="noopener" target="_blank"><img src="~/assets/images/vue-logo.svg" alt="Vue.js"></a></p>
                     </div>
                 </moso-sidenav>
                 <div class="app-layout">
@@ -98,99 +103,86 @@ export default {
 <style lang="scss">
 @import './assets/sass/variables';
 
-moso-drawer-list {
-    li {
-        display: flex;
-        height: 40px;
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
 
-        a {
-            display: block;
-            padding: 0 2rem;
-            font-weight: 400;
-            color: $sidenav-link-color;
-            line-height: 40px;
-            text-decoration: none;
-            transition: color .2s ease-in-out;
+    img {
+        width: 100%;
+        height: 57px;
+        padding: .3125rem 0;
+    }
+}
 
-            svg {
-                position: relative;
-                top: 2px;
-                width: 1rem;
-                height: 1rem;
-                margin-right: 10px;
-                fill: $sidenav-link-color;
-                transition: fill .2s ease-in-out;
+.profile-picture {
+    padding: .9125rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+
+    .image {
+        width: 100px;
+        height: 100px;
+        margin: 1px auto 8px auto;
+
+        img {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 2px solid #37474F;
+        }
+    }
+
+    .media {
+        & >>> p {
+            margin: 0;
+            text-align: center;
+            color: $text-color-sidenav;
+
+            &:first-of-type {
+                font-size: 1.25rem;
+                font-weight: 400;
+                margin: 0 0 .3125rem;
             }
 
-            &:hover,
-            &:focus,
-            &:active,
-            &:hover:active {
-                color: lighten($sidenav-link-color, 10%);
-                outline: none;
-                text-decoration: none;
-
-                svg {
-                    fill: lighten($sidenav-link-color, 10%);
-                }
-            }
-
-            &.router-link-active,
-            &.active {
-                color: $sidenav-active-link-color;
-                font-weight: 500;
-
-                svg {
-                    fill: $sidenav-active-link-color;
-                }
+            &:last-of-type {
+                font-size: .8125rem;
+                font-weight: 300;
             }
         }
     }
 }
 
-moso-sidenav {
-    .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 65px;
-        box-shadow: 0 2px 5px rgba(0,0,0,.26);
+.made-with {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    color: #546e7a;
+    text-align: center;
+
+    p {
+        margin: 0;
+
+        i.mdi {
+            font-size: 1rem;
+            margin: 0 .0625rem;
+            color: $text-color-sidenav;
+        }
+
+        i.mdi,
+        img {
+            width: 16px;
+            height: 16px;
+        }
 
         img {
-            width: 100%;
-            height: 57px;
-            padding: .3125rem 0;
-        }
-    }
-
-    .made-with {
-        position: absolute;
-        bottom: 5px;
-        left: 0;
-        right: 0;
-        color: #546e7a;
-        text-align: center;
-
-        p {
-            margin: 0;
-
-            i.mdi {
-                font-size: 1rem;
-                margin: 0 .0625rem;
-                color: $text-color-sidenav;
-            }
-
-            i.mdi,
-            img {
-                width: 16px;
-                height: 16px;
-            }
-
-            img {
-                position: relative;
-                top: 3px;
-                margin-left: .125rem;
-            }
+            position: relative;
+            top: 3px;
+            margin-left: .125rem;
         }
     }
 }

@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="lg:6">
+                    <div class="xl:6">
                         <div class="widget">
                             <div class="widget__header">
                                 <h3 class="title"><img src="~/assets/images/info.svg" alt=""> Information</h3>
@@ -98,7 +98,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lg:6">
+                    <div class="xl:6">
                         <div class="widget">
                             <div class="widget__header">
                                 <h3 class="title"><img src="~/assets/images/wrench.svg" alt=""> Toolbox</h3>
@@ -163,7 +163,3 @@ export default {
     }
 }
 </script>
-
-<style lang="scss">
-
-</style>

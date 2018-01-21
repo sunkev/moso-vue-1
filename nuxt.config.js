@@ -67,6 +67,12 @@ module.exports = {
         }
     },
     /*
+    ** Modules
+    */
+    modules: [
+        '@nuxtjs/axios',
+    ],
+    /*
     ** Build configuration
     */
     build: {
@@ -96,6 +102,7 @@ module.exports = {
     ** Plugins
     */
     plugins: [
+        '~/plugins/axios',
         '~/plugins/Ripple',
         '~/plugins/v-lazy-img',
         '~/plugins/vue-masonry'
