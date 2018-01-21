@@ -11,11 +11,9 @@ export default {
             type: Boolean
         }
     },
-
     mounted() {
-
+        //
     },
-
     computed: {
         classes() {
             return {

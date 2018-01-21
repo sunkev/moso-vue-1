@@ -18,24 +18,19 @@ export default {
         link: {
             type: String
         },
-
         linkClass: {
             type: String
         },
-
         icon: {
             type: String
         },
-
         svg: {
             type: String
         },
-
         title: {
             type: String
         }
     },
-
     mounted() {
         //
     }

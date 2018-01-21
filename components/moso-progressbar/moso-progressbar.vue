@@ -17,13 +17,10 @@ export default {
         name: {
             type: String
         },
-
         percentage: {
             type: String
         }
-
     },
-
     mounted() {
         //
     }

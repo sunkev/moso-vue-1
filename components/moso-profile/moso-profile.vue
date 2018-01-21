@@ -18,16 +18,13 @@ export default {
         image: {
             type: String
         },
-
         name: {
             type: String
         },
-
         position: {
             type: String
         }
     },
-
     mounted() {
         //
     }

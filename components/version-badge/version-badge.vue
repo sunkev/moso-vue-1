@@ -8,9 +8,8 @@ export default {
     props: {
         version: String
     },
-
     mounted() {
-
+        //
     }
 }
 </script>

@@ -11,7 +11,6 @@ export default {
             element: null,
         }
     },
-
     methods: {
         init() {
             this.element.classList.add('has-ripple');
@@ -23,7 +22,6 @@ export default {
             );
         }
     },
-
     mounted() {
         this.element = this.$el.parentElement;
         this.ripples = [];

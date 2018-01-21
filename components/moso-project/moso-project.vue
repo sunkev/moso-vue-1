@@ -25,35 +25,27 @@ export default {
         image: {
             type: String
         },
-
         projectTitle: {
             type: String
         },
-
         subTitle: {
             type: String
         },
-
         link: {
             type: String
         },
-
         icon: {
             type: String
         }
     },
-
     filters: {
         stripHTTP: function(value) {
-
             value = value.toString();
-
             if (value.match(/https?:\/\//)) {
                 return value.replace(/https?:\/\//, '');
             }
         }
     },
-
     mounted() {
         //
     }
