@@ -1,4 +1,4 @@
-import Ripple from '~/plugins/Ripple.js';
+import Ripple from '~/plugins/RippleClass.js';
 
 export default {
     inserted(el) {
