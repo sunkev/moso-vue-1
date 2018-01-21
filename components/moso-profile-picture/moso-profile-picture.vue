@@ -38,5 +38,24 @@ export default {
             border: 2px solid #37474F;
         }
     }
+
+    .media {
+        & >>> p {
+            margin: 0;
+            text-align: center;
+            color: $text-color-sidenav;
+
+            &:first-of-type {
+                font-size: 1.25rem;
+                font-weight: 400;
+                margin: 0 0 .3125rem;
+            }
+
+            &:last-of-type {
+                font-size: .8125rem;
+                font-weight: 300;
+            }
+        }
+    }
 }
 </style>

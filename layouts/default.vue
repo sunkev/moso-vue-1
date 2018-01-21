@@ -147,4 +147,51 @@ moso-drawer-list {
         }
     }
 }
+
+moso-sidenav {
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 65px;
+        box-shadow: 0 2px 5px rgba(0,0,0,.26);
+
+        img {
+            width: 100%;
+            height: 57px;
+            padding: .3125rem 0;
+        }
+    }
+
+    .made-with {
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        right: 0;
+        color: #546e7a;
+        text-align: center;
+
+        p {
+            margin: 0;
+
+            i.mdi {
+                font-size: 1rem;
+                margin: 0 .0625rem;
+                color: $text-color-sidenav;
+            }
+
+            i.mdi,
+            img {
+                width: 16px;
+                height: 16px;
+            }
+
+            img {
+                position: relative;
+                top: 3px;
+                margin-left: .125rem;
+            }
+        }
+    }
+}
 </style>
