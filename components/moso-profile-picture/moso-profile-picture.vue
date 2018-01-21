@@ -20,7 +20,7 @@ export default {
 }
 </script>
 <style lang="scss">
-@import '~/assets/sass/variables';
+@import './assets/sass/variables';
 
 .profile-picture {
     padding: .9125rem;

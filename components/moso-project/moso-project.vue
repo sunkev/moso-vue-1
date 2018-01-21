@@ -52,7 +52,7 @@ export default {
 }
 </script>
 <style lang="scss">
-@import '~/assets/sass/variables';
+@import './assets/sass/variables';
 
 .project {
     display: flex;

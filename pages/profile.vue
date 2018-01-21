@@ -87,7 +87,7 @@
                                             <ul class="list list--inline list--social" v-for="icon in socialicons" :key="icon.id">
                                                 <li>
                                                     <a :href="icon.url" class="button icon-button icon-button--small" :title="icon.title" rel="noopener">
-                                                        <img :src="~/assets/icon.img" alt="">
+                                                        <img :src="icon.img" alt="">
                                                         <nano-ripple></nano-ripple>
                                                     </a>
                                                 </li>
@@ -101,13 +101,13 @@
                     <div class="lg:6">
                         <div class="widget">
                             <div class="widget__header">
-                                <h3 class="title"><img src="/images/wrench.svg" alt=""> Toolbox</h3>
+                                <h3 class="title"><img src="~/assets/images/wrench.svg" alt=""> Toolbox</h3>
                             </div>
                             <div class="widget__body widget__toolbox">
                                 <p>Besides playing around with HTML, CSS, and jQuery, I more of less master a lot of frameworks and building tools to create great webapps. Here I have listed some of them:</p>
 
                                 <ul class="toolbox-list">
-                                    <li v-for="tool in toolitems">{{tool.item}}</li>
+                                    <li v-for="tool in toolitems" :key="tool.id">{{tool.item}}</li>
                                 </ul>
                             </div>
                         </div>
