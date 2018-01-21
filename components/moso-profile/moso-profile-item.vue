@@ -8,31 +8,83 @@
     </li>
 </template>
 <script>
-    export default {
-        props: {
-            link: {
-                type: String
-            },
+import NanoRipple from '~/components/nano-ripple/nano-ripple.vue'
 
-            linkClass: {
-                type: String
-            },
-
-            icon: {
-                type: String
-            },
-
-            svg: {
-                type: String
-            },
-
-            title: {
-                type: String
-            }
+export default {
+    components: {
+        NanoRipple
+    },
+    props: {
+        link: {
+            type: String
         },
 
-        mounted() {
-            //
+        linkClass: {
+            type: String
+        },
+
+        icon: {
+            type: String
+        },
+
+        svg: {
+            type: String
+        },
+
+        title: {
+            type: String
+        }
+    },
+
+    mounted() {
+        //
+    }
+}
+</script>
+<style lang="scss">
+@import '~/assets/sass/variables';
+
+:root {
+    li {
+        height: 40px;
+        width: 40px;
+
+        a {
+            text-decoration: none;
+            text-align: center;
+            border-radius: 50%;
+
+            &:hover,
+            &:focus,
+            &:active,
+            &:visited,
+            &:hover:active {
+                text-decoration: none;
+                outline: 0;
+            }
+
+            &.github,
+            &.codepen {
+                color: #000;
+            }
+
+            &.facebook {
+                color: $facebook;
+            }
+
+            &.twitter {
+                color: $twitter;
+            }
+
+            &.linkedin {
+                color: $linkedin;
+            }
+
+            i.mdi {
+                display: block;
+                line-height: 22px;
+            }
         }
     }
-</script>
+}
+</style>
