@@ -10,13 +10,33 @@
     </div>
 </template>
 <script>
-    export default {
-        props: {
-            image: String
-        },
+export default {
+    props: {
+        image: String
+    },
+    mounted() {
+        //
+    }
+}
+</script>
+<style lang="scss">
+.profile-picture {
+    padding: .9125rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
 
-        mounted() {
+    .image {
+        width: 100px;
+        height: 100px;
+        margin: 1px auto 8px auto;
 
+        img {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 2px solid #37474F;
         }
     }
-</script>
+}
+</style>
