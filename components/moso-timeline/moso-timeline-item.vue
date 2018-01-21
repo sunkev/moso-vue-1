@@ -11,23 +11,23 @@
     </li>
 </template>
 <script>
-    export default {
-        props: {
-            entry: {
-                type: String
-            },
-
-            location: {
-                type: String
-            },
-
-            time: {
-                type: String
-            }
+export default {
+    props: {
+        entry: {
+            type: String
         },
 
-        mounted() {
-            //
+        location: {
+            type: String
+        },
+
+        time: {
+            type: String
         }
+    },
+
+    mounted() {
+        //
     }
+}
 </script>

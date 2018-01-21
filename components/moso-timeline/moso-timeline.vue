@@ -4,9 +4,107 @@
     </ul>
 </template>
 <script>
-    export default {
-        mounted() {
-            //
+export default {
+    mounted() {
+        //
+    }
+}
+</script>
+<style lang="scss">
+@import '~/assets/sass/variables';
+
+.timeline {
+    list-style: none;
+    margin: 0 0 0 .625rem;
+    padding: 0;
+
+    & >>> li {
+        position: relative;
+        margin: 0;
+        padding: 0 0 1rem 1rem;
+        border-left: 2px solid rgba(0,0,0,.12);
+
+        &:before {
+            content: '';
+            width: 1rem;
+            height: 1rem;
+            position: absolute;
+            left: -9px;
+            top: 0px;
+            border-radius: 50%;
+            background-color: #fff;
+            padding: .25rem;
+            border: 4px solid #546E7A;
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);
+        }
+
+        @media (min-width: 768px) {
+            padding: 0 0 2.5rem 2.5rem;
+        }
+
+        .title {
+            position: relative;
+            top: -4px;
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        &:first-child {
+            .title {
+                margin-top: .625rem;
+            }
+        }
+
+        &:last-of-type {
+            border: 0;
+
+            @media (min-width: 768px) {
+                padding: 0 0 0 2.5rem;
+            }
+
+            &:before {
+                left: -7px;
+            }
+        }
+
+        .information {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 0 .375rem;
+
+            .location {
+                font-size: .75rem;
+                color: rgba(0,0,0,.54);
+
+                i.mdi,
+                img {
+                    margin-right: .125rem;
+                }
+
+                img {
+                    position: relative;
+                    top: 1px;
+                    width: .75rem;
+                    height: .75rem;
+                    opacity: .35;
+                }
+            }
+
+            .time {
+                margin-left: auto;
+                font-size: .875rem;
+                font-weight: 300;
+                color: rgba(0,0,0,.54);
+            }
+        }
+
+        p {
+            margin: 0 0 .625rem;
+            font-size: .875rem;
+            color: rgba(0,0,0,.65);
         }
     }
-</script>
+}
+</style>
