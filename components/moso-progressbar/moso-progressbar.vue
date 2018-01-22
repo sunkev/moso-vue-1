@@ -26,7 +26,7 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 @import './assets/sass/variables';
 
 .progressbar-container {
@@ -61,7 +61,7 @@ export default {
         .thumb {
             position: absolute;
             top: -3px;
-            right: 0;
+            right: -2px;
             width: 20px;
             height: 20px;
             background-color: #607D8B;

@@ -30,7 +30,7 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 @import './assets/sass/variables';
 
 .profile {
@@ -71,7 +71,7 @@ export default {
     }
 
     .icon-group {
-        margin: 1rem 0 0;
+        margin: .78rem 0 0;
         width: 100%;
         font-size: 1.5rem;
 

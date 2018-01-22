@@ -1,6 +1,6 @@
 <template>
     <li>
-        <a :href="link" class="button icon-button" :class="linkClass" tabindex="-1" :title="title" rel="noopener">
+        <a :href="link" class="button icon-button" :class="linkClass" tabindex="-1" :title="title" target="_blank" rel="noopener">
             <img :src="svg" alt="" v-if="svg">
             <i class="mdi" :class="icon" v-if="icon"></i>
             <nano-ripple></nano-ripple>
@@ -36,49 +36,47 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 @import './assets/sass/variables';
 
-:root {
-    li {
-        height: 40px;
-        width: 40px;
+li {
+    height: 40px;
+    width: 40px;
 
-        a {
+    a {
+        text-decoration: none;
+        text-align: center;
+        border-radius: 50%;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:visited,
+        &:hover:active {
             text-decoration: none;
-            text-align: center;
-            border-radius: 50%;
+            outline: 0;
+        }
 
-            &:hover,
-            &:focus,
-            &:active,
-            &:visited,
-            &:hover:active {
-                text-decoration: none;
-                outline: 0;
-            }
+        &.github,
+        &.codepen {
+            color: #000;
+        }
 
-            &.github,
-            &.codepen {
-                color: #000;
-            }
+        &.facebook {
+            color: $facebook;
+        }
 
-            &.facebook {
-                color: $facebook;
-            }
+        &.twitter {
+            color: $twitter;
+        }
 
-            &.twitter {
-                color: $twitter;
-            }
+        &.linkedin {
+            color: $linkedin;
+        }
 
-            &.linkedin {
-                color: $linkedin;
-            }
-
-            i.mdi {
-                display: block;
-                line-height: 22px;
-            }
+        i.mdi {
+            display: block;
+            line-height: 22px;
         }
     }
 }

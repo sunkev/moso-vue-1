@@ -89,23 +89,6 @@
                 }
             }
         }
-
-        .toolbox-list {
-            margin: 0;
-            padding-left: 1rem;
-
-            li {
-                padding: .21rem 0;
-
-                &:first-of-type {
-                    padding: 0 0 .21rem;
-                }
-
-                &:last-of-type {
-                    padding: .21rem 0 0;
-                }
-            }
-        }
     }
 
     .widget__bio {
