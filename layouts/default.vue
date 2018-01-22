@@ -5,13 +5,13 @@
                 <moso-sidenav ref="sidenav">
                     <div class="logo">
                         <a href="/" @click="closeSidenav" title="Home">
-                            <img src="~/assets/images/logo.svg" alt="Logo">
+                            <img src="/images/logo.svg" alt="Logo">
                         </a>
                     </div>
                     <div class="profile-picture">
                         <div class="media">
                             <div class="image">
-                                <img src="~/assets/images/profile.jpg" alt="Morten Sørensen">
+                                <img src="/images/profile.jpg" alt="Morten Sørensen">
                             </div>
                             <p>Morten S&oslash;rensen</p>
                             <p>Front-End Engineer, Website Magician</p>
@@ -50,7 +50,7 @@
                         </li>
                     </moso-drawer-list>
                     <div class="made-with">
-                        <p>Made with <img src="~/assets/images/heart.svg" alt="Love"> and <a href="https://vuejs.org" title="Vue.js" rel="noopener" target="_blank"><img src="~/assets/images/vue-logo.svg" alt="Vue.js"></a></p>
+                        <p>Made with <img src="/images/heart.svg" alt="Love"> and <a href="https://vuejs.org" title="Vue.js" rel="noopener" target="_blank"><img src="/images/vue-logo.svg" alt="Vue.js"></a></p>
                     </div>
                 </moso-sidenav>
                 <div class="app-layout">

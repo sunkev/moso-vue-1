@@ -97,6 +97,6 @@ module.exports = {
     plugins: [
         '~/plugins/Ripple',
         '~/plugins/v-lazy-img',
-        '~/plugins/vue-masonry'
+        { src: '~/plugins/vue-masonry', ssr: false }
     ]
 }

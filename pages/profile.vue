@@ -41,7 +41,7 @@
 
                 <div class="widget">
                     <div class="widget__header">
-                        <h3 class="title"><img src="~/assets/images/plus-one.svg" alt=""> Skills</h3>
+                        <h3 class="title"><img src="/images/plus-one.svg" alt=""> Skills</h3>
                     </div>
                     <div class="widget__body">
                         <moso-progressbar name="HTML5/CSS3/Sass" percentage="100"></moso-progressbar>
@@ -63,7 +63,7 @@
             <div class="lg:7 xl:8 info-widgets">
                 <div class="widget">
                     <div class="widget__header">
-                        <h3 class="title"><img src="~/assets/images/profile.svg" alt=""> Profile</h3>
+                        <h3 class="title"><img src="/images/profile.svg" alt=""> Profile</h3>
                     </div>
                     <div class="widget__body widget__bio">
                         <div class="bio">
@@ -79,7 +79,7 @@
                     <div class="xl:6">
                         <div class="widget">
                             <div class="widget__header">
-                                <h3 class="title"><img src="~/assets/images/info.svg" alt=""> Information</h3>
+                                <h3 class="title"><img src="/images/info.svg" alt=""> Information</h3>
                             </div>
                             <div class="widget__body widget__information">
                                 <div class="personal-information">
@@ -126,31 +126,31 @@
                                             <ul class="list list--inline list--social">
                                                 <li>
                                                     <a href="https://github.com/moso" class="button icon-button icon-button--small" title="GitHub" target="_blank" rel="noopener">
-                                                        <img src="~/assets/images/github.svg" alt="">
+                                                        <img src="/images/github.svg" alt="">
                                                         <nano-ripple></nano-ripple>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="https://codepen.io/moso" class="button icon-button icon-button--small" title="CodePen" target="_blank" rel="noopener">
-                                                        <img src="~/assets/images/codepen.svg" alt="">
+                                                        <img src="/images/codepen.svg" alt="">
                                                         <nano-ripple></nano-ripple>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="https://twitter.com/mosodotio" class="button icon-button icon-button--small" title="Twitter" target="_blank" rel="noopener">
-                                                        <img src="~/assets/images/twitter.svg" alt="">
+                                                        <img src="/images/twitter.svg" alt="">
                                                         <nano-ripple></nano-ripple>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="https://facebook.com/moso.profil" class="button icon-button icon-button--small" title="Facebook" target="_blank" rel="noopener">
-                                                        <img src="~/assets/images/facebook.svg" alt="">
+                                                        <img src="/images/facebook.svg" alt="">
                                                         <nano-ripple></nano-ripple>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="https://dk.linkedin.com/in/mosoio" class="button icon-button icon-button--small" title="LinkedIn" target="_blank" rel="noopener">
-                                                        <img src="~/assets/images/linkedin.svg" alt="">
+                                                        <img src="/images/linkedin.svg" alt="">
                                                         <nano-ripple></nano-ripple>
                                                     </a>
                                                 </li>
@@ -164,7 +164,7 @@
                     <div class="xl:6">
                         <div class="widget">
                             <div class="widget__header">
-                                <h3 class="title"><img src="~/assets/images/wrench.svg" alt=""> Toolbox</h3>
+                                <h3 class="title"><img src="/images/wrench.svg" alt=""> Toolbox</h3>
                             </div>
                             <div class="widget__body widget__toolbox">
                                 <p>Besides playing around with HTML, CSS, and jQuery, I more of less master a lot of frameworks and building tools to create great webapps. Here I have listed some of them:</p>

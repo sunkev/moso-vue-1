@@ -53,23 +53,8 @@ export default {
         MosoTimeline,
         TimelineItem
     },
-    data: function() {
-        return {
-            experiences: '',
-            educations: ''
-        }
-    },
     mounted() {
-        this.fetchData();
-    },
-    methods: {
-        fetchData() {
-            axios.get('https://api.moso.io/api/v1/resumedata')
-            .then(response => {
-                this.experiences = response.data.experience;
-                this.educations = response.data.education;
-            });
-        }
+        //
     }
 }
 </script>

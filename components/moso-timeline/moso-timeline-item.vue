@@ -3,7 +3,7 @@
         <h3 class="title">{{ entry }}</h3>
         <div class="information">
             <span class="location" v-if="location">
-                <img src="~/assets/images/map-marker.svg" alt="Location"> {{ location }}
+                <img src="/images/map-marker.svg" alt="Location"> {{ location }}
             </span>
             <span class="time">{{ time }}</span>
         </div>
