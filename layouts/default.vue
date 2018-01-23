@@ -49,7 +49,7 @@
                             </nuxt-link>
                         </li>
                     </moso-drawer-list>
-                    <div class="made-with">
+                    <div class="footer">
                         <span>Made with <img src="/images/heart.svg" alt="Love"> and <a href="https://vuejs.org" title="Vue.js" target="_blank" rel="noopener"><img src="/images/vue-logo.svg" alt="Vue.js"></a> &#43; <a href="https://nuxtjs.org" title="Nuxt.js" target="_blank" rel="noopener"><img src="/images/nuxt-logo.svg" alt="Nuxt.js"></a></span>
                     </div>
                 </moso-sidenav>
@@ -155,7 +155,7 @@ export default {
     }
 }
 
-.made-with {
+.footer {
     position: absolute;
     bottom: 5px;
     left: 0;
