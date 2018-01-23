@@ -47,12 +47,35 @@ module.exports = {
     router: {
         //mode: 'hash',
         linkActiveClass: 'router-link-active',
+        routes: [
+            { path: '/', component: '~/pages/profile', name: 'Profile ' },
+            { path: '/profile', component: '~/pages/profile', name: 'Profile' },
+            { path: '/resume', component: '~/pages/resume', name: 'Resume' },
+            { path: '/projects', component: '~/pages/projects', name: 'Projects' },
+            //{ path: '/404', component: '~/pages/notfound', name: '404 - not found' },
+            //{ path: '*', redirect: '404' }
+        ],
         extendedRoutes (routes, resolve) {
-            routes.push([
+            /*routes.push([
                 {
                     name: 'Profile ',
                     path: '/',
                     component: resolve(__dirname, 'pages/profile.vue')
+                },
+                {
+                    name: 'Profile',
+                    path: '/profile',
+                    component: resolve(__dirname, 'pages/profile.vue')
+                },
+                {
+                    name: 'Resume',
+                    path: '/resume',
+                    component: resolve(__dirname, 'pages/resume.vue')
+                },
+                {
+                    name: 'Projects',
+                    path: '/projects',
+                    component: resolve(__dirname, 'pages/projects.vue')
                 },
                 {
                     name: '404 - not found',
@@ -63,7 +86,7 @@ module.exports = {
                     path: '*',
                     redirect: '404'
                 }
-            ])
+            ])*/
         }
     },
     /*

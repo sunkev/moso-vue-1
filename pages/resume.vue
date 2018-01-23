@@ -51,11 +51,15 @@ import MosoTimeline from '~/components/moso-timeline/moso-timeline.vue'
 import TimelineItem from '~/components/moso-timeline/moso-timeline-item.vue'
 
 export default {
-    name: 'Resume',
     layout: 'default',
     components: {
-        MosoTimeline,
-        TimelineItem
+        'moso-timeline': MosoTimeline,
+        'timeline-item': TimelineItem
+    },
+    asyncData(context) {
+        return {
+            name: 'Resume'
+        }
     },
     data() {
         return {

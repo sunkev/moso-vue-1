@@ -40,14 +40,19 @@ import MosoProject from '~/components/moso-project/moso-project.vue'
 import NoSSR from 'vue-no-ssr'
 
 export default {
-    name: 'Projects',
     layout: 'default',
     components: {
         'moso-project': MosoProject,
         'no-ssr': NoSSR
     },
+    asyncData(context) {
+        return {
+            name: 'Projects'
+        }
+    },
     data() {
         return {
+            title: 'Projects',
             projects: [
                 {
                     id: 1,

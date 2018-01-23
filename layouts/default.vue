@@ -61,7 +61,7 @@
                                     <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
                                 </svg>
                             </button>
-                            <div class="page-title"><h1>{{ this.$route.name }}</h1></div>
+                            <div class="page-title"><h1>{{ name }}</h1></div>
                             <version-badge version="v4.2-vue" />
                         </moso-toolbar>
                     </div>
@@ -83,11 +83,11 @@ import VersionBadge from '~/components/version-badge/version-badge.vue'
 
 export default {
     components: {
-        MosoSidenav,
-        MosoProfilePicture,
-        MosoDrawerList,
-        MosoToolbar,
-        VersionBadge
+        'moso-sidenav': MosoSidenav,
+        'moso-profile-picture': MosoProfilePicture,
+        'moso-drawer-list': MosoDrawerList,
+        'moso-toolbar': MosoToolbar,
+        'version-badge': VersionBadge
     },
     methods: {
         toggleSidenav() {

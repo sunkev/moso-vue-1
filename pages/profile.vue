@@ -200,13 +200,17 @@ import MosoProgressbar from '~/components/moso-progressbar/moso-progressbar.vue'
 import NanoRipple from '~/components/nano-ripple/nano-ripple.vue'
 
 export default {
-    name: 'Profile',
     layout: 'default',
     components: {
-        MosoProfile,
-        ProfileItem,
-        MosoProgressbar,
-        NanoRipple
+        'moso-profile': MosoProfile,
+        'profile-item': ProfileItem,
+        'moso-progressbar': MosoProgressbar,
+        'nano-ripple': NanoRipple
+    },
+    asyncData(context) {
+        return {
+            name: 'Profile'
+        }
     },
     mounted() {
         //
