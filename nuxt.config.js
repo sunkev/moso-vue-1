@@ -110,7 +110,6 @@ module.exports = {
         ** Vendor plugins
         */
         vendor: [
-            'v-lazy-img',
             'vue-masonry'
         ]
     },
@@ -119,7 +118,6 @@ module.exports = {
     */
     plugins: [
         '~/plugins/Ripple',
-        '~/plugins/v-lazy-img',
         { src: '~/plugins/vue-masonry', ssr: false }
     ]
 }

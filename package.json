@@ -34,7 +34,6 @@
     "flexgrid.co": "^2.5.0",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
-    "v-lazy-img": "^0.1.0",
     "vue-masonry": "^0.10.16",
     "vue-no-ssr": "^0.2.2"
   },
