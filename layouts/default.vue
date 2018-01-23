@@ -50,7 +50,7 @@
                         </li>
                     </moso-drawer-list>
                     <div class="made-with">
-                        <p>Made with <img src="/images/heart.svg" alt="Love"> and <a href="https://vuejs.org" title="Vue.js" rel="noopener" target="_blank"><img src="/images/vue-logo.svg" alt="Vue.js"></a></p>
+                        <span>Made with <img src="/images/heart.svg" alt="Love"> and <a href="https://vuejs.org" title="Vue.js" target="_blank" rel="noopener"><img src="/images/vue-logo.svg" alt="Vue.js"></a> &#43; <a href="https://nuxtjs.org" title="Nuxt.js" target="_blank" rel="noopener"><img src="/images/nuxt-logo.svg" alt="Nuxt.js"></a></span>
                     </div>
                 </moso-sidenav>
                 <div class="app-layout">
@@ -163,25 +163,11 @@ export default {
     color: #546e7a;
     text-align: center;
 
-    p {
-        margin: 0;
-
-        i.mdi {
-            font-size: 1rem;
-            margin: 0 .0625rem;
-            color: $text-color-sidenav;
-        }
-
-        i.mdi,
+    span {
         img {
-            width: 16px;
-            height: 16px;
-        }
-
-        img {
-            position: relative;
-            top: 3px;
-            margin-left: .125rem;
+            width: auto;
+            height: 12px;
+            margin: 0 2px;
         }
     }
 }
