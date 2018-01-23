@@ -21,21 +21,20 @@
     "url": "https://github.com/moso/moso-nuxt/issues"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^4.5.2",
-    "nuxt": "^1.1.1"
+    "flexgrid.co": "^2.5.0",
+    "node-sass": "^4.7.2",    
+    "@nuxtjs/router": "^1.0.1",
+    "nuxt": "^1.1.1",
+    "sass-loader": "^6.0.6",
+    "vue-masonry": "^0.10.16",
+    "vue-no-ssr": "^0.2.2"
   },
   "devDependencies": {
-    "axios": "^0.17.1",
     "babel-eslint": "^8.2.1",
     "eslint": "^4.16.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.9.0",
-    "eslint-plugin-vue": "^4.2.0",
-    "flexgrid.co": "^2.5.0",
-    "node-sass": "^4.7.2",
-    "sass-loader": "^6.0.6",
-    "vue-masonry": "^0.10.16",
-    "vue-no-ssr": "^0.2.2"
+    "eslint-plugin-vue": "^4.2.0"    
   },
   "homepage": "https://moso.io"
 }

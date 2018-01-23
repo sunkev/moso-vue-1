@@ -2,17 +2,12 @@
     <profile />
 </template>
 <script>
-import Profile from '~/pages/profile.vue'
+import Profile from '~/views/profile.vue'
 
 export default {
     layout: 'default',
     components: {
         'profile': Profile
-    },
-    asyncData(context) {
-        return {
-            name: 'Profile'
-        }
     },
     mounted() {
         //

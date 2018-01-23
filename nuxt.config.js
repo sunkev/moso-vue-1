@@ -42,24 +42,15 @@ module.exports = {
     */
     loading: { color: '#263238' },
     /*
-    ** Custom routes
+    ** Modules
     */
-    router: {
-        //mode: 'hash',
-        linkActiveClass: 'router-link-active',
-        extendedRoutes (routes, resolve) {
-            routes.push([
-                {
-                    name: '404 - not found',
-                    path: '/404',
-                    component: resolve(__dirname, 'pages/404.vue')
-                },
-                {
-                    path: '*',
-                    redirect: '404'
-                }
-            ])
-        }
+    modules: [
+        '@nuxtjs/router'
+    ],
+    generate: {
+        routes: [
+            '/'
+        ]
     },
     /*
     ** Build configuration
