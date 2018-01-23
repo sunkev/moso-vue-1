@@ -83,7 +83,6 @@
                             </div>
                             <div class="widget__body widget__information">
                                 <div class="personal-information">
-                                    <h4 class="sub-title">Personal information</h4>
                                     <div class="column">
                                         <div class="column-item column-item--left">Name:</div>
                                         <div class="column-item column-item--right">Morten S&oslash;rensen</div>
@@ -108,53 +107,15 @@
                                         <div class="column-item column-item--left">Web:</div>
                                         <div class="column-item column-item--right"><a href="https://moso.io" title="https://moso.io">https://moso.io</a></div>
                                     </div>
-                                </div>
-
-                                <div class="contact-information">
-                                    <h4 class="sub-title">Contact information</h4>
                                     <div class="column">
                                         <div class="column-item column-item--left">E-mail:</div>
-                                        <div class="column-item column-item--right"><span class="code">x@y.io where x = morten && y = moso</span></div>
-                                    </div>
-                                    <div class="column">
-                                        <div class="column-item column-item--left">Phone:</div>
-                                        <div class="column-item column-item--right">--- Removed ---</div>
-                                    </div>
-                                    <div class="column">
-                                        <div class="column-item column-item--left">Social:</div>
                                         <div class="column-item column-item--right">
-                                            <ul class="list list--inline list--social">
-                                                <li>
-                                                    <a href="https://github.com/moso" class="button icon-button icon-button--small" title="GitHub" target="_blank" rel="noopener">
-                                                        <img src="/images/github.svg" alt="">
-                                                        <nano-ripple></nano-ripple>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://codepen.io/moso" class="button icon-button icon-button--small" title="CodePen" target="_blank" rel="noopener">
-                                                        <img src="/images/codepen.svg" alt="">
-                                                        <nano-ripple></nano-ripple>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://twitter.com/mosodotio" class="button icon-button icon-button--small" title="Twitter" target="_blank" rel="noopener">
-                                                        <img src="/images/twitter.svg" alt="">
-                                                        <nano-ripple></nano-ripple>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://facebook.com/moso.profil" class="button icon-button icon-button--small" title="Facebook" target="_blank" rel="noopener">
-                                                        <img src="/images/facebook.svg" alt="">
-                                                        <nano-ripple></nano-ripple>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://dk.linkedin.com/in/mosoio" class="button icon-button icon-button--small" title="LinkedIn" target="_blank" rel="noopener">
-                                                        <img src="/images/linkedin.svg" alt="">
-                                                        <nano-ripple></nano-ripple>
-                                                    </a>
-                                                </li>
-                                            </ul>
+                                            <div class="code-highlight">
+                                                <div><span class="red">let</span> $x <span class="red">= </span> <span class="blue">'morten'</span>;</div>
+                                                <div><span class="red">let</span> $y <span class="red">= </span> <span class="blue">'moso'</span>;</div>
+                                                <div>&nbsp;</div>
+                                                <div><span class="purple">console</span>.<span class="blue">log</span>($x <span class="red">+ </span> <span class="blue">'&#64;' </span> <span class="red">+ </span> $y <span class="red">+ </span> <span class="blue">'.io'</span>);</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -167,23 +128,19 @@
                                 <h3 class="title"><img src="/images/wrench.svg" alt=""> Toolbox</h3>
                             </div>
                             <div class="widget__body widget__toolbox">
-                                <p>Besides playing around with HTML, CSS, and jQuery, I more of less master a lot of frameworks and building tools to create great webapps. Here I have listed some of them:</p>
+                                <p>Besides playing around with HTML, CSS, and next-gen JS libraries, I juggle with a lot of frameworks and building tools to create great webapps. Here I have listed some of them:</p>
                                 <ul class="toolbox-list">
-                                    <li>Bootstrap 3 + 4</li>
-                                    <li>Material Design</li>
+                                    <li>Git</li>
+                                    <li>JavaScript ES6 + ES7</li>
+                                    <li>Node.js</li>
+                                    <li>Gulp</li>
+                                    <li>Webpack</li>
+                                    <li>Server-Side Rendering</li>
+                                    <li>XHR/ajax</li>
+                                    <li>Bootstrap</li>
                                     <li>Sass/SCSS/Less</li>
                                     <li>SMACSS/BEM</li>
-                                    <li>JavaScript ES6 + ES7</li>
-                                    <li>XHR/ajax</li>
-                                    <li>Git</li>
-                                    <li>Node.js</li>
-                                    <li>Express.js</li>
-                                    <li>Webpack</li>
-                                    <li>Gulp</li>
                                     <li>Laravel/Lumen</li>
-                                    <li>Vagrant</li>
-                                    <li>Nginx/Apache</li>
-                                    <li>MariaDB/MySQL/PostgreSQL</li>
                                 </ul>
                             </div>
                         </div>
@@ -207,11 +164,6 @@ export default {
         'moso-progressbar': MosoProgressbar,
         'nano-ripple': NanoRipple
     },
-    asyncData(context) {
-        return {
-            name: 'Profile'
-        }
-    },
     mounted() {
         //
     }
@@ -232,6 +184,29 @@ export default {
         &:last-of-type {
             padding: .21rem 0 0;
         }
+    }
+}
+
+.code-highlight {
+    width: 100%;
+    padding: 1rem;
+    background-color: #f6f8fa;
+    border-radius: 3px;
+    font-family: "Liberation Mono","SFMono-Regular",Consolas,Menlo,Courier,monospace;
+    font-size: 91%;
+    color: #000;
+    line-height: 1.45;
+
+    .red {
+        color: #d73a49;
+    }
+
+    .blue {
+        color: #032f62;
+    }
+
+    .purple {
+        color: #6f42c1;
     }
 }
 </style>
