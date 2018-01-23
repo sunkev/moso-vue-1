@@ -4,7 +4,7 @@
             <div class="md:8 md:offset:2">
                 <div class="not-found">
                     <div class="content">
-                        <div v-if="error.statusCode === 404">
+                        <div>
                             <h1>404</h1>
                             <p>It looks like your found a</p>
                             <h2>dead link</h2>
@@ -17,36 +17,11 @@
         </div>
     </div>
 </template>
+
 <script>
 export default {
-    layout: 'default',
-    props: ['error'],
-    data() {
-        return {
-            mounted: false
-        }
-    },
-    mounted () {
-        this.mounted = true
-    },
-    created () {
-        console.error(this.error)
-    },
-    watch: {
-        error(newErr) {
-            if(newErr) {
-                console.error(newErr)
-            }
-        }
-    },
-    computed: {
-        statusCode() {
-            return (this.error && this.error.statusCode) || 500
-        },
-        message() {
-            return this.error.message || '<%= messages.client_error %>'
-        }
-    }
+  props: ['error'],
+  layout: 'default' // you can set a custom layout for the error page
 }
 </script>
 <style lang="scss" scoped>
@@ -103,3 +78,4 @@ export default {
     }
 }
 </style>
+
