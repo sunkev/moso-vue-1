@@ -29,12 +29,15 @@ export default {
 
             a {
                 display: block;
+                width: 100%;
                 padding: 0 2rem;
                 font-weight: 400;
                 color: $sidenav-link-color;
                 line-height: 40px;
+                user-select: none;
                 text-decoration: none;
                 transition: color .2s ease-in-out;
+                -webkit-tap-highlight-color: rgba(255,255,255,0);
 
                 svg {
                     position: relative;
@@ -52,6 +55,7 @@ export default {
                 &:hover:active {
                     color: lighten($sidenav-link-color, 10%);
                     outline: none;
+                    user-select: none;
                     text-decoration: none;
 
                     svg {
@@ -66,6 +70,20 @@ export default {
 
                     svg {
                         fill: $sidenav-active-link-color;
+                    }
+
+                    &:hover,
+                    &:focus,
+                    &:active,
+                    &:hover:active {
+                        color: $sidenav-active-link-color;
+                        outline: none;
+                        user-select: none;
+                        text-decoration: none;
+
+                        svg {
+                            fill: $sidenav-active-link-color;
+                        }
                     }
                 }
             }
