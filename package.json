@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "flexgrid.co": "^2.5.0",
-    "node-sass": "^4.7.2",    
+    "node-sass": "^4.7.2",
     "@nuxtjs/router": "^1.0.1",
     "nuxt": "^1.1.1",
     "sass-loader": "^6.0.6",
@@ -34,7 +34,7 @@
     "eslint": "^4.16.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.9.0",
-    "eslint-plugin-vue": "^4.2.0"    
+    "eslint-plugin-vue": "^4.2.0"
   },
   "homepage": "https://moso.io"
 }
