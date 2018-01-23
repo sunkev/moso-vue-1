@@ -62,7 +62,7 @@
                                 </svg>
                             </button>
                             <div class="page-title"><h1>{{ this.$route.name }}</h1></div>
-                            <version-badge version="v4.2-vue" />
+                            <version-badge version="v4.2-nuxt" />
                         </moso-toolbar>
                     </div>
                     <main>
