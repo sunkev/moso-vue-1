@@ -75,13 +75,9 @@
                 vertical-align: middle;
 
                 &--left {
-                    flex: 1;
-                    max-width: 28%;
+                    flex: 2;
+                    max-width: 31%;
                     font-weight: 500;
-
-                    @media (min-width: 992px) {
-                        max-width: 100%;
-                    }
                 }
 
                 &--right {
