@@ -110,7 +110,7 @@ export default {
     box-shadow: 0 2px 5px rgba(0,0,0,.26);
 
     img {
-        width: 100%;
+        width: auto;
         height: 57px;
         padding: .3125rem 0;
     }
