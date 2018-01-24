@@ -7,34 +7,40 @@ Run `npm install` or `yarn install` to install the dependencies.
 ### Scripts
 Since this project is compiled with Nuxt, you have the following scripts at hand:
 
-- `npm run dev`: will run `nuxt` to launch a development server on `localhost:3000` with hot-reloading.
-- `npm run build` will run `nuxt build` to build your application with webpack, and minify the JS & CSS (for production).
-- `npm run start` will run `nuxt start` to start the server in production mode (after running `nuxt build`).
-- `npm run generate` will run `nuxt generate` to build the application and generate every route as an HTML file (used for static hosting).
-- `npm run lint`: ESLint will lint all of your JavaScript and Vue files while ignoring your ignored files defined in your `.gitignore`.
-- `npm run precommit`: Same as `npm run lint`, however recommended best practice.
+```shell
+$ npm run dev        # `nuxt` will launch a development server on `localhost:3000` with hot-reloading
+$ npm run build      # `nuxt build` will build your app with webpack, and minify JS & CSS (production)
+$ npm run start      # `nuxt start` will start the server in production mode (after running `nuxt build`)
+$ npm run generate   # `nuxt generate` will build the app and generate every route as HTML files
+$ npm run lint:      # ESLint will lint all JS- and Vue-files while ignoring files in `.gitignore`
+$ npm run precommit: # Same as `npm run lint`, however recommended best practice
+```
 
 The usual workflow is to run `npm run dev` while developing. Then run `npm run build` and `npm run generate` to build the app, where the scripts will generate a `~/dist`-folder. In this folder are all the files you'd upload to your host.
 
 You can also run `npm run build` and `npm run start` on a dedicated server to run a node.js server. You will have to set up proxying to `localhost:3000` and point the webroot to `/dist/` for this to work. Some prefer this solution, and it will autogenerate the files if they're changed - ie. an ecommerce solution where the product stock changes all the time.
 
-### File structure
-As per Nuxt standard, the file structure is as follows:
+### Folder structure
+__Almost__ as per Nuxt standard, the folder structure is as follows:
 
-- assets
-- components
-- layouts
-- plugins
-- static
-- views*
+- `~/assets`
+- `~/components`
+- `~/layouts`
+- `~/plugins`
+- `~/static`
+- `~/views`*
 
 All common styling belongs in the `~/assets/sass`-folder, and the files are named so it should be easy to find what's what.
 
-All my custom Vue-components resides in the `~/components`-folder.
+All the custom Vue-components resides in the `~/components`-folder.
+
+All layouts resides in the `~/layouts`-folder (yeah, really).
+
+All custom plugin loaders and, in this case, directives and classes resides in the `~/plugins`-folder.
 
 All static content like images and fonts are stored in the `~/static`-folder, as per Nuxt standard.
 
-* = The only difference from a standard Nuxt installation is, that I'm using a custom router config. Since the standard Nuxt generation of routes doesn't allow me to name routes manually, I had to solve it this way. That means that all pages that in a standard Nuxt install resides in `~/pages`, are now stored in `~/views`, and manually set up in `router.js`. The Nuxt config is only set to generate the `/`-route, as this is needed for the index page to work.
+\* = The only difference from a standard Nuxt installation is, that I'm using a custom router config. Since the standard Nuxt generation of routes doesn't allow me to name routes manually, I had to solve it this way. That means that all pages that in a standard Nuxt install resides in `~/pages`, are now stored in `~/views`, and manually set up in `/router.js`. The Nuxt config is only set to generate the `/`-route, as this is needed for the index page to work.
 
 ### Routing
 As mentioned, all routes have to be set up manually. However, it's rather straight forward, and it follows [vue-router](https://router.vuejs.org/en/essentials/named-routes.html)'s scheme. All routes are residing in `/router.js`. Here's an example:
@@ -93,21 +99,16 @@ In this Nuxt install, I've gone back to having content directly in the views. Th
 However it's on my todo-list to get Axios up and running, plus to throw an error, if the api-request isn't coming from my own server, so you'll notice once you boot up the page.
 
 # Custom components
-This project is full of custom and homemade components. Some of them aren't used but are kept in, so I have a hosted copy of a working component. Unused components are, of course, not being loaded, to keep `app.js` at a minimum.
+This project is full of custom and homemade components. Unused components are, of course, not being loaded, to keep `app.js` at a minimum.
 
 Perhaps I will write some documentation on how they're used, if this is needed. However, since this is just to show my Vue-skills, and since this is a personal website just for me, I haven't written any. **They should be straight forward, though**.
 
-The list are as follows:
+The list is as follows:
 
 ### moso-components
-##### moso-card-cover
-Meant to emulate the [Image Card](https://getmdl.io/components/index.html#cards-section) from [Material Design Lite](https://getmdl.io). A demo can be found on [my Codepen](https://codepen.io/moso/pen/BWvYxa). _Not used._
-
-##### moso-card-reveal
-Meant to emulate the [Card Reveal](http://materializecss.com/cards.html#reveal) from Materialize. _Not used._
 
 ##### moso-drawer-list
-This is basically the sidebar menu content.
+This is basically the sidenav menu content.
 
 ##### moso-profile
 This is the small box with the social icons and profile image you see on the front/profile page.
