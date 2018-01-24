@@ -76,7 +76,6 @@
 
 <script>
 import MosoSidenav from '~/components/moso-sidenav/moso-sidenav.vue'
-import MosoProfilePicture from '~/components/moso-profile-picture/moso-profile-picture.vue'
 import MosoDrawerList from '~/components/moso-drawer-list/moso-drawer-list'
 import MosoToolbar from '~/components/moso-toolbar/moso-toolbar.vue'
 import VersionBadge from '~/components/version-badge/version-badge.vue'
@@ -84,7 +83,6 @@ import VersionBadge from '~/components/version-badge/version-badge.vue'
 export default {
     components: {
         'moso-sidenav': MosoSidenav,
-        'moso-profile-picture': MosoProfilePicture,
         'moso-drawer-list': MosoDrawerList,
         'moso-toolbar': MosoToolbar,
         'version-badge': VersionBadge
