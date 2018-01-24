@@ -5,7 +5,7 @@ My personal portfolio (re)built with [Vue.js](https://vuejs.org) and [Nuxt.js](h
 Run `npm install` or `yarn install` to install the dependencies.
 
 ### Scripts
-Since this project is compiled Nuxt, you have the following scripts at hand:
+Since this project is compiled with Nuxt, you have the following scripts at hand:
 
 - `npm run dev`: will run `nuxt` to launch a development server on `localhost:3000` with hot-reloading.
 - `npm run build` will run `nuxt build` to build your application with webpack, and minify the JS & CSS (for production).
@@ -13,3 +13,131 @@ Since this project is compiled Nuxt, you have the following scripts at hand:
 - `npm run generate` will run `nuxt generate` to build the application and generate every route as an HTML file (used for static hosting).
 - `npm run lint`: ESLint will lint all of your JavaScript and Vue files while ignoring your ignored files defined in your `.gitignore`.
 - `npm run precommit`: Same as `npm run lint`, however recommended best practice.
+
+The usual workflow is to run `npm run dev` while developing. Then run `npm run build` and `npm run generate` to build the app, where the scripts will generate a `~/dist`-folder. In this folder are all the files you'd upload to your host.
+
+You can also run `npm run build` and `npm run start` on a dedicated server to run a node.js server. You will have to set up proxying to `localhost:3000` and point the webroot to `/dist/` for this to work. Some prefer this solution, and it will autogenerate the files if they're changed - ie. an ecommerce solution where the product stock changes all the time.
+
+### File structure
+As per Nuxt standard, the file structure is as follows:
+
+- assets
+- components
+- layouts
+- plugins
+- static
+- views*
+
+All common styling belongs in the `~/assets/sass`-folder, and the files are named so it should be easy to find what's what.
+
+All my custom Vue-components resides in the `~/components`-folder.
+
+All static content like images and fonts are stored in the `~/static`-folder, as per Nuxt standard.
+
+* = The only difference from a standard Nuxt installation is, that I'm using a custom router config. Since the standard Nuxt generation of routes doesn't allow me to name routes manually, I had to solve it this way. That means that all pages that in a standard Nuxt install resides in `~/pages`, are now stored in `~/views`, and manually set up in `router.js`. The Nuxt config is only set to generate the `/`-route, as this is needed for the index page to work.
+
+### Routing
+As mentioned, all routes have to be set up manually. However, it's rather straight forward, and it follows [vue-router](https://router.vuejs.org/en/essentials/named-routes.html)'s scheme. All routes are residing in `/router.js`. Here's an example:
+
+```javascript
+import Vue from 'vue'
+import Router from 'vue-router'
+
+import PageA from '~/views/page-a.vue'
+import PageB from '~/views/page-b.vue'
+import PageC from '~/views/page-c.vue'
+import PageError from '~/views/page-error.vue'
+
+Vue.use(Router)
+
+export function createRouter() {
+    return new Router({
+        linkActiveClass: 'router-link-active',
+        routes: [
+            {
+                path: '/page-a',
+                component: PageA,
+                name: 'Page A'
+            },
+            {
+                path: '/page-b',
+                component: PageB,
+                name: 'Page B'
+            },
+            {
+                path: '/page-c',
+                component: PageC,
+                name: 'Page C'
+            },
+            {
+                path: '/404',
+                component: PageError,
+                name: '404 - not found'
+            },
+            {
+                path: '*',
+                redirect: '404'
+            }
+        ]
+    })
+}
+```
+
+This will generate the routes for `/page-a`, `/page-b`, `/page-c`, `/404`, and will redirect all non-routes (example: `/ghhghghg`) to `/404`.
+
+# Editing content
+You probably want to edit the content, if you want to copy the site and just change some stuff.
+
+In this Nuxt install, I've gone back to having content directly in the views. This is because I haven't been able to get Axios running properly. I have also edited the Profile-view a bit.
+
+However it's on my todo-list to get Axios up and running, plus to throw an error, if the api-request isn't coming from my own server, so you'll notice once you boot up the page.
+
+# Custom components
+This project is full of custom and homemade components. Some of them aren't used but are kept in, so I have a hosted copy of a working component. Unused components are, of course, not being loaded, to keep `app.js` at a minimum.
+
+Perhaps I will write some documentation on how they're used, if this is needed. However, since this is just to show my Vue-skills, and since this is a personal website just for me, I haven't written any. **They should be straight forward, though**.
+
+The list are as follows:
+
+### moso-components
+##### moso-card-cover
+Meant to emulate the [Image Card](https://getmdl.io/components/index.html#cards-section) from [Material Design Lite](https://getmdl.io). A demo can be found on [my Codepen](https://codepen.io/moso/pen/BWvYxa). _Not used._
+
+##### moso-card-reveal
+Meant to emulate the [Card Reveal](http://materializecss.com/cards.html#reveal) from Materialize. _Not used._
+
+##### moso-drawer-list
+This is basically the sidebar menu content.
+
+##### moso-profile
+This is the small box with the social icons and profile image you see on the front/profile page.
+
+##### moso-profile-item
+These items are the social icons in said small box.
+
+##### moso-progressbar
+These are the "switch" progressbars you see in the Skills-section on the profile page. These are not draggable, sorry. A demo can be found on [my CodePen](https://codepen.io/moso/pen/evQxRE).
+
+##### moso-project
+This is the projects you see on the projects page. This is also where I use [vue-masonry](https://github.com/shershen08/vue-masonry).
+
+##### moso-sidenav
+This is the sidenav. Yeah... This also includes the sidenav-backdrop - the dark, clickable area that covers the page when the sidebar is active on small devices.
+
+##### moso-timeline
+This is the timeline you see on the Resume page. A working demo can be found on [my CodePen](https://codepen.io/moso/pen/MpPRgg) with slightly different styling.
+
+##### moso-timeline-item
+Wrapper for the items inside `moso-timeline`.
+
+##### moso-toolbar
+This is basically just the toolbar for the title and the version badge.
+
+##### version-badge
+A simple version badge that is literally just a string with some styling.
+
+##### nano-ripple
+This is from the framework [Nano](https://github.com/getnano/nano-framework) that I'm working on in my sparetime. This is the small ripple you see when you click on buttons and the social icons. This is inspired by [Material Design](https://getmdl.io/components/index.html#buttons-section) (look under "button with ripple") and requires a custom directive and a custom class which are both included in this project.
+
+# Issues?
+Please report any issues and non-working stuff here on GitHub.
