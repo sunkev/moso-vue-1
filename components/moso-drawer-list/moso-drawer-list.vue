@@ -53,6 +53,7 @@ export default {
                 &:focus,
                 &:active,
                 &:hover:active {
+                    background-color: transparent !important;
                     color: lighten($sidenav-link-color, 10%);
                     outline: none;
                     user-select: none;
