@@ -61,7 +61,7 @@ export default {
     background-color: #fff;
     padding: 1rem;
     border-radius: 2px;
-    font-size: 1rem;
+    font-size: .875rem;
     font-weight: 400;
     color: $rgba-black;
     box-shadow: $box-shadow;
