@@ -83,7 +83,7 @@ export default {
                 },
                 {
                     id: 4,
-                    image: '/images/static/shade-theme.png',
+                    image: '/images/static/shade.jpg',
                     title: 'Shade Ghost theme',
                     subtitle: 'Dark theme for Ghost',
                     link: 'https://shade.moso.io',
