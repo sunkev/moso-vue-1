@@ -18,7 +18,7 @@
             <div class="md:12 xl:10 xl:offset:1">
                 <div class="row">
                     <div class="sm:12">
-                        <h2 class="stuff-headline">I've also made stuff for</h2>
+                        <h2 class="stuff-headline">I've also recently made stuff for</h2>
                     </div>
                 </div>
                 <no-ssr>
@@ -112,21 +112,21 @@ export default {
             smallprojects: [
                 {
                     id: 1,
-                    image: '/images/static/skm-logo.svg',
-                    title: 'Danish Ministry of Treasury',
+                    image: '/images/static/skat.svg',
+                    title: 'The Danish Customs and Tax Administration',
                     subtitle: 'Claimant portal'
                 },
                 {
                     id: 2,
-                    image: '/images/static/erst.png',
-                    title: 'Danish Business Authority',
+                    image: '/images/static/dgst.svg',
+                    title: 'The Danish Agency for Digitisation',
                     subtitle: 'Danish WebDesign Standards Pilot Project'
                 },
                 {
                     id: 3,
-                    image: '/images/static/nyidk.svg',
-                    title: 'New to Denmark',
-                    subtitle: 'The Danish Immigration Service'
+                    image: '/images/static/uim-us.svg',
+                    title: 'The Danish Immigration Service',
+                    subtitle: '\'New to Denmark\'-portal '
                 },
                 {
                     id: 4,
@@ -140,12 +140,6 @@ export default {
                     title: 'Scratcher',
                     subtitle: 'Gamification platform'
                 },
-                {
-                    id: 6,
-                    image: '/images/static/vestergaard.svg',
-                    title: 'Vestergaard Huse',
-                    subtitle: 'House construction'
-                }
             ]
         }
     },
