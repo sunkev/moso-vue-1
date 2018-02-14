@@ -33,7 +33,7 @@ main {
         padding: 2rem 1rem;
     }
 
-    > .container-fluid {
+    > .container\:fluid {
         @media (max-width: 991px) {
             padding: 0;
         }
@@ -67,18 +67,5 @@ main {
 
     @media (min-width: 992px) {
         margin-top: 2rem;
-    }
-}
-
-// MASONRY
-.row > .masonry-column {
-    margin-bottom: 1rem;
-
-    @media (min-width: 992px) {
-        margin-bottom: 2rem;
-    }
-
-    &:last-of-type {
-        margin-bottom: 0;
     }
 }

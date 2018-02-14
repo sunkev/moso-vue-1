@@ -150,3 +150,35 @@ export default {
     }
 }
 </script>
+<style lang="scss" scoped>
+.masonry-column {
+    & >>> div {
+        margin-bottom: 1rem;
+
+        @media (min-width: 992px) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &:last-of-type {
+        & >>> div {
+            margin-bottom: 0;
+        }
+    }
+
+    & >>> .project-body {
+        span {
+            p {
+                margin: 0 0 1rem;                
+
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+
+</style>
+
