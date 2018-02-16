@@ -60,7 +60,7 @@ export default {
     position: relative;
     background-color: #fff;
     padding: 1rem;
-    border-radius: 2px;
+    border-radius: $border-radius;
     font-weight: 400;
     color: $rgba-black;
     box-shadow: $box-shadow;

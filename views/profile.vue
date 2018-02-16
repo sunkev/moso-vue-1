@@ -191,7 +191,7 @@ export default {
     width: 100%;
     padding: 1rem;
     background-color: #f6f8fa;
-    border-radius: 3px;
+    border-radius: $border-radius;
     font-family: "Liberation Mono","SFMono-Regular",Consolas,Menlo,Courier,monospace;
     font-size: 86%;
     color: #000;

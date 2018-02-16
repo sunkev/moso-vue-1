@@ -105,7 +105,7 @@ export default {
     align-items: center;
     justify-content: center;
     height: 65px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+    box-shadow: $box-shadow;
 
     img {
         width: auto;
@@ -117,7 +117,7 @@ export default {
 .profile-picture {
     padding: .9125rem;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+    box-shadow: $box-shadow;
 
     .image {
         width: 100px;

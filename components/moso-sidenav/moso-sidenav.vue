@@ -92,7 +92,7 @@ export default {
     left: 0;
     width: 256px;
     background-color: $dark-blue-gray;
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);
+    box-shadow: $box-shadow;
     transform: translate3d(-105%,0,0);
     transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
     z-index: 4;
