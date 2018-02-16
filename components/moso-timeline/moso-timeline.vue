@@ -35,7 +35,7 @@ export default {
             background-color: #fff;
             padding: .25rem;
             border: 4px solid #546E7A;
-            box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);
+            box-shadow: $box-shadow;
         }
 
         @media (min-width: 768px) {
