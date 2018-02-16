@@ -39,11 +39,17 @@ export default {
                 transition: color .2s ease-in-out;
                 -webkit-tap-highlight-color: rgba(255,255,255,0);
 
+                span {
+                    display: flex;
+                    align-items: center;
+                    height: 40px;
+                }
+
                 svg {
                     position: relative;
-                    top: 2px;
-                    width: 1rem;
-                    height: 1rem;
+                    top: -1px;
+                    width: 1.125rem;
+                    height: 1.125rem;
                     margin-right: 10px;
                     fill: $sidenav-link-color;
                     transition: fill .2s ease-in-out;
