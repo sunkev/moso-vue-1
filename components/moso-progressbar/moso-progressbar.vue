@@ -33,7 +33,6 @@ export default {
     .progressbar-values {
         display: flex;
         justify-content: flex-start;
-        font-size: .875rem;
         padding-bottom: .25rem;
 
         span:last-of-type {

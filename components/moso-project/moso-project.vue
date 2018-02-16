@@ -61,7 +61,6 @@ export default {
     background-color: #fff;
     padding: 1rem;
     border-radius: 2px;
-    font-size: .875rem;
     font-weight: 400;
     color: $rgba-black;
     box-shadow: $box-shadow;
@@ -153,7 +152,6 @@ export default {
         margin-top: 1rem;
         padding-top: 1rem;
         border-top: 1px solid #ddd;
-        font-size: .875rem;
     }
 
     &.single {

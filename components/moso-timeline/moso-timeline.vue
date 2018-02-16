@@ -102,7 +102,6 @@ export default {
 
         p {
             margin: 0 0 .625rem;
-            font-size: .875rem;
             color: rgba(0,0,0,.65);
         }
     }

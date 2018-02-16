@@ -70,7 +70,6 @@
                 display: flex;
                 align-items: center;
                 padding: .625rem 1rem;
-                font-size: .875rem;
                 color: rgba(0,0,0,.65);
                 vertical-align: middle;
 
@@ -89,7 +88,6 @@
 
     .widget__bio {
         p {
-            font-size: .875rem;
             color: rgba(0,0,0,.65);
         }
 
@@ -102,12 +100,10 @@
 
     .widget__information {
         padding: 0 1rem;
-        font-size: .875rem;
         color: rgba(0,0,0,.65);
     }
 
     .widget__toolbox {
-        font-size: .875rem;
         color: rgba(0,0,0,.65);
 
         p {
