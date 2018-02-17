@@ -10,7 +10,7 @@
             </div>
             <div class="project-link" v-if="link || subTitle">
                 <a :href="link" :title="link" v-if="link">
-                    <svg viewBox="0 0 24 24" v-html="icon"></svg>
+                    <svg viewBox="0 0 16 16" v-html="icon"></svg>
                 </a>
             </div>
         </div>
@@ -86,7 +86,7 @@ export default {
             img {
                 width: 40px;
                 height: 40px;
-                border: 2px solid #ddd;
+                border: 2px solid $border-color;
                 border-radius: 50%;
 
                 @media (min-width: 992px) {

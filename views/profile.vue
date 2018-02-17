@@ -41,7 +41,12 @@
 
                 <div class="widget">
                     <div class="widget__header">
-                        <h3 class="title"><img src="/images/plus-one.svg" alt=""> Skills</h3>
+                        <h3 class="title">
+                            <svg viewBox="0 0 16 16" id="skills-svg">
+                                <path d="M 10.042969 2.050781 L 5.039063 13.550781 L 5.960938 13.949219 L 10.957031 2.449219 Z M 3.226563 5.070313 L 0.996094 8 L 3.226563 10.925781 L 4.023438 10.324219 L 2.253906 8 L 4.023438 5.679688 Z M 12.773438 5.070313 L 11.976563 5.679688 L 13.746094 8 L 11.976563 10.324219 L 12.773438 10.925781 L 15.003906 8 Z " />
+                            </svg>
+                            Skills
+                        </h3>
                     </div>
                     <div class="widget__body">
                         <moso-progressbar name="HTML5/CSS3/Sass" percentage="100"></moso-progressbar>
@@ -51,8 +56,8 @@
                         <moso-progressbar name="Graphics (Photoshop/Illustrator)" percentage="90"></moso-progressbar>
 
                         <a href="/files/morten-sorensen-cv-2017.pdf" class="button button-primary button--raised" title="Download CV (da)" rel="noopener">
-                            <svg viewBox="0 0 24 24">
-                                <path fill="#ffffff" d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z" />
+                            <svg viewBox="0 0 32 32">
+                                <path d="M 6 3 L 6 4 L 6 28 L 6 29 L 7 29 L 25 29 L 26 29 L 26 28 L 26 10 L 26 9.59375 L 25.71875 9.28125 L 19.71875 3.28125 L 19.40625 3 L 19 3 L 7 3 L 6 3 z M 8 5 L 18 5 L 18 10 L 18 11 L 19 11 L 24 11 L 24 27 L 8 27 L 8 5 z M 20 6.4375 L 22.5625 9 L 20 9 L 20 6.4375 z M 11 13 L 11 15 L 21 15 L 21 13 L 11 13 z M 11 17 L 11 19 L 21 19 L 21 17 L 11 17 z M 11 21 L 11 23 L 21 23 L 21 21 L 11 21 z"/>
                             </svg>
                             Download CV (da)
                             <nano-ripple></nano-ripple>
@@ -63,7 +68,12 @@
             <div class="lg:7 xl:8 info-widgets">
                 <div class="widget">
                     <div class="widget__header">
-                        <h3 class="title"><img src="/images/profile.svg" alt=""> Profile</h3>
+                        <h3 class="title">
+                            <svg viewBox="0 0 16 16" id="profile-svg">
+                                <path d="M 7.5 1 C 3.917969 1 1 3.917969 1 7.5 C 1 11.082031 3.917969 14 7.5 14 C 11.082031 14 14 11.082031 14 7.5 C 14 3.917969 11.082031 1 7.5 1 Z M 7.5 2 C 10.542969 2 13 4.457031 13 7.5 C 13 8.839844 12.523438 10.0625 11.734375 11.015625 C 11.304688 9.796875 10.375 8.816406 9.1875 8.332031 C 9.683594 7.875 10 7.222656 10 6.5 C 10 5.125 8.875 4 7.5 4 C 6.125 4 5 5.125 5 6.5 C 5 7.222656 5.316406 7.875 5.8125 8.332031 C 4.625 8.816406 3.699219 9.796875 3.269531 11.015625 C 2.476563 10.0625 2 8.839844 2 7.5 C 2 4.457031 4.457031 2 7.5 2 Z M 7.5 5 C 8.335938 5 9 5.664063 9 6.5 C 9 7.335938 8.335938 8 7.5 8 C 6.664063 8 6 7.335938 6 6.5 C 6 5.664063 6.664063 5 7.5 5 Z M 7.5 9 C 9.199219 9 10.59375 10.207031 10.917969 11.808594 C 9.976563 12.554688 8.792969 13 7.5 13 C 6.207031 13 5.023438 12.554688 4.085938 11.808594 C 4.40625 10.207031 5.800781 9 7.5 9 Z " />
+                            </svg>
+                            Profile
+                        </h3>
                     </div>
                     <div class="widget__body widget__bio">
                         <div class="bio">
@@ -79,7 +89,12 @@
                     <div class="xl:6">
                         <div class="widget">
                             <div class="widget__header">
-                                <h3 class="title"><img src="/images/info.svg" alt=""> Information</h3>
+                                <h3 class="title">
+                                    <svg viewBox="0 0 16 16" id="info-svg">
+                                        <path d="M 7.5 1 C 3.917969 1 1 3.917969 1 7.5 C 1 11.082031 3.917969 14 7.5 14 C 11.082031 14 14 11.082031 14 7.5 C 14 3.917969 11.082031 1 7.5 1 Z M 7.5 2 C 10.542969 2 13 4.457031 13 7.5 C 13 10.542969 10.542969 13 7.5 13 C 4.457031 13 2 10.542969 2 7.5 C 2 4.457031 4.457031 2 7.5 2 Z M 7 4 L 7 5 L 8 5 L 8 4 Z M 7 6 L 7 11 L 8 11 L 8 6 Z " />
+                                    </svg>
+                                    Information
+                                </h3>
                             </div>
                             <div class="widget__body widget__information">
                                 <div class="personal-information">
@@ -125,7 +140,12 @@
                     <div class="xl:6">
                         <div class="widget">
                             <div class="widget__header">
-                                <h3 class="title"><img src="/images/wrench.svg" alt=""> Toolbox</h3>
+                                <h3 class="title">
+                                    <svg viewBox="0 0 16 16" id="tool-svg">
+                                        <path d="M 6.5 1 C 5.675781 1 5 1.675781 5 2.5 L 5 3 L 2.5 3 C 1.648438 3 1 3.753906 1 4.609375 L 1 12.386719 C 1 13.246094 1.648438 14 2.503906 14 L 13.496094 14 C 14.351563 14 15 13.242188 15 12.386719 L 15 4.613281 C 15 3.753906 14.351563 3 13.5 3 L 11 3 L 11 2.5 C 11 1.675781 10.324219 1 9.5 1 Z M 6.5 2 L 9.5 2 C 9.78125 2 10 2.21875 10 2.5 L 10 3 L 6 3 L 6 2.5 C 6 2.21875 6.21875 2 6.5 2 Z M 2.5 4 L 13.5 4 C 13.75 4 14 4.242188 14 4.613281 L 14 7 L 2 7 L 2 4.609375 C 2 4.242188 2.25 4 2.5 4 Z M 2 8 L 4 8 L 4 9 L 6 9 L 6 8 L 10 8 L 10 9 L 12 9 L 12 8 L 14 8 L 14 12.386719 C 14 12.757813 13.75 13 13.496094 13 L 2.503906 13 C 2.25 13 2 12.757813 2 12.386719 Z " />
+                                    </svg>
+                                    Toolbox
+                                </h3>
                             </div>
                             <div class="widget__body widget__toolbox">
                                 <p>Besides playing around with HTML, CSS, and next-gen JS libraries, I juggle with a lot of frameworks and building tools to create great webapps. Here I have listed some of them:</p>
@@ -208,5 +228,18 @@ export default {
     .purple {
         color: #6f42c1;
     }
+}
+
+#skills-svg {
+    top: 2px;
+}
+
+#profile-svg {
+    top: 4px;
+}
+
+#info-svg,
+#tool-svg {
+    top: 5px;
 }
 </style>
