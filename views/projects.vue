@@ -178,7 +178,4 @@ export default {
         }
     }
 }
-
-
 </style>
-

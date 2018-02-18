@@ -129,7 +129,7 @@ export default {
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            border: 2px solid #37474F;
+            border: 2px solid $border-color;
         }
     }
 

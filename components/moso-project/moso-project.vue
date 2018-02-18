@@ -105,7 +105,7 @@ export default {
                 margin: 0 0 .3125rem;
                 font-size: 1.125rem;
                 font-weight: 500;
-                color: rgba(0,0,0,.87);
+                color: $rgba-black;
                 line-height: 1;
 
                 @media (min-width: 992px) {

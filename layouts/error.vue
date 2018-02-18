@@ -58,7 +58,7 @@ export default {
         h2 {
             font-size: 4rem;
             font-weight: 400;
-            color: rgba(0,0,0,.87);
+            color: $rgba-black;
             margin: 0;
             margin-bottom: 1.5625rem;
             line-height: 1;
