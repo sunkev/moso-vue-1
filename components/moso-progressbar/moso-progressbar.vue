@@ -5,9 +5,7 @@
             <span>{{ percentage }}%</span>
         </div>
         <div class="progressbar">
-            <span class="progress" :style="'width: ' + percentage + '%'">
-                <span class="thumb"></span>
-            </span>
+            <span class="progress" :style="'width: ' + percentage + '%'"></span>
         </div>
     </div>
 </template>
