@@ -42,7 +42,7 @@ export default {
     text-align: center;
 
     @media (min-width: 992px) {
-        padding: 2rem;
+        padding: 1.81rem;
     }
 
     .profile-image {
