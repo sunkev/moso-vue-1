@@ -30,12 +30,11 @@ export default {
             height: 1rem;
             position: absolute;
             left: -9px;
-            top: 0px;
+            top: -2px;
             border-radius: 50%;
             background-color: #fff;
             padding: .25rem;
-            border: 4px solid #546E7A;
-            box-shadow: $box-shadow;
+            border: 4px solid $primary;
         }
 
         @media (min-width: 768px) {
@@ -70,7 +69,6 @@ export default {
 
         .information {
             display: flex;
-            justify-content: flex-start;
             align-items: center;
             padding: 0 0 .375rem;
 
@@ -78,16 +76,12 @@ export default {
                 font-size: .75rem;
                 color: rgba(0,0,0,.54);
 
-                i.mdi,
-                img {
-                    margin-right: .125rem;
-                }
-
                 img {
                     position: relative;
                     top: 1px;
                     width: .75rem;
                     height: .75rem;
+                    margin-right: .125rem;
                     opacity: .35;
                 }
             }
