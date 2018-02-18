@@ -56,6 +56,9 @@ export default {
         height: 13px;
         background-color: rgba(38,50,56,.9);
         border-radius: 8px;
+        transition: 3s all;
+        animation-duration: 3s;
+        animation-name: animationProgress;
 
         .thumb {
             position: absolute;
@@ -67,6 +70,12 @@ export default {
             border-radius: 50%;
             box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
         }
+    }
+}
+
+@keyframes animationProgress {
+    from {
+        width: 0;
     }
 }
 </style>
