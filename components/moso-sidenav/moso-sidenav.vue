@@ -90,7 +90,7 @@ export default {
     top: 0;
     bottom: 0;
     left: 0;
-    width: 256px;
+    width: $sidenav-width;
     background-color: $dark-blue-gray;
     box-shadow: $box-shadow;
     transform: translate3d(-105%,0,0);
