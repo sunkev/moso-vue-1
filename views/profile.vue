@@ -78,7 +78,7 @@
                     <div class="widget__body widget__bio">
                         <div class="bio">
                             <p>With 15+ years of experience with making websites, I see myself as a veteran. I often tell people around me that I'm from the generation that designed websites for IE6 in XHTML Strict, which, for the unfamiliar, was utterly horrible. It's something we can all laugh about now but back then, it was the challenge that drove us.</p>
-                            <p>That same challenge is still driving me today but in a different way. I could have built this website in any ordinary way, but I've decided to use <a href="https://vuejs.org" title="Vue.js" target="_blank" rel="noopener">Vue.js</a>-components, not to make it harder but to use the technology I have in front of me. I love using new technologies and (still) try my best to keep up with the latest trends.</p>
+                            <p>That same challenge is still driving me today but in a different way. That's why this website is built on tech by <a href="https://vuejs.org" title="Vue.js" target="_blank" rel="noopener">Vue.js</a> and <a href="https://nuxtjs.org" title="Nuxt" target="_blank" rel="noopener">Nuxt</a>, not to make it harder but to use the technology I have in front of me. I love using new technologies and (still) try my best to keep up with the latest trends.</p>
                             <p>When not coding at work, <a href="https://krve.io" title="@krve" target="_blank" rel="noopener">@krve</a> and I have a project called <a href="https://getnano.io" title="Nano" rel="noopener">Nano</a>. While there's nothing on that page but a logo, we're working creating a full-blown UI web-framework based on <a href="https://vuejs.org" title="Vue.js" target="_blank" rel="noopener">Vue.js</a>-components and <a href="https://sass-lang.org" title="Sass" target="_blank" rel="noopener">Sass</a>. We're not quite finished yet but if you're interested, we have a dev-branch on <a href="https://github.com/getnano/nano-framework/tree/dev" title="GitHub" target="_blank" rel="noopener">GitHub</a> that you can check out and follow.</p>
                             <p>When I'm not building webexperiences, I love spending time with my family. I also have a hobby where I activate small computers, such as the two Raspberry Pi 3's I have, where one acts as the family's media center, and is collecting data from my weatherstation, the other acts as a server for various projects and services, an ODROID-C2 that acts as Tor relay, and a ROCK64 that acts as <a href="https://nextcloud.com/box" title="Nextcloud Box" target="_blank" rel="noopener">Nextcloud Box</a> and main webproxy.</p>
                         </div>
@@ -118,10 +118,6 @@
                                         <div class="column-item column-item--right">Vammen, Denmark</div>
                                     </div>
                                     <div class="column">
-                                        <div class="column-item column-item--left">Web:</div>
-                                        <div class="column-item column-item--right"><a href="https://moso.io" title="https://moso.io">https://moso.io</a></div>
-                                    </div>
-                                    <div class="column">
                                         <div class="column-item column-item--left">E-mail:</div>
                                         <div class="column-item column-item--right">
                                             <div class="code-highlight">
@@ -152,7 +148,6 @@
                                     <li>Git</li>
                                     <li>JavaScript ES6 + ES7</li>
                                     <li>Node.js</li>
-                                    <li>Gulp</li>
                                     <li>Webpack</li>
                                     <li>Server-Side Rendering</li>
                                     <li>XHR/ajax</li>
