@@ -26,15 +26,15 @@ export default {
 
         &:before {
             content: '';
-            width: 1rem;
-            height: 1rem;
+            width: 1.125rem;
+            height: 1.125rem;
             position: absolute;
-            left: -9px;
-            top: -2px;
+            left: -10px;
+            top: -4px;
             border-radius: 50%;
             background-color: #fff;
             padding: .25rem;
-            border: 4px solid $primary;
+            border: 2px solid $primary;
         }
 
         @media (min-width: 768px) {
@@ -63,7 +63,7 @@ export default {
             }
 
             &:before {
-                left: -7px;
+                left: -8px;
             }
         }
 
