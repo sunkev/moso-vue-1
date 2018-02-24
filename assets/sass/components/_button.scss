@@ -133,6 +133,9 @@ button, .button {
         &.button-primary {
             @include button-color(#fff, $primary);
         }
+        &.button-dark {
+            @include button-color(#fff, $dark-blue-gray);
+        }
     }
 }
 
