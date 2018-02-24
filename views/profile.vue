@@ -190,6 +190,8 @@ export default {
 }
 </script>
 <style lang="scss">
+@import './assets/sass/variables';
+
 .toolbox-list {
     margin: 0;
     padding-left: 1rem;
