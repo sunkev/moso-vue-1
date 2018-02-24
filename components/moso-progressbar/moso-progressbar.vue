@@ -25,8 +25,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import './assets/sass/variables';
-
 .progressbar-container {
     .progressbar-values {
         display: flex;
@@ -42,7 +40,7 @@ export default {
 .progressbar {
     position: relative;
     width: 100%;
-    height: 13px;
+    height: 6px;
     background-color: rgba(158,158,158,.3);
     border-radius: 8px;
 
@@ -51,23 +49,12 @@ export default {
         top: 0;
         left: 0;
         width: 100%;
-        height: 13px;
+        height: 6px;
         background-color: rgba(38,50,56,.9);
         border-radius: 8px;
-        transition: 3s all;
-        animation-duration: 3s;
+        transition: 2s all;
+        animation-duration: 2s;
         animation-name: animationProgress;
-
-        .thumb {
-            position: absolute;
-            top: -3px;
-            right: -2px;
-            width: 20px;
-            height: 20px;
-            background-color: #607D8B;
-            border-radius: 50%;
-            box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-        }
     }
 }
 
