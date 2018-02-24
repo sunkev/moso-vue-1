@@ -156,6 +156,12 @@ export default {
     }
 
     &.single {
+        padding: 1rem;
+
+        .project-header {
+            padding: 0;
+        }
+
         .project-body {
             display: none;
         }
