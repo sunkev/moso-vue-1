@@ -67,7 +67,7 @@ export default {
                     id: 2,
                     image: '/images/static/nano-logo.png',
                     title: 'Nano',
-                    subtitle: 'CSS framework and Vue.js components',
+                    subtitle: 'Vue.js-components Framework',
                     link: 'https://getnano.io',
                     icon: '<path d="M 7.5 1 C 5.205 1 3.18725 2.199 2.03125 4 L 2 4 L 2 4.0527344 C 1.37 5.0537344 1 6.233 1 7.5 C 1 8.767 1.37 9.9462656 2 10.947266 L 2 11 L 2.03125 11 C 3.18825 12.801 5.205 14 7.5 14 L 8 14 L 8 8 L 14 8 L 14 7.5 C 14 6.233 13.63 5.0537344 13 4.0527344 L 13 4 L 12.96875 4 C 11.81275 2.199 9.795 1 7.5 1 z M 7 2.1289062 L 7 4 L 5.6035156 4 C 5.9765156 3.053 6.481 2.3929062 7 2.1289062 z M 8 2.1289062 C 8.519 2.3929062 9.0234844 3.053 9.3964844 4 L 8 4 L 8 2.1289062 z M 9.7617188 2.5058594 C 10.523719 2.8528594 11.18975 3.364 11.71875 4 L 10.460938 4 C 10.269937 3.436 10.034719 2.9318594 9.7617188 2.5058594 z M 5.2382812 2.5078125 C 4.9642812 2.9328125 4.7290625 3.436 4.5390625 4 L 3.28125 4 C 3.81025 3.364 4.4762812 2.8538125 5.2382812 2.5078125 z M 2.6054688 5 L 4.2597656 5 C 4.1237656 5.621 4.0406719 6.294 4.0136719 7 L 2.0214844 7 C 2.0864844 6.285 2.2924687 5.61 2.6054688 5 z M 5.296875 5 L 7 5 L 7 7 L 5.0214844 7 C 5.0524844 6.271 5.148875 5.599 5.296875 5 z M 8 5 L 9.703125 5 C 9.851125 5.599 9.9465156 6.271 9.9785156 7 L 8 7 L 8 5 z M 10.740234 5 L 12.394531 5 C 12.707531 5.61 12.914516 6.285 12.978516 7 L 10.986328 7 C 10.958328 6.294 10.875234 5.621 10.740234 5 z M 2.0214844 8 L 4.0136719 8 C 4.0416719 8.706 4.1247656 9.379 4.2597656 10 L 2.6054688 10 C 2.2924688 9.39 2.0864844 8.715 2.0214844 8 z M 5.0214844 8 L 7 8 L 7 10 L 5.296875 10 C 5.148875 9.401 5.0524844 8.729 5.0214844 8 z M 9 9 L 11 14 L 11.939453 12.65625 L 13.5 14 L 14.5 12.878906 L 12.853516 11.511719 L 14 10.5 L 9 9 z M 3.28125 11 L 4.5390625 11 C 4.7300625 11.564 4.9652813 12.067188 5.2382812 12.492188 C 4.4762813 12.146187 3.81025 11.636 3.28125 11 z M 5.6035156 11 L 7 11 L 7 12.871094 C 6.481 12.607094 5.9765156 11.947 5.6035156 11 z" />',
                     content: '<p>Nano is going to be a full-blown mobile-first, responsive front-end framework made with custom-made <a href="https://vuejs.org" title="Vue.js" target="_blank" rel="noopener">Vue.js</a>-components and <a href="https://sass-lang" title="Sass" target="_blank" rel="noopener">Sass</a>. The components are inspired, both in design and functionality, by Google\'s <a href="https://material.io/guidelines" title="Material Design guidelines" target="_blank" rel="noopener">Material Design guidelines</a>, however, Nano shouldn\'t be categorized as Material Design.</p><p>While Nano is still under development, you can checkout what we\'re up to at our <em>dev</em>-branch on <a href="https://github.com/getnano/nano-framework/tree/dev" title="GitHub" target="_blank" rel="noopener">GitHub</a>, and you\'re more than welcome to contribute to the project by sending us a PR.</p>'
@@ -120,7 +120,7 @@ export default {
                     id: 2,
                     image: '/images/static/dgst.svg',
                     title: 'The Danish Agency for Digitisation',
-                    subtitle: 'Danish WebDesign Standards Pilot Project'
+                    subtitle: 'Danish WebDesign Standards'
                 },
                 {
                     id: 3,

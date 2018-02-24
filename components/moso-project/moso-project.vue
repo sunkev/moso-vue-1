@@ -59,7 +59,7 @@ export default {
     flex-direction: column;
     position: relative;
     background-color: #fff;
-    padding: 1rem;
+    //padding: 1rem;
     border-radius: $border-radius;
     font-weight: 400;
     color: $rgba-black;
@@ -72,6 +72,7 @@ export default {
     .project-header {
         position: relative;
         display: flex;
+        padding: 1rem 0 0 1rem;
 
         .project-image {
             display: flex;
@@ -121,12 +122,12 @@ export default {
 
         .project-link {
             position: absolute;
-            top: -0.5rem;
-            right: -0.5rem;
+            top: .5rem;
+            right: .5rem;
 
             @media (min-width: 992px) {
-                top: 0;
-                right: 0;
+                top: .8125rem;
+                right: .8125rem;
                 margin-left: auto;
             }
 
@@ -150,7 +151,7 @@ export default {
 
     .project-body {
         margin-top: 1rem;
-        padding-top: 1rem;
+        padding: 1rem;
         border-top: 1px solid #ddd;
     }
 
