@@ -214,7 +214,7 @@ export default {
     line-height: 1.45;
 
     .red {
-        color: #d73a49;
+        color: #a61130;
     }
 
     .blue {
