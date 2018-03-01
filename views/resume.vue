@@ -66,31 +66,38 @@ export default {
             experiences: [
                 {
                     id: 1,
-                    entry: 'Interface Consultant',
-                    location: 'Netcompany A/S',
-                    time: 'Oct, 2017 -',
-                    content: 'Development and consultancy on front-end- and UI design of larger, webbased projects for both the private- and the public sector.'
+                    entry: 'Front-End Developer',
+                    location: 'Aidgency',
+                    time: 'Apr, 2018 -',
+                    content: 'Conjuring of beautiful, award-winning designs into holistic and responsive webexperiences. Development of small bits and pieces for various content management systems.'
                 },
                 {
                     id: 2,
-                    entry: 'Lead Front-End Developer',
-                    location: 'Indexed',
-                    time: 'Apr, 2017 - Oct, 2017',
-                    content: 'Development and design of responsive, mobile-friendly websites and webshops - mostly WordPress, with Bootstrap and Sass/CSS3 as front-end - now with much more responsibility and freedom of expression. Development of small plugins and custom things and bits for WordPress based on customer demands - all with version control (Git), of course. Conversion of design (typically a PSD) into real front-end. Serveradministration (Debian/Ubuntu).'
+                    entry: 'Interface Consultant',
+                    location: 'Netcompany',
+                    time: 'Oct, 2017 - Apr, 2018',
+                    content: 'Development and consultancy on front-end- and UI design of larger, webbased projects for both the private- and (mostly) the public sector.'
                 },
                 {
                     id: 3,
-                    entry: 'Front-End Developer',
-                    location: 'Eyeforce ApS',
-                    time: 'Apr, 2015 - Apr, 2017',
-                    content: 'Development and design of responsive, mobile-friendly websites, webshops, and Android apps, with Bootstrap and Sass/CSS3 as front-end, and Laravel as backend. Front-end design for small and large Laravel-systems, all with version control (Git), of course. Conversion of design (typically a PSD) into real front-end. Development and design of catalogues and brochures for print. Graphic design of logos, og cropping/adjusting of misc web-elements to, eg, Facebook. Serveradministration (Debian/Ubuntu).'
+                    entry: 'Lead Front-End Developer',
+                    location: 'Indexed',
+                    time: 'Apr, 2017 - Oct, 2017',
+                    content: 'Development and design of responsive, mobile-friendly websites and webshops (mostly WordPress). Development of small plugins and custom things and bits for WordPress based on customer demands. Conversion of design (typically a PSD) into real front-end. Serveradministration (Debian/Ubuntu).'
                 },
                 {
                     id: 4,
+                    entry: 'Front-End Developer',
+                    location: 'Eyeforce',
+                    time: 'Apr, 2015 - Apr, 2017',
+                    content: 'Development and design of responsive, mobile-friendly websites, webshops, and Android apps. Front-end design for small and large Laravel-systems. Conversion of design (typically a PSD) into real front-end. Development and design of catalogues and brochures for printing. Graphic design of logos, and creation of misc web-elements to, eg, Facebook. Serveradministration (Debian/Ubuntu).'
+                },
+                {
+                    id: 5,
                     entry: 'Freelance Webdeveloper',
                     location: '3up',
                     time: 'Jan, 2014 - Apr, 2015',
-                    content: 'I started my own company to pick up experience during my education as Webintegrator. During that time I got to work with optimization of webshops, and redesigning logos and social media buttons to fasten up the website.'
+                    content: 'I started my own company to pick up experience while studying as Webintegrator. During that time I got to work with optimization of webshops, and redesigning logos and social media buttons to reduce loadtimes.'
                 }
             ],
             educations: [
