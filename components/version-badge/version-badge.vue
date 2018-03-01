@@ -23,10 +23,10 @@ export default {
     height: 20px;
     margin: 1.125rem 1.5rem;
     padding: .625rem;
-    background-color: rgba(0,0,0,.26);
+    background-color: $dark-blue-gray;
     border-radius: 2px;
     font-size: .6875rem;
-    color: #fff;
+    color: $blue-gray;
     line-height: 1;
 
     @media (max-width: 767px) {
