@@ -85,6 +85,10 @@
                     flex: 5;
                 }
             }
+
+            &:last-of-type {
+                border-bottom: 0;
+            }
         }
     }
 
