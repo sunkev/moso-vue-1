@@ -209,7 +209,7 @@ export default {
     background-color: #f6f8fa;
     border-radius: $border-radius;
     font-family: "Liberation Mono","SFMono-Regular",Consolas,Menlo,Courier,monospace;
-    font-size: 86%;
+    font-size: 80%;
     color: #000;
     line-height: 1.45;
 
