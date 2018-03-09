@@ -18,7 +18,7 @@
                                 title="CodePen">
                             </profile-item>
                             <profile-item
-                                link="https://twitter.com/mosodotio"
+                                link="https://twitter.com/mosolicious"
                                 link-class="twitter"
                                 svg="/images/twitter.svg"
                                 title="Twitter">

@@ -18,7 +18,7 @@
             <div class="md:12 xl:10 xl:offset:1">
                 <div class="row">
                     <div class="sm:12">
-                        <h2 class="stuff-headline">I've also recently made stuff for</h2>
+                        <h2 class="stuff-headline">I've also made stuff for</h2>
                     </div>
                 </div>
                 <no-ssr>
