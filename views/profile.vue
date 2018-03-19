@@ -24,10 +24,10 @@
                                 title="Twitter">
                             </profile-item>
                             <profile-item
-                                link="https://facebook.com/moso.profil"
-                                link-class="facebook"
-                                svg="/images/facebook.svg"
-                                title="Facebook">
+                                link="https://m.me/moso.profil"
+                                link-class="messenger"
+                                svg="/images/messenger.svg"
+                                title="Messenger">
                             </profile-item>
                             <profile-item
                                 link="https://dk.linkedin.com/in/mosoio"
