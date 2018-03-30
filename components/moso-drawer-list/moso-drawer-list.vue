@@ -53,6 +53,11 @@ export default {
                     margin-right: 10px;
                     fill: $sidenav-link-color;
                     transition: fill .2s ease-in-out;
+
+                    &.ghost-svg {
+                        width: 1.125rem;
+                        height: .8125rem;
+                    }
                 }
 
                 &:hover,
