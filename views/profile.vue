@@ -4,7 +4,7 @@
             <div class="lg:5 xl:4 profile-widgets">
                 <div class="widget">
                     <div class="widget__body">
-                        <moso-profile image="/images/profile.jpg" name="Morten Sørensen" position="Interface Consultant at Netcompany">
+                        <moso-profile image="/images/profile.jpg" name="Morten Sørensen" position="Front-End Developer at Aidgency">
                             <profile-item
                                 link="https://github.com/moso"
                                 link-class="github"
@@ -79,7 +79,7 @@
                         <div class="bio">
                             <p>With 15+ years of experience with making websites, I see myself as a veteran. I often tell people around me that I'm from the generation that designed websites for IE6 in XHTML Strict, which, for the unfamiliar, was utterly horrible. It's something we can all laugh about now but back then, it was the challenge that drove us.</p>
                             <p>That same challenge is still driving me today but in a different way. That's why this website is built on tech by <a href="https://vuejs.org" title="Vue.js" target="_blank" rel="noopener">Vue.js</a> and <a href="https://nuxtjs.org" title="Nuxt" target="_blank" rel="noopener">Nuxt</a>, not to make it harder but to use the technology I have in front of me. I love using new technologies and (still) try my best to keep up with the latest trends.</p>
-                            <p>When not coding at work, <a href="https://krve.io" title="@krve" target="_blank" rel="noopener">@krve</a> and I have a project called <a href="https://getnano.io" title="Nano" rel="noopener">Nano</a>. While there's nothing on that page but a logo, we're working creating a full-blown UI web-framework based on <a href="https://vuejs.org" title="Vue.js" target="_blank" rel="noopener">Vue.js</a>-components and <a href="https://sass-lang.org" title="Sass" target="_blank" rel="noopener">Sass</a>. We're not quite finished yet but if you're interested, we have a dev-branch on <a href="https://github.com/getnano/nano-framework/tree/dev" title="GitHub" target="_blank" rel="noopener">GitHub</a> that you can check out and follow.</p>
+                            <p>When not coding at work, I maintain my open-source <nuxt-link to="/projects">projects</nuxt-link>. Being a project owner of an open-source project takes a lot of time, but I'm enjoying every moment of it. The idea that my knowledge is used by someone else, and most importantly that it's all available for free, is very rewarding for me. I also try to improve other projects by contributing, where the most profilic project is perhaps <a href="https://getbootstrap.com" title="Bootstrap" target="_blank" rel="noopener">Bootstrap</a>.</p>
                             <p>When I'm not building webexperiences, I love spending time with my family. I also have a hobby where I activate small computers, such as the two Raspberry Pi 3's I have, where one acts as the family's media center, and is collecting data from my weatherstation, the other acts as a server for various projects and services, an ODROID-C2 that acts as Tor relay, and a ROCK64 that acts as <a href="https://nextcloud.com/box" title="Nextcloud Box" target="_blank" rel="noopener">Nextcloud Box</a> and main webproxy.</p>
                         </div>
                     </div>
@@ -107,7 +107,7 @@
                                     </div>
                                     <div class="column">
                                         <div class="column-item column-item--left">Position:</div>
-                                        <div class="column-item column-item--right">Interface Consultant</div>
+                                        <div class="column-item column-item--right">Front-End Developer</div>
                                     </div>
                                     <div class="column">
                                         <div class="column-item column-item--left">Nationality:</div>
