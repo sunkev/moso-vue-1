@@ -6,10 +6,10 @@
                     <div class="widget__body">
                         <moso-profile image="/images/profile.jpg" name="Morten Sørensen" position="Front-End Developer at Aidgency">
                             <profile-item
-                                link="https://github.com/moso"
-                                link-class="github"
-                                svg="/images/github.svg"
-                                title="GitHub">
+                                link="https://gitlab.com/moso"
+                                link-class="gitlab"
+                                svg="/images/gitlab.svg"
+                                title="GitLab">
                             </profile-item>
                             <profile-item
                                 link="https://codepen.io/moso"
@@ -55,7 +55,7 @@
                         <moso-progressbar name="CMS (Ghost, Pagekit, WordPress)" percentage="80"></moso-progressbar>
                         <moso-progressbar name="Graphics (Photoshop/Illustrator)" percentage="90"></moso-progressbar>
 
-                        <a href="/files/morten-sorensen-cv-2017.pdf" class="button button-dark button--raised" title="Download CV (da)" rel="noopener">
+                        <a href="/files/morten-sorensen-cv-2017.pdf" class="button button-dark button--raised" title="Download CV (da)" rel="noopener,nofollow">
                             <svg viewBox="0 0 16 16">
                                 <path fill="#ffffff" d="M 4.5 2 C 3.675781 2 3 2.675781 3 3.5 L 3 12.5 C 3 13.324219 3.675781 14 4.5 14 L 11.5 14 C 12.324219 14 13 13.324219 13 12.5 L 13 3.5 C 13 2.675781 12.324219 2 11.5 2 Z M 4.5 3 L 11.5 3 C 11.78125 3 12 3.21875 12 3.5 L 12 12.5 C 12 12.78125 11.78125 13 11.5 13 L 4.5 13 C 4.21875 13 4 12.78125 4 12.5 L 4 3.5 C 4 3.21875 4.21875 3 4.5 3 Z M 7 4 C 6.449219 4 6 4.449219 6 5 C 6 5.550781 6.449219 6 7 6 C 7.550781 6 8 5.550781 8 5 C 8 4.449219 7.550781 4 7 4 Z M 7 6 C 5.898438 6 5 6.898438 5 8 L 9 8 C 9 6.898438 8.101563 6 7 6 Z M 10 5 L 10 6 L 11 6 L 11 5 Z M 10 7 L 10 8 L 11 8 L 11 7 Z M 5 9 L 5 10 L 11 10 L 11 9 Z M 5 11 L 5 12 L 11 12 L 11 11 Z " />
                             </svg>
@@ -78,9 +78,9 @@
                     <div class="widget__body widget__bio">
                         <div class="bio">
                             <p>With 15+ years of experience with making websites, I see myself as a veteran. I often tell people around me that I'm from the generation that designed websites for IE6 in XHTML Strict, which, for the unfamiliar, was utterly horrible. It's something we can all laugh about now but back then, it was the challenge that drove us.</p>
-                            <p>That same challenge is still driving me today but in a different way. That's why this website is built on tech by <a href="https://vuejs.org" title="Vue.js" target="_blank" rel="noopener">Vue.js</a> and <a href="https://nuxtjs.org" title="Nuxt" target="_blank" rel="noopener">Nuxt</a>, not to make it harder but to use the technology I have in front of me. I love using new technologies and (still) try my best to keep up with the latest trends.</p>
+                            <p>That same challenge is still driving me today but in a different way. That's why this website is built on tech by <a href="https://vuejs.org" title="Vue.js" target="_blank" rel="noopener">Vue.js</a> and <a href="https://nuxtjs.org" title="Nuxt" target="_blank" rel="noopener">Nuxt</a>.</p>
                             <p>When not coding at work, I maintain my open-source <nuxt-link to="/projects">projects</nuxt-link>. Being a project owner of an open-source project takes a lot of time, but I'm enjoying every moment of it. The idea that my knowledge is used by someone else, and most importantly that it's all available for free, is very rewarding for me. I also try to improve other projects by contributing, where the most profilic project is perhaps <a href="https://getbootstrap.com" title="Bootstrap" target="_blank" rel="noopener">Bootstrap</a>.</p>
-                            <p>When I'm not building webexperiences, I love spending time with my family. I also have a hobby where I activate small computers, such as the two Raspberry Pi 3's I have, where one acts as the family's media center, and is collecting data from my weatherstation, the other acts as a server for various projects and services, an ODROID-C2 that acts as Tor relay, and a ROCK64 that acts as <a href="https://nextcloud.com/box" title="Nextcloud Box" target="_blank" rel="noopener">Nextcloud Box</a> and main webproxy.</p>
+                            <p>When I'm not building webexperiences, I love spending time with my family. I also have a hobby where I activate small computers, such as the two ROCK64's I have, where one acts as the family's media center with Plex, and is collecting data from my weatherstation, the other acts as <a href="https://nextcloud.com/box" title="Nextcloud Box" target="_blank" rel="noopener">Nextcloud Box</a> and main webproxy, an ODROID-C2 that acts as Tor relay, and two Raspberry Pi 3's where one acts as home network DNS-over-HTTPS with <a href="https://developers.cloudflare.com/1.1.1.1/dns-over-https/cloudflared-proxy" title="cloudflared" target="_blank" rel="noopener">cloudflared</a> and adblock at DNS-level with <a href="https://pi-hole.net" title="Pi-hole" target="_blank" rel="noopener">Pi-hole</a>, and one acts as UniFi Controller for my Ubiquiti UniFi APs.</p>
                         </div>
                     </div>
                 </div>
