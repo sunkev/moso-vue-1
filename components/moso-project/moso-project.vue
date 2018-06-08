@@ -9,9 +9,7 @@
                 <small class="project-subtitle" v-if="subTitle">{{ subTitle }}</small>
             </div>
             <div class="project-link" v-if="link || subTitle">
-                <a :href="link" :title="link" v-if="link">
-                    <svg viewBox="0 0 16 16" v-html="icon"></svg>
-                </a>
+                <a v-if="link" :href="link" :title="link" target="_blank" rel="noopener" v-html="icon"></a>
             </div>
         </div>
         <div class="project-body">
@@ -130,22 +128,6 @@ export default {
                 right: .8125rem;
                 margin-left: auto;
             }
-
-            svg {
-                width: 1.25rem;
-                height: 1.25rem;
-                fill: #000;
-                opacity: 0.54;
-                transition: opacity .2s ease-in-out;
-
-                &:hover,
-                &:focus,
-                &:active,
-                &:hover:active {
-                    fill: #000;
-                    opacity: 0.87;
-                }
-            }
         }
     }
 
@@ -176,6 +158,24 @@ export default {
 
         &:last-of-type {
             margin: 0;
+        }
+    }
+}
+
+.project-link {
+    svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        fill: #000;
+        opacity: 0.54;
+        transition: opacity .2s ease-in-out;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:hover:active {
+            fill: #000;
+            opacity: 0.87;
         }
     }
 }
