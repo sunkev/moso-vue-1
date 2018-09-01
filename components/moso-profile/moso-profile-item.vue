@@ -3,7 +3,7 @@
         <a :href="link" class="button icon-button" :class="linkClass" tabindex="-1" :title="title" target="_blank" rel="noopener">
             <img :src="svg" alt="" v-if="svg">
             <i class="mdi" :class="icon" v-if="icon"></i>
-            <nano-ripple></nano-ripple>
+            <nano-ripple />
         </a>
     </li>
 </template>
@@ -72,6 +72,10 @@ li {
 
         &.linkedin {
             color: $linkedin;
+        }
+
+        &.mastodon img {
+            height: 18px;
         }
 
         i.mdi {

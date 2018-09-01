@@ -16,7 +16,7 @@ export default {
             type: String
         },
         percentage: {
-            type: String
+            type: Number
         }
     },
     mounted() {

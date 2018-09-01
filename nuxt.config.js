@@ -64,8 +64,20 @@ module.exports = {
     ** Modules
     */
     modules: [
-        '@nuxtjs/router'
+        '@nuxtjs/router',
+        '@nuxtjs/axios'
     ],
+    /*
+    ** axios config
+    */
+    axios: {
+        proxy: true
+    },
+
+    proxy: {
+        '/api/': { target: 'http://api.morten.is', pathRewrite: {'^/api/': ''} }
+    },
+
     generate: {
         routes: [
             '/'
@@ -92,7 +104,8 @@ module.exports = {
         ** Vendor plugins
         */
         vendor: [
-            'vue-masonry'
+            'vue-masonry',
+            'axios'
         ]
     },
     /*

@@ -79,6 +79,10 @@
                     flex: 2;
                     max-width: 31%;
                     font-weight: 500;
+
+                    @media (min-width: 1600px) {
+                        max-width: 22%;
+                    }
                 }
 
                 &--right {
