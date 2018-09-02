@@ -195,7 +195,7 @@ export default {
 
 .code-highlight {
     width: 100%;
-    padding: .75rem;
+    padding: .6rem;
     background-color: #f6f8fa;
     border-radius: $border-radius;
     font-family: "Liberation Mono","SFMono-Regular",Consolas,Menlo,Courier,monospace;
