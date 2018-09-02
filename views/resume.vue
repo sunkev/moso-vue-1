@@ -15,8 +15,8 @@
                             </div>
                             <div class="widget__body">
                                 <moso-timeline>
-                                    <timeline-item v-for="experience in experiences" :key="experience.id" :entry="experience.entry" :location="experience.location" :time="experience.time">
-                                        <p>{{experience.content}}</p>
+                                    <timeline-item v-for="experience in reverseExp" :key="experience.id" :entry="experience.title" :location="experience.location" :time="experience.year">
+                                        <p>{{experience.description}}</p>
                                     </timeline-item>
                                 </moso-timeline>
                             </div>
@@ -34,8 +34,8 @@
                             </div>
                             <div class="widget__body">
                                 <moso-timeline>
-                                    <timeline-item v-for="education in educations" :key="education.id" :entry="education.entry" :location="education.location" :time="education.time">
-                                        <p>{{education.content}}</p>
+                                    <timeline-item v-for="education in reverseEdu" :key="education.id" :entry="education.title" :location="education.location" :time="education.year">
+                                        <p>{{education.description}}</p>
                                     </timeline-item>
                                 </moso-timeline>
                             </div>
@@ -50,83 +50,40 @@
 import MosoTimeline from '~/components/moso-timeline/moso-timeline.vue'
 import TimelineItem from '~/components/moso-timeline/moso-timeline-item.vue'
 
+import axios from 'axios'
+
 export default {
     layout: 'default',
     components: {
         'moso-timeline': MosoTimeline,
         'timeline-item': TimelineItem
     },
-    asyncData(context) {
-        return {
-            name: 'Resume'
-        }
-    },
     data() {
         return {
-            experiences: [
-                {
-                    id: 1,
-                    entry: 'Front-End Developer',
-                    location: 'Aidgency',
-                    time: 'Apr, 2018 -',
-                    content: 'Conjuring of beautiful, award-winning designs into holistic and responsive webexperiences. Development of small bits and pieces for various content management systems.'
-                },
-                {
-                    id: 2,
-                    entry: 'Interface Consultant',
-                    location: 'Netcompany',
-                    time: 'Oct, 2017 - Apr, 2018',
-                    content: 'Development and consultancy on front-end- and UI design of larger, webbased projects for both the private- and (mostly) the public sector.'
-                },
-                {
-                    id: 3,
-                    entry: 'Lead Front-End Developer',
-                    location: 'Indexed',
-                    time: 'Apr, 2017 - Oct, 2017',
-                    content: 'Development and design of responsive, mobile-friendly websites and webshops (mostly WordPress). Development of small plugins and custom things and bits for WordPress based on customer demands. Conversion of design (typically a PSD) into real front-end. Serveradministration (Debian/Ubuntu).'
-                },
-                {
-                    id: 4,
-                    entry: 'Front-End Developer',
-                    location: 'Eyeforce',
-                    time: 'Apr, 2015 - Apr, 2017',
-                    content: 'Development and design of responsive, mobile-friendly websites, webshops, and Android apps. Front-end design for small and large Laravel-systems. Conversion of design (typically a PSD) into real front-end. Development and design of catalogues and brochures for printing. Graphic design of logos, and creation of misc web-elements to, eg, Facebook. Serveradministration (Debian/Ubuntu).'
-                },
-                {
-                    id: 5,
-                    entry: 'Freelance Webdeveloper',
-                    location: '3up',
-                    time: 'Jan, 2014 - Apr, 2015',
-                    content: 'I started my own company to pick up experience while studying as Webintegrator. During that time I got to work with optimization of webshops, and redesigning logos and social media buttons to reduce loadtimes.'
-                }
-            ],
-            educations: [
-                {
-                    id: 1,
-                    entry: 'Webintegrator',
-                    location: 'Mercantec',
-                    time: 'Mar, 2016',
-                    content: 'In 2016 I passed the Webintegrator exam by making a project that looked a bit like Stack Overflow (that was actually in the assignment), just with a dash of Material Design.'
-                },
-                {
-                    id: 2,
-                    entry: 'IT-Supporter',
-                    location: 'Mercantec',
-                    time: 'Sep, 2012',
-                    content: 'In 2012 I passed the IT-Supporter exam by doing a bit of troubleshooting on an exam-machine, and telling the examiners how much I knew about group policies and heritance. They told me I should have told them about this magical thing called a Raspberry Pi, that I had set up as a small webserver integrated perfectly with Active Directory. But I thought it was too simple, and since it wasn\'t in the assignment, I thought I\'d fail if I did. Oh well...'
-                },
-                {
-                    id: 3,
-                    entry: 'CCNA',
-                    location: 'Mercantec',
-                    time: 'Sep, 2012',
-                    content: 'As part of the IT-Supporter exam, I passed the CCNA exam with a final score of 82.6.'
-                },
-            ]
+            experiences: [],
+            educations: []
         }
     },
-    mounted() {
-        //
+    async asyncData({ req, params }) {
+        const [
+            { data: experiences },
+            { data: educations }
+        ] = await Promise.all([
+            axios.get('https://api.morten.is/experience'),
+            axios.get('https://api.morten.is/education')
+        ])
+        return {
+            experiences,
+            educations
+        }
+    },
+    computed: {
+        reverseExp() {
+            return this.experiences.slice().reverse();
+        },
+        reverseEdu() {
+            return this.educations.slice().reverse();
+        }
     }
 }
 </script>
