@@ -1,19 +1,19 @@
 # moso-vue
-My personal portfolio (re)built with [Vue.js](https://vuejs.org) and [Nuxt.js](https://nuxtjs.org).
+My personal portfolio (re)built\* with [Vue.js](https://vuejs.org) and [Nuxt.js](https://nuxtjs.org) featuring my own [Flexgrid](https://flexgrid.co).
 
 ### Install
 Run `npm install` or `yarn install` to install the dependencies.
 
 ### Scripts
-Since this project is compiled with Nuxt, you have the following scripts at hand:
+Since this project is built with Nuxt, you have the following scripts at hand:
 
 ```shell
 $ npm run dev        # `nuxt` will launch a development server on `localhost:3000` with hot-reloading
 $ npm run build      # `nuxt build` will build your app with webpack, and minify JS & CSS (production)
 $ npm run start      # `nuxt start` will start the server in production mode (after running `nuxt build`)
 $ npm run generate   # `nuxt generate` will build the app and generate every route as HTML files
-$ npm run lint:      # ESLint will lint all JS- and Vue-files while ignoring files in `.gitignore`
-$ npm run precommit: # Same as `npm run lint`, however recommended best practice
+$ npm run lint       # ESLint will lint all JS- and Vue-files while ignoring files in `.gitignore`
+$ npm run precommit  # Same as `npm run lint`, however recommended best practice
 ```
 
 The usual workflow is to run `npm run dev` while developing. Then run `npm run build` and `npm run generate` to build the app, where the scripts will generate a `~/dist`-folder. In this folder are all the files you'd upload to your host.
@@ -40,7 +40,7 @@ All custom plugin loaders and, in this case, directives and classes resides in t
 
 All static content like images and fonts are stored in the `~/static`-folder, as per Nuxt standard.
 
-\* = The only difference from a standard Nuxt installation is, that I'm using a custom router config. Since the standard Nuxt generation of routes doesn't allow me to name routes manually, I had to solve it this way. That means that all pages that in a standard Nuxt install resides in `~/pages`, are now stored in `~/views`, and manually set up in `/router.js`. The Nuxt config is only set to generate the `/`-route, as this is needed for the index page to work.
+\* = The only difference from a standard Nuxt installation is, that I'm using a custom router config. Since the standard Nuxt generation of routes doesn't allow me to name routes manually, which I need for `this.$route.name` in the toolbar, I had to solve it this way. That means that all pages that in a standard Nuxt install resides in `~/pages`, are now stored in `~/views`, and manually set up in `/router.js`. The Nuxt config is only set to generate the `/`-route, as this is needed for the index page to work.
 
 ### Routing
 As mentioned, all routes have to be set up manually. However, it's rather straight forward, and it follows [vue-router](https://router.vuejs.org/en/essentials/named-routes.html)'s scheme. All routes are residing in `/router.js`. Here's an example:
@@ -94,9 +94,9 @@ This will generate the routes for `/page-a`, `/page-b`, `/page-c`, `/404`, and w
 # Editing content
 You probably want to edit the content, if you want to copy the site and just change some stuff.
 
-In this Nuxt install, I've gone back to having content directly in the views. This is because I haven't been able to get Axios running properly. I have also edited the Profile-view a bit.
+In this Nuxt install, I'm getting my data from a [Strapi](https://strapijs.org) API with axios. You probablyt don't want these data on your page if you're straight up copying it. Thus you'll need to remove those `asyncData`-functions from each page.
 
-However it's on my todo-list to get Axios up and running, plus to throw an error, if the api-request isn't coming from my own server, so you'll notice once you boot up the page.
+It's on my todo-list to throw an error, if the api-request isn't coming from my own server, so you'll notice once you boot up the page.
 
 # Custom components
 This project is full of custom and homemade components. Unused components are, of course, not being loaded, to keep `app.js` at a minimum.
@@ -142,3 +142,5 @@ This is from the framework [Nano](https://github.com/getnano/nano-framework) tha
 
 # Issues?
 Please report any issues and non-working stuff here on GitHub.
+
+\* rebuilt = This site used to be a [Polymer](https://polymer-project.org)-site. But I saw the light and rebuilt it from scratch in Vue.
