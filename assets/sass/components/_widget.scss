@@ -58,7 +58,7 @@
 
         h4.sub-title {
             margin-bottom: .625rem;
-            font-weight: 500;
+            font-weight: 600;
             color: $rgba-black;
         }
 
@@ -78,7 +78,7 @@
                 &--left {
                     flex: 2;
                     max-width: 31%;
-                    font-weight: 500;
+                    font-weight: 600;
 
                     @media (min-width: 1600px) {
                         max-width: 22%;

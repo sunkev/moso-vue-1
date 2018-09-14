@@ -78,7 +78,7 @@ export default {
                 &.router-link-active,
                 &.active {
                     color: $sidenav-active-link-color;
-                    font-weight: 500;
+                    font-weight: 600;
 
                     svg {
                         fill: $sidenav-active-link-color;

@@ -103,7 +103,7 @@ export default {
             h4 {
                 margin: 0 0 .3125rem;
                 font-size: 1.125rem;
-                font-weight: 500;
+                font-weight: 600;
                 color: $rgba-black;
                 line-height: 1;
 

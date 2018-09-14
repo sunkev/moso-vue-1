@@ -45,7 +45,7 @@ export default {
             position: relative;
             top: -4px;
             font-size: 1.25rem;
-            font-weight: 500;
+            font-weight: 600;
             margin: 0;
         }
 

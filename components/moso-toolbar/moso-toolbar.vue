@@ -51,7 +51,7 @@ export default {
     & >>> .page-title {
         h1 {
             font-size: 1.5rem;
-            font-weight: 500;
+            font-weight: 600;
             margin: 0 0 0 1rem;
         }
     }
