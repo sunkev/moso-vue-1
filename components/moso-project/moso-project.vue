@@ -108,7 +108,7 @@ export default {
                 line-height: 1;
 
                 @media (min-width: 992px) {
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                 }
             }
 

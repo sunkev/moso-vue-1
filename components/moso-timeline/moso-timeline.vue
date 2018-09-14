@@ -30,7 +30,7 @@ export default {
             height: 1.125rem;
             position: absolute;
             left: -10px;
-            top: -4px;
+            top: -7px;
             border-radius: 50%;
             background-color: #fff;
             padding: .25rem;
@@ -43,7 +43,7 @@ export default {
 
         .title {
             position: relative;
-            top: -4px;
+            top: -10px;
             font-size: 1.25rem;
             font-weight: 600;
             margin: 0;
@@ -70,6 +70,7 @@ export default {
         .information {
             display: flex;
             align-items: center;
+            margin-top: -7px;
             padding: 0 0 .375rem;
 
             .location {
