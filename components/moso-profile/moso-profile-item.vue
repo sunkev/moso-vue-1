@@ -78,6 +78,10 @@ li {
             height: 18px;
         }
 
+        &.gitlab img {
+            height: 22px;
+        }
+
         i.mdi {
             display: block;
             line-height: 22px;
