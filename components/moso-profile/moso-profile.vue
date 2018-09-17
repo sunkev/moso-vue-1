@@ -38,7 +38,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: .875rem;
+    padding: 1.75rem;
     text-align: center;
 
     .profile-image {

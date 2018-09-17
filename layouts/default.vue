@@ -156,12 +156,11 @@ export default {
             &:first-of-type {
                 font-size: 1.25rem;
                 font-weight: 400;
-                margin: 0 0 .3125rem;
+                margin: 0;
             }
 
             &:last-of-type {
-                font-size: .739rem;
-                font-weight: 300;
+                font-size: .804rem;
             }
         }
     }

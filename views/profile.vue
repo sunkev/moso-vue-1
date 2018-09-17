@@ -216,6 +216,10 @@ export default {
     }
 }
 
+.widget__body >>> .progressbar-container:last-of-type {
+    margin-bottom: 1.55rem;
+}
+
 #profile-svg,
 #info-svg,
 #tool-svg {

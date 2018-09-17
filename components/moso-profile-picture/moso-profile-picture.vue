@@ -54,7 +54,7 @@ export default {
             }
 
             &:last-of-type {
-                font-size: .739rem;
+                font-size: .804rem;
                 font-weight: 300;
             }
         }
