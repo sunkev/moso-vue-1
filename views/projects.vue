@@ -55,8 +55,8 @@ export default {
             { data: projects },
             { data: smallprojects }
         ] = await Promise.all([
-            axios.get('https://api.morten.is/project'),
-            axios.get('https://api.morten.is/smallproject')
+            axios.get('https://api.morten.is/projects'),
+            axios.get('https://api.morten.is/smallprojects')
         ])
         return {
             projects,
