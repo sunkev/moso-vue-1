@@ -69,8 +69,8 @@ export default {
             { data: experiences },
             { data: educations }
         ] = await Promise.all([
-            axios.get('https://api.morten.is/experience'),
-            axios.get('https://api.morten.is/education')
+            axios.get('https://api.morten.is/experiences'),
+            axios.get('https://api.morten.is/educations')
         ])
         return {
             experiences,
