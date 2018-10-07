@@ -157,11 +157,11 @@ export default {
             { data: infolists },
             { data: tools }
         ] = await Promise.all([
-            axios.get('https://api.morten.is/devicon'),
-            axios.get('https://api.morten.is/skill'),
-            axios.get('https://api.morten.is/profile'),
-            axios.get('https://api.morten.is/infolist'),
-            axios.get('https://api.morten.is/tool')
+            axios.get('https://api.morten.is/devicons'),
+            axios.get('https://api.morten.is/skills'),
+            axios.get('https://api.morten.is/profiles'),
+            axios.get('https://api.morten.is/infolists'),
+            axios.get('https://api.morten.is/tools')
         ])
         return {
             devicons,
