@@ -99,14 +99,7 @@ module.exports = {
                     exclude: /(node_modules)/
                 })
             }
-        },
-        /*
-        ** Vendor plugins
-        */
-        vendor: [
-            'vue-masonry',
-            'axios'
-        ]
+        }
     },
     /*
     ** Plugins
