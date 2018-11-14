@@ -65,6 +65,7 @@ export default {
         }
     },
     async asyncData({ req, params }) {
+        performance.mark('getResume:start')
         const [
             { data: experiences },
             { data: educations }
@@ -76,6 +77,7 @@ export default {
             experiences,
             educations
         }
+        performance.mark('getResume:end')
     },
     computed: {
         reverseExp() {

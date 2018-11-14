@@ -150,6 +150,7 @@ export default {
     },
 
     async asyncData({ req, params }) {
+        performance.mark('getProfile:start')
         const [
             { data: devicons },
             { data: skills },
@@ -170,6 +171,7 @@ export default {
             infolists,
             tools
         }
+        performance.mark('getProfile:end')
     }
 }
 </script>
