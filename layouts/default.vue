@@ -166,6 +166,106 @@ export default {
     }
 }
 
+[moso-drawer-list],
+#drawerMenu {
+    li {
+        display: flex;
+        height: 40px;
+
+        a {
+            display: block;
+            width: 100%;
+            padding: 0 2rem;
+            font-weight: 400;
+            color: $sidenav-link-color;
+            line-height: 40px;
+            user-select: none;
+            text-decoration: none;
+            transition: color .2s ease-in-out;
+            -webkit-tap-highlight-color: rgba(255,255,255,0);
+
+            span {
+                display: flex;
+                align-items: center;
+                height: 40px;
+            }
+
+            svg {
+                position: relative;
+                top: -1px;
+                width: 1.125rem;
+                height: 1.125rem;
+                margin-right: 10px;
+                fill: $sidenav-link-color;
+                transition: fill .2s ease-in-out;
+
+                &.ghost-svg {
+                    width: 1.125rem;
+                    height: .8125rem;
+                }
+            }
+
+            &:hover,
+            &:focus,
+            &:active,
+            &:hover:active {
+                background-color: transparent !important;
+                color: lighten($sidenav-link-color, 10%);
+                outline: none;
+                user-select: none;
+                text-decoration: none;
+
+                svg {
+                    fill: lighten($sidenav-link-color, 10%);
+                }
+            }
+
+            &.router-link-active,
+            &.active {
+                color: $sidenav-active-link-color;
+                font-weight: 600;
+
+                svg {
+                    fill: $sidenav-active-link-color;
+                }
+
+                &:hover,
+                &:focus,
+                &:active,
+                &:hover:active {
+                    color: $sidenav-active-link-color;
+                    outline: none;
+                    user-select: none;
+                    text-decoration: none;
+
+                    svg {
+                        fill: $sidenav-active-link-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.profile-picture {
+    p {
+        margin: 0;
+        text-align: center;
+        color: $text-color-sidenav;
+
+        &:first-of-type {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin: 0 0 .3125rem;
+        }
+
+        &:last-of-type {
+            font-size: .804rem;
+            font-weight: 300;
+        }
+    }
+}
+
 .footer {
     position: absolute;
     bottom: 5px;
