@@ -3,8 +3,8 @@
         <div class="row">
             <div class="lg:5 xl:4 profile-widgets">
                 <div class="widget">
-                    <div class="widget__body">
-                        <moso-profile image="/images/profile.jpg" name="Morten Sørensen" position="Front-End Developer at Aidgency">
+                    <div class="widget__body" v-for="title in titles" :key="title.id">
+                        <moso-profile image="/images/profile.jpg" name="Morten Sørensen" :position="title.title">
                             <profile-item v-for="item in devicons" :key="item.id"
                                             :link="item.url"
                                             :link-class="item.name.toLowerCase().trim()"
@@ -141,6 +141,7 @@ export default {
     },
     data() {
         return {
+            titles: [],
             devicons: [],
             skills: [],
             profiles: [],
@@ -152,12 +153,14 @@ export default {
     async asyncData({ req, params }) {
         performance.mark('getProfile:start')
         const [
+            { data: titles },
             { data: devicons },
             { data: skills },
             { data: profiles },
             { data: infolists },
             { data: tools }
         ] = await Promise.all([
+            axios.get('https://api.morten.is/titles'),
             axios.get('https://api.morten.is/devicons'),
             axios.get('https://api.morten.is/skills'),
             axios.get('https://api.morten.is/profiles'),
@@ -165,6 +168,7 @@ export default {
             axios.get('https://api.morten.is/tools')
         ])
         return {
+            titles,
             devicons,
             skills,
             profiles,
