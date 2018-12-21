@@ -15,8 +15,8 @@
                             </div>
                             <div class="widget__body">
                                 <moso-timeline>
-                                    <timeline-item v-for="experience in reverseExp" :key="experience.id" :entry="experience.title" :location="experience.location" :time="experience.year">
-                                        <p>{{experience.description}}</p>
+                                    <timeline-item v-for="experience in experiences" :key="experience.id" :entry="experience.title" :location="experience.location" :time="experience.year">
+                                        <p v-html="experience.description" ></p>
                                     </timeline-item>
                                 </moso-timeline>
                             </div>
@@ -34,8 +34,8 @@
                             </div>
                             <div class="widget__body">
                                 <moso-timeline>
-                                    <timeline-item v-for="education in reverseEdu" :key="education.id" :entry="education.title" :location="education.location" :time="education.year">
-                                        <p>{{education.description}}</p>
+                                    <timeline-item v-for="education in educations" :key="education.id" :entry="education.title" :location="education.location" :time="education.year">
+                                        <p v-html=education.description></p>
                                     </timeline-item>
                                 </moso-timeline>
                             </div>
@@ -49,8 +49,6 @@
 <script>
 import MosoTimeline from '~/components/moso-timeline/moso-timeline.vue'
 import TimelineItem from '~/components/moso-timeline/moso-timeline-item.vue'
-
-import axios from 'axios'
 
 export default {
 
@@ -66,28 +64,51 @@ export default {
                     title: "Software Engineer III",
                     year: "2018",
                     location: "Cisco Systems",
-                    description: "Tech lead working at Cisco Systems on the Smart Licensing Platform."
+                    description: "Tech lead working on the Smart Licensing Platform. Conceptualized design and led user story development to " +
+                        "establish code coverage and automated testing, which identified areas for improvement, reducing the codebase by 10% and potential defects by 25%"
                 },
                 {
                     title: "Director of Engineering/Product Manager",
                     year: "2017-2018",
                     location: "salesEQUITY",
-                    description: ""
+                    description: "Responsible for all aspects of company's technical strategy, application development and deployment. " +
+                        "Developed and executed a technical roadmap that launched a new subscription model, better positioning the product for smaller businesses, leading to a 3x increase in customers"
                 },
                 {
                     title: "Lead Developer",
                     year: "2015 - 2017",
                     location: "salesEQUITY",
-                    description: "Responsible for leading a 4 person cross-functional team to develop solutions and implement requirements."
+                    description: "Lead a 4 person cross-functional team to develop solutions and implement requirements." +
+                        "Utilized extreme agile programming with 100% test driven development and automated testing to drive ."
                 },
                 {
                     title: "Full Stack Developer",
                     year: "2013 - 2015",
                     location: "salesEQUITY",
-                    description: "Developed from scratch a Ruby on Rail web app that measures B2B relationship."
+                    description: "Developed a Ruby-on-Rails web app that measures B2B relationship." +
+                        "Difficult back-end problems solved include HTML to PDF conversion, integration with 3rd party APIs (Salesforce and Qualtrics)" +
+                        "On the front-end, implemented a combination of AngularJS, Bootstrap and data visualization libraries (D3.js/ChartJS/amCharts."
                 }
             ],
-            educations: []
+            educations: [
+                {
+                    title: "MBA",
+                    year: "2020",
+                    location: "University of North Carolina at Chapel Hill",
+                    description: "<ul><li>Data Analytics & Decision Making</li><li>Leading and Managing</li><li>Technology & Business Innovation</li><li>Management Communication</li><li>Entrepreneurship</li><li>Ethical Leadership</li> </ul>"
+                },
+                {
+                    title: "Master's of Liberal Arts, Software Engineering",
+                    year: "2019",
+                    location: "Harvard University Extension School",
+                    description: "<ul><li>Big Data Analytics</li><li>Advanced Javascript</li><li>Agile Software Development</li><li>C & Unix/Linux</li><li>Intro to Cloud and DevOps</li><li>Java and Hadoop</li><li>Internet of Things</li></ul>"
+                },
+                {
+                    title: "Bachelor's of Arts, Biology",
+                    year: "2012",
+                    location: "Brandeis University"
+                }
+            ]
         }
     }
 }
