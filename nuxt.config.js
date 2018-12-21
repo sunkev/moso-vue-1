@@ -21,7 +21,7 @@ module.exports = {
             { name: 'author', content: 'Kevin Sun' },
             { name: 'mobile-web-app-capable', content: 'yes' },
             { name: 'apple-mobile-web-app-capable', content: 'yes' },
-            { name: 'application-name', content: 'Morten Sørensen | moso.io' },
+            { name: 'application-name', content: 'Kevin Sun' },
             { name: 'msapplication-TileColor', content: '#263238' },
             { name: 'msapplication-TileImage', content: '/images/favicon.ico' },
             { name: 'theme-color', content: '#263238' }
