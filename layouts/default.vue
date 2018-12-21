@@ -4,17 +4,15 @@
             <div class="row">
                 <moso-sidenav ref="sidenav">
                     <div class="logo">
-                        <a href="/" @click="closeSidenav" title="Home">
-                            <img src="/images/logo.svg" alt="Logo">
-                        </a>
+                        <a href="/" @click="closeSidenav" title="Home"></a>
                     </div>
                     <div class="profile-picture">
                         <div class="media">
                             <div class="image">
-                                <img src="/images/profile.jpg" alt="Morten Sørensen">
+                                <img src="/images/profile.jpg" alt="Kevin Sun">
                             </div>
-                            <p>Morten S&oslash;rensen</p>
-                            <p>Front-End Engineer, Website Magician</p>
+                            <p>Kevin Sun</p>
+                            <p>Software Engineer, Lifelong Learner</p>
                         </div>
                     </div>
                     <moso-drawer-list ref="drawerList">
@@ -65,6 +63,7 @@
                     </moso-drawer-list>
                     <div class="footer">
                         <span>Made with <img src="/images/heart.svg" alt="Love"> and <a href="https://vuejs.org" title="Vue.js" target="_blank" rel="noopener"><img src="/images/vue-logo.svg" alt="Vue.js"></a> &#43; <a href="https://nuxtjs.org" title="Nuxt.js" target="_blank" rel="noopener"><img src="/images/nuxt-logo.svg" alt="Nuxt.js"></a></span>
+                        <div>Forked from moso.io</div>
                     </div>
                 </moso-sidenav>
                 <div class="app-layout">

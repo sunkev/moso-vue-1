@@ -2,7 +2,7 @@
     <div class="profile-picture">
         <div class="media">
             <div class="image">
-                <img :src="image" alt="Morten Sørensen">
+                <img :src="image" alt="Kevin Sun">
             </div>
             <slot name="name"></slot>
             <slot name="position"></slot>
