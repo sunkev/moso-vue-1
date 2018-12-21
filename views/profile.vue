@@ -43,7 +43,7 @@
                             </div>
                             <div class="column">
                                 <div class="column-item column-item--left">Location:</div>
-                                <div class="column-item column-item--right">Chapel Hill</div>
+                                <div class="column-item column-item--right">Chapel Hill, NC</div>
                             </div>
                             <div class="column">
                                 <div class="column-item column-item--left">E-mail:</div>
@@ -65,9 +65,9 @@
                     </div>
                     <div class="widget__body widget__bio">
                         <p>I have 5+ years of experience of leading teams to build successful software start to finish. Here is my career in a nutshell. I started with a background in biology and worked at New England Biolabs as a research assistant, but found I had a knack for building web apps.</p>
-                        <p>So I took a risk and pivoted my career by joining a development bootcamp. The rest is history! I joined a start-up and was the first developer for salesEQUITY, staying and growing the company until it reached ~5M evaluation. </p>
-                        <p>Afterwards, I decided to experience working for a Fortune 500 company and joined Cisco Systems, working on their Smart Software Licensing platform. </p>
-                        <p>I love challenging myself, so I'm currently pursuing both a Master's in Software Engineering and an MBA. I'm looking for a product manager internship for the summer, if anything sounds interesting let me know through <a href = "mailto: kevin_sun@kenan-flagler.unc.edu">email</a>!</p>
+                        <p>So I took a risk and pivoted my career by joining a development bootcamp. The rest is history! I joined a start-up and was the first developer for salesEQUITY, growing the company until it reached $5M evaluation. </p>
+                        <p>Afterwards, I decided to branch out and work for a Fortune 500 company. I joined Cisco Systems and worked on their Smart Software Licensing platform. </p>
+                        <p>I love challenging myself, so I'm currently pursuing both a Master's in Software Engineering and an MBA. I'm looking for a product manager internship for the summer. If anything sounds interesting let me know through <a href = "mailto: kevin_sun@kenan-flagler.unc.edu">email</a>!</p>
                     </div>
                 </div>
                 <div class="row">
