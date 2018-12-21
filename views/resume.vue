@@ -53,6 +53,7 @@ import TimelineItem from '~/components/moso-timeline/moso-timeline-item.vue'
 import axios from 'axios'
 
 export default {
+
     layout: 'default',
     components: {
         'moso-timeline': MosoTimeline,
@@ -60,31 +61,33 @@ export default {
     },
     data() {
         return {
-            experiences: [],
+            experiences: [
+                {
+                    title: "Software Engineer III",
+                    year: "2018",
+                    location: "Cisco Systems",
+                    description: "Tech lead working at Cisco Systems on the Smart Licensing Platform."
+                },
+                {
+                    title: "Director of Engineering/Product Manager",
+                    year: "2017-2018",
+                    location: "salesEQUITY",
+                    description: ""
+                },
+                {
+                    title: "Lead Developer",
+                    year: "2015 - 2017",
+                    location: "salesEQUITY",
+                    description: "Responsible for leading a 4 person cross-functional team to develop solutions and implement requirements."
+                },
+                {
+                    title: "Full Stack Developer",
+                    year: "2013 - 2015",
+                    location: "salesEQUITY",
+                    description: "Developed from scratch a Ruby on Rail web app that measures B2B relationship."
+                }
+            ],
             educations: []
-        }
-    },
-    async asyncData({ req, params }) {
-        performance.mark('getResume:start')
-        const [
-            { data: experiences },
-            { data: educations }
-        ] = await Promise.all([
-            axios.get('https://api.morten.is/experiences'),
-            axios.get('https://api.morten.is/educations')
-        ])
-        return {
-            experiences,
-            educations
-        }
-        performance.mark('getResume:end')
-    },
-    computed: {
-        reverseExp() {
-            return this.experiences.slice().reverse();
-        },
-        reverseEdu() {
-            return this.educations.slice().reverse();
         }
     }
 }

@@ -136,7 +136,7 @@ export default {
     },
     data() {
         return {
-            titles: [{ title: "Front-End Engineer" }],
+            titles: [{ title: "Full Stack Software Engineer" }],
             devicons: [
                 {
                     icon: "/images/github.svg",
@@ -157,6 +157,11 @@ export default {
                     icon: "/images/codewars.png",
                     url: "https://www.codewars.com/users/sunkev",
                     name: "Codewars"
+                },
+                {
+                    icon: "/images/gmail.png",
+                    url: "mailto:kevin_sun@kenan-flagler.unc.edu",
+                    name: "Gmail"
                 }
             ],
             technical_skills: [
