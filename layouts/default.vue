@@ -46,20 +46,6 @@
                                 </span>
                             </nuxt-link>
                         </li>
-                        <li>
-                            <a href="https://moso.blog" target="_blank" rel="noopener">
-                                <span @click="closeSidenav">
-                                    <svg viewBox="0 0 85 87" xmlns="http://www.w3.org/2000/svg" class="ghost-svg">
-                                        <rect x=".209" y="69.017" width="33.643" height="17.014" rx="4"/>
-                                        <rect x="50.672" y="69.017" width="33.622" height="17.014" rx="4"/>
-                                        <rect x=".184" y="34.99" width="84.121" height="17.014" rx="4"/>
-                                        <rect x=".209" y=".964" width="50.469" height="17.013" rx="4"/>
-                                        <rect x="67.494" y=".964" width="16.821" height="17.013" rx="4"/>
-                                    </svg>
-                                    Blog
-                                </span>
-                            </a>
-                        </li>
                     </moso-drawer-list>
                     <div class="footer">
                         <span>Made with <img src="/images/heart.svg" alt="Love"> and <a href="https://vuejs.org" title="Vue.js" target="_blank" rel="noopener"><img src="/images/vue-logo.svg" alt="Vue.js"></a> &#43; <a href="https://nuxtjs.org" title="Nuxt.js" target="_blank" rel="noopener"><img src="/images/nuxt-logo.svg" alt="Nuxt.js"></a></span>
