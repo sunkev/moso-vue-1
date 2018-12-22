@@ -27,6 +27,7 @@
     "flexgrid.co": "^2.5.0",
     "node-sass": "^4.10.0",
     "nuxt": "^2.2.0",
+    "redirect-ssl": "^1.4.0",
     "sass-loader": "^7.1.0",
     "vue-masonry": "^0.11.6",
     "vue-no-ssr": "^1.0.0"

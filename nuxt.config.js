@@ -59,6 +59,10 @@ module.exports = {
         proxy: false
     },
 
+    serverMiddleware: [
+        'redirect-ssl'
+    ],
+
     proxy: {
     },
 
