@@ -17,7 +17,6 @@ module.exports = {
             { vmid: 'og:image:height', property: 'og:image:height', content: '150'},
             { vmid: 'og:title', property: 'og:title', content: 'Kevin Sun - Personal Site' },
             { vmid: 'og:type', property: 'og:type', content: 'website' },
-            { vmid: 'og:url', property: 'og:url', content: 'http://kevinsun.me' },
             { name: 'description', content: 'Portfolio made with Vue.js and Nuxt.js' },
             { name: 'author', content: 'Kevin Sun' },
             { name: 'mobile-web-app-capable', content: 'yes' },
