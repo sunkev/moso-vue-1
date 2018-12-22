@@ -13,6 +13,8 @@ module.exports = {
             { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0' },
             { vmid: 'og:description', property: 'og:description', content: 'Portfolio made with Vue.js and Nuxt.js' },
             { vmid: 'og:image', property: 'og:image', content: 'http://www.kevinsun.me/images/profile.jpg' },
+            { vmid: 'og:image:width', property: 'og:image:width', content: '150' },
+            { vmid: 'og:image:height', property: 'og:image:height', content: '150'},
             { vmid: 'og:title', property: 'og:title', content: 'Kevin Sun - Personal Site' },
             { vmid: 'og:type', property: 'og:type', content: 'website' },
             { vmid: 'og:url', property: 'og:url', content: 'http://kevinsun.me' },
