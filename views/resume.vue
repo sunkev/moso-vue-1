@@ -86,7 +86,7 @@ export default {
                     year: "2013 - 2015",
                     location: "salesEQUITY",
                     description: "Developed a Ruby-on-Rails web app that measures B2B relationship. " +
-                        "Difficult back-end problems solved include HTML to PDF conversion, integration with 3rd party APIs (Salesforce and Qualtrics) " +
+                        "Difficult back-end problems solved include HTML to PDF conversion, integration with 3rd party APIs (Salesforce and Qualtrics). " +
                         "On the front-end, implemented a combination of AngularJS, Bootstrap and data visualization libraries (D3.js/ChartJS/amCharts)."
                 }
             ],
