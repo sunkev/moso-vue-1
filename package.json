@@ -40,7 +40,7 @@
     "eslint-plugin-vue": "^4.7.1"
   },
   "engines": {
-      "node": "v12.7.0"
+      "node": "v10.14.2"
   },
   "homepage": "https://moso.io"
 }
