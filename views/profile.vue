@@ -67,7 +67,9 @@
                         <p>I have 5+ years of experience of leading teams to build successful software start to finish. Here is my career in a nutshell. I started with a background in biology and worked at New England Biolabs as a research assistant, but found I had a knack for building web apps.</p>
                         <p>So I took a risk and pivoted my career by joining a development bootcamp. The rest is history! I joined a start-up and was the first developer for salesEQUITY, growing the company until it reached $5M evaluation. </p>
                         <p>Afterwards, I decided to branch out and work for a Fortune 500 company. I joined Cisco Systems and worked on their Smart Software Licensing platform. </p>
-                        <p>I love challenging myself, so I'm currently pursuing both a Master's in Software Engineering and an MBA. I'm looking for a product manager internship for the summer. If anything sounds interesting let me know through <a href = "mailto: kevin_sun@kenan-flagler.unc.edu">email</a>!</p>
+                        <p>I love challenging myself, and decided to pursued both a Master's in Software Engineering and an MBA.</p>
+                        <p>Currently working as CTO of a Techstars 2019 start-up company Bundl Technologies, building a mobile platform in the resale industry.</p>
+                        <p>Always open to me opportunities, just <a href = "mailto: kevin_sun@kenan-flagler.unc.edu">email</a> me!</p>
                     </div>
                 </div>
                 <div class="row">
@@ -78,11 +80,11 @@
                                     <svg viewBox="0 0 16 16" id="skills-svg">
                                         <path d="M 10.042969 2.050781 L 5.039063 13.550781 L 5.960938 13.949219 L 10.957031 2.449219 Z M 3.226563 5.070313 L 0.996094 8 L 3.226563 10.925781 L 4.023438 10.324219 L 2.253906 8 L 4.023438 5.679688 Z M 12.773438 5.070313 L 11.976563 5.679688 L 13.746094 8 L 11.976563 10.324219 L 12.773438 10.925781 L 15.003906 8 Z " />
                                     </svg>
-                                    Technical Skills
+                                    Web Skills
                                 </h3>
                             </div>
                             <div class="widget__body">
-                                <moso-progressbar v-for="skill in technical_skills" :key="skill.id"
+                                <moso-progressbar v-for="skill in web_skills" :key="skill.id"
                                                   :name="skill.type"
                                                   :percentage="skill.percent" />
 
@@ -103,11 +105,11 @@
                                     <svg viewBox="0 0 16 16" id="skills-svg">
                                         <path d="M 10.042969 2.050781 L 5.039063 13.550781 L 5.960938 13.949219 L 10.957031 2.449219 Z M 3.226563 5.070313 L 0.996094 8 L 3.226563 10.925781 L 4.023438 10.324219 L 2.253906 8 L 4.023438 5.679688 Z M 12.773438 5.070313 L 11.976563 5.679688 L 13.746094 8 L 11.976563 10.324219 L 12.773438 10.925781 L 15.003906 8 Z " />
                                     </svg>
-                                    Soft Skills
+                                    Mobile Skills
                                 </h3>
                             </div>
                             <div class="widget__body">
-                                <moso-progressbar v-for="skill in soft_skills" :key="skill.id"
+                                <moso-progressbar v-for="skill in mobile_skills" :key="skill.id"
                                                   :name="skill.type"
                                                   :percentage="skill.percent" />
                             </div>
@@ -164,7 +166,7 @@ export default {
                     name: "Gmail"
                 }
             ],
-            technical_skills: [
+            web_skills: [
                 {
                     type: "Ruby on Rails",
                     percent: 100
@@ -178,42 +180,42 @@ export default {
                     percent: 80
                 },
                 {
-                    type: "Java",
-                    percent: 65
+                    type: "SQL",
+                    percent: 80
                 },
                 {
                     type: "UNIX Shell Script",
                     percent: 65
                 },
                 {
-                    type: "Tableau/R",
+                    type: "Tableau",
                     percent: 75
                 }
             ],
-            soft_skills:[
+            mobile_skills:[
                 {
-                    type: "Leadership",
+                    type: "React Native",
                     percent: 90
                 },
                 {
-                    type: "Working under pressure",
-                    percent: 85
-                },
-                {
-                    type: "Decision Making",
+                    type: "TypeScript/JavaScript",
                     percent: 90
                 },
                 {
-                    type: "Time Management",
-                    percent: 90
+                    type: "iOS development",
+                    percent: 80
                 },
                 {
-                    type: "Adaptability",
-                    percent: 100
+                    type: "Java",
+                    percent: 70
                 },
                 {
-                    type: "Teamwork",
-                    percent: 100
+                    type: "Xamarin",
+                    percent: 50
+                },
+                {
+                    type: "Flutter",
+                    percent: 60
                 }
             ]
         }
