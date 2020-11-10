@@ -64,14 +64,14 @@ export default {
                     title: "Co-Founder and CTO",
                     year: "2020",
                     location: "MyOwn Communications",
-                    description: "Established a health communications company that expedites secure provider transfer of clinical information." +
+                    description: "Established a health communications company that expedites secure provider transfer of clinical information. " +
                         "Oversee technology development, facilitate communication between executives and engineers, and advise on application architecture."
                 },
                 {
                     title: "Co-Founder and CTO",
                     year: "2019",
                     location: "Bundl Technologies",
-                    description: "Developed and launched the iOS mobile application “My Bundl” for children's clothing resale." +
+                    description: "Developed and launched the iOS mobile application “My Bundl” for children's clothing resale. " +
                         "Designed a two-sided marketplace that had ~200 downloads and over 450 clothes and accessories uploaded for sale within one month of release."
                 },
                 {
@@ -113,9 +113,9 @@ export default {
                 },
                 {
                     title: "Master of Liberal Arts, Software Engineering",
-                    year: "2019",
+                    year: "2021",
                     location: "Harvard University Extension School",
-                    description: "<ul><li>Big Data Analytics</li><li>Advanced Javascript</li><li>Agile Software Development</li><li>C & Unix/Linux</li><li>Intro to Cloud and DevOps</li><li>Java and Hadoop</li><li>Internet of Things</li></ul>"
+                    description: "<ul><li>Big Data Analytics</li><li>Advanced Javascript</li><li>Agile Software Development</li><li>C & Unix/Linux</li><li>Intro to Cloud and DevOps</li><li>Java and Hadoop</li><li>Internet of Things</li><li>UML Documentation</li></ul>"
                 },
                 {
                     title: "Bachelor of Arts, Biology",
