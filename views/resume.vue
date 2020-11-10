@@ -106,16 +106,16 @@ export default {
             ],
             educations: [
                 {
-                    title: "MBA",
-                    year: "2020",
-                    location: "University of North Carolina at Chapel Hill",
-                    description: "<ul><li>Data Analytics & Decision Making</li><li>Leading and Managing</li><li>Technology & Business Innovation</li><li>Management Communication</li><li>Entrepreneurship</li><li>Ethical Leadership</li> </ul>"
-                },
-                {
                     title: "Master of Liberal Arts, Software Engineering",
                     year: "2021",
                     location: "Harvard University Extension School",
                     description: "<ul><li>Big Data Analytics</li><li>Advanced Javascript</li><li>Agile Software Development</li><li>C & Unix/Linux</li><li>Intro to Cloud and DevOps</li><li>Java and Hadoop</li><li>Internet of Things</li><li>UML Documentation</li></ul>"
+                },
+                {
+                    title: "MBA",
+                    year: "2020",
+                    location: "University of North Carolina at Chapel Hill",
+                    description: "<ul><li>Data Analytics & Decision Making</li><li>Leading and Managing</li><li>Technology & Business Innovation</li><li>Management Communication</li><li>Entrepreneurship</li><li>Ethical Leadership</li> </ul>"
                 },
                 {
                     title: "Bachelor of Arts, Biology",
