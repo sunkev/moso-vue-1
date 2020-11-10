@@ -61,6 +61,20 @@ export default {
         return {
             experiences: [
                 {
+                    title: "Co-Founder and CTO",
+                    year: "2020",
+                    location: "MyOwn Communications",
+                    description: "Established a health communications company that expedites secure provider transfer of clinical information." +
+                        "Oversee technology development, facilitate communication between executives and engineers, and advise on application architecture."
+                },
+                {
+                    title: "Co-Founder and CTO",
+                    year: "2019",
+                    location: "Bundl Technologies",
+                    description: "Developed and launched the iOS mobile application “My Bundl” for children's clothing resale." +
+                        "Designed a two-sided marketplace that had ~200 downloads and over 450 clothes and accessories uploaded for sale within one month of release."
+                },
+                {
                     title: "Software Engineer III",
                     year: "2018",
                     location: "Cisco Systems",

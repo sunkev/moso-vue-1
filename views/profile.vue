@@ -30,16 +30,8 @@
                                 <div class="column-item column-item--right">Kevin Sun</div>
                             </div>
                             <div class="column">
-                                <div class="column-item column-item--left">Age:</div>
-                                <div class="column-item column-item--right">28</div>
-                            </div>
-                            <div class="column">
                                 <div class="column-item column-item--left">Position:</div>
-                                <div class="column-item column-item--right">Full Stack Developer</div>
-                            </div>
-                            <div class="column">
-                                <div class="column-item column-item--left">Nationality:</div>
-                                <div class="column-item column-item--right">Chinese American</div>
+                                <div class="column-item column-item--right">Chief Technology Officer</div>
                             </div>
                             <div class="column">
                                 <div class="column-item column-item--left">Location:</div>
@@ -47,7 +39,7 @@
                             </div>
                             <div class="column">
                                 <div class="column-item column-item--left">E-mail:</div>
-                                <div class="column-item column-item--right">kevin_sun@kenan-flagler.unc.edu</div>
+                                <div class="column-item column-item--right">sunkev24@gmail.com</div>
                             </div>
                         </div>
                     </div>
@@ -68,8 +60,8 @@
                         <p>So I took a risk and pivoted my career by joining a development bootcamp. The rest is history! I joined a start-up and was the first developer for salesEQUITY, growing the company until it reached $5M evaluation. </p>
                         <p>Afterwards, I decided to branch out and work for a Fortune 500 company. I joined Cisco Systems and worked on their Smart Software Licensing platform. </p>
                         <p>I love challenging myself, and decided to pursued both a Master's in Software Engineering and an MBA.</p>
-                        <p>Currently working as CTO of a Techstars 2019 start-up company Bundl Technologies, building a mobile platform in the resale industry.</p>
-                        <p>Always open to me opportunities, just <a href = "mailto: kevin_sun@kenan-flagler.unc.edu">email</a> me!</p>
+                        <p>Currently working as CTO of the start-up company MyOwn Communications, facilitating HIPAA-compliant communications between healthcare providers.</p>
+                        <p>Always open to me opportunities, just <a href = "mailto: sunkev24@gmail.com">email</a> me!</p>
                     </div>
                 </div>
                 <div class="row">
@@ -138,7 +130,7 @@ export default {
     },
     data() {
         return {
-            titles: [{ title: "Full Stack Software Engineer" }],
+            titles: [{ title: "Chief Technology Officer" }],
             devicons: [
                 {
                     icon: "/images/github.svg",
@@ -162,7 +154,7 @@ export default {
                 },
                 {
                     icon: "/images/gmail.png",
-                    url: "mailto:kevin_sun@kenan-flagler.unc.edu",
+                    url: "mailto:sunkev24@gmail.com",
                     name: "Gmail"
                 }
             ],
